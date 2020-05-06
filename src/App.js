@@ -6,8 +6,9 @@ import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-
 import './App.css';
+
+import Footer from './components/Footer';
 
 class App extends React.Component {
 
@@ -41,7 +42,7 @@ class App extends React.Component {
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>Daniel</Navbar.Brand>
-            <Navbar.Toggle arie-controls="navbar-toggle"/>
+            <Navbar.Toggle className="border-0" arie-controls="navbar-toggle"/>
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">Home</Link>
@@ -50,7 +51,7 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          
+          <Footer />
         </Container>
       </Router>
     );
