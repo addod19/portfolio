@@ -1,0 +1,84 @@
+.wrap-bg {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    background-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+}
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.d-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2em;
+    margin-left: 4%;
+}
+
+.l-none {
+    list-style: none;
+}
+.t-dec-none {
+    text-decoration: none;
+}
+.navBtn {
+    height: 2em;
+    background-color: aliceblue;
+    padding: 1em;
+    border-radius: 3em;
+}
+.me-skills,
+.sum-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+}
+
+.ml-5-mr-5 {
+    margin-left: 3%;
+    margin-right: 5%;
+}
+.pri {
+    color: aliceblue;
+}
+.text-color:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+    transition: ease-in 3s;
+    cursor: pointer;
+}
+.text-color {
+    transform: translateY(1.5rem) scale(1.03);
+    transition: ease-in 3s;
+}
+.text-center {
+    text-align: center;
+}
+.live-demo {
+    width: 6em;
+    height: 3em;
+    padding: 0.7em;
+    margin-left: 6%;
+    background-color: #766df2;
+    border-radius: 1em;
+}
+.t-color {
+    color:#f2e709;
+}
+.t-color:hover {
+    text-decoration: none;
+    color: white;
+}
+.align-icon {
+    margin-top: 10em;
+}
+@media (max-width: 700px) {
+    .img-w-100 {
+        width: 100%;
+    }
+}
