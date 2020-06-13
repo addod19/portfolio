@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple example steps.
 ## Deployment
 
 - ``` run npm build or yarn build ```
-- ``` git add . git commit -m "ready for deployment ```
+- ``` git add . git commit -m "ready for deployment" ```
 - ``` git push ```
 - Set up the app in netlify
 - Deploy 
