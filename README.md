@@ -66,10 +66,10 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/addod19/design-tearDown/issues).
+Feel free to check the [issues page](https://github.com/addod19/portfolio/issues).
 
 
-1. Fork it (https://github.com/addod19/design-tearDown/fork)
+1. Fork it (https://github.com/addod19/portfolio/fork)
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -87,4 +87,4 @@ Give us a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [Apache](lic.url) licensed.
