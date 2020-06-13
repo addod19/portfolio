@@ -5,10 +5,10 @@
 
 ## Screenshots
 
-<img src="assets/images/mp.png" alt="fist now">
-<img src="assets/images/mp1.png" alt="fist now">
-<img src="assets/images/mp2.png" alt="fist now">
-<img src="assets/images/mp3.png" alt="fist now">
+<img src="./mp.png" alt="fist now">
+<img src="./mp1.png" alt="fist now">
+<img src="./mp2.png" alt="fist now">
+<img src="./mp3.png" alt="fist now">
 
 
 
