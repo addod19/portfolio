@@ -7,7 +7,7 @@ import { StyledContent } from './styles';
 
 const Layout = ({ user, children }) => {
   return (
-    <div className="wrap-bg">
+    <div className="containerFluid wrap-bg">
       <MobileNav />
       <Sidebar />
       <StyledContent>
