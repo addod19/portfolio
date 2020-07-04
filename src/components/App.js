@@ -1,25 +1,31 @@
-// eslint-disable-next-line
-// eslint-no-unused-vars
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Route, Switch} from 'react-router-dom';
 
-import Pages from '../pages'
+
+import HomePage from '../pages/HomePage';
+import ProjectsPage from '../pages/ProjectPage';
+import SkillsPage from '../pages/SkillsPage';
+import ContactPage from '../pages/ContactPage';
+import Navbar from './navbar';
+import Footer from './footer';
+
 
 const App = () => {
-  const [user, setUser] = useState(null);
-  useEffect(() => {
-    fetch('https://gitconnected.com/v1/portfolio/addod19')
-      .then(res => res.json())
-      .then(user => {
-        setUser(user);
-      })
-      .catch( err => err);
-  }, []);
+  
 
-  if (!user) {
-    return <div />;
-  }
-
-  return <Pages user={user} />;
+  return(
+    <div className="">
+      <Navbar />
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/projects' component={ProjectsPage} />
+        <Route exact path='/skills' component={SkillsPage} />
+        <Route exact path='/contact' component={ContactPage} />
+        <Route component={Error} />
+      </Switch>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
