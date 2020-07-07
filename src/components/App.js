@@ -14,7 +14,7 @@ const App = () => {
   
 
   return(
-    <div className="">
+    <div className="content">
       <Navbar />
       <Switch>
         <Route exact path='/' component={HomePage} />
