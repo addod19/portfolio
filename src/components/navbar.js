@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {FaAlignRight} from 'react-icons/fa';
+import {FaAlignRight, FaHome, FaFileImage, FaCode, FaEthernet} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 // import { createStore } from 'redux';
@@ -33,16 +33,18 @@ class Navbar extends Component {
                     </div>
                     <ul className={this.state.isOpen? "nav-links show-nav" : "nav-links" }>
                         <li>
-                            <Link to="/" className="primary">Home</Link>
+                            <Link to="/" className="primary">
+                                <FaHome />Home
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/skills" className="primary">Skills</Link>
+                            <Link to="/skills" className="primary"><FaFileImage />About</Link>
                         </li>
                         <li>
-                            <Link to="/contact" className="primary">Contact</Link>
+                            <Link to="/contact" className="primary"><FaEthernet />Contact</Link>
                         </li>
                         <li>
-                            <Link to="/projects" className="primary">Projects</Link>
+                            <Link to="/projects" className="primary"> <FaCode />Project</Link>
                         </li>                        
                     </ul>
                 </div>

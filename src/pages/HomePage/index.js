@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import profile__image from '../../Images/free.jpg';
 import { FaHtml5, FaCss3Alt, FaDatabase, FaJs, FaReact, FaGithub,
-        FaTwitter, FaFacebook, FaLinkedin, FaMedium, FaAngellist } from 'react-icons/fa';
+        FaTwitter, FaFacebook, FaLinkedin, FaMedium, FaAngellist,
+        FaHandPointRight, FaMailBulk } from 'react-icons/fa';
 import './style.css';
 
 
@@ -43,43 +44,49 @@ export default class HomePage extends Component {
                         <hr className="line" />
                         <div className="social-links">
                             <h3 className="text-center t-color">Social handles</h3>
-                            <ul className="no-marg">
-                                <li>
+                            <section className="no-marg">
+                                <div>
                                     <a href="https://github.com/addod19" className='s-links'>
                                         <FaGithub />
                                     </a>
-                                </li>
-                                <li>
+                                </div>
+                                <div>
                                     <a href="https://www.linkedin.com/in/daniel-larbi-addo/" className='s-links'>
                                     <FaLinkedin />
                                     </a>
-                                </li>
-                                <li>
+                                </div>
+                                <div>
                                     <a href="https://angel.co/u/daniel-larbi-addo" className='s-links'>
                                     <FaAngellist />
                                     </a>
-                                </li>
-                                <li>
+                                </div>
+                                <div>
                                     <a href="https://twitter.com/DanielLarbiAdd1" className='s-links'>
                                     <FaTwitter />
                                     </a>
-                                </li>
-                                <li>
+                                </div>
+                                <div>
                                     <a href="https://medium.com/@addodaniellarbi" className='s-links'>
                                     <FaMedium />
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="" className='s-links'>
+                                </div>
+                                <div>
+                                    <a href="https://web.facebook.com/daniel.larbi.addo/" className='s-links'>
                                     <FaFacebook />
                                     </a>
-                                </li>
+                                </div>
                                 
-                            </ul>
+                            </section>
                         </div>
-                        <div className="contact">
-
-                        </div>
+                        
+                    </div>
+                </div>
+                <div className="email">
+                    <div  className="i-large">
+                    <FaHandPointRight  className="i-large"/>
+                    </div>
+                    <div  className="i-large">
+                    email: <FaMailBulk /> info@daniellarbiaddo.com
                     </div>
                 </div>
             </div>

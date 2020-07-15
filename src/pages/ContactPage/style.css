@@ -9,3 +9,19 @@
     margin: auto;
     background: white;
 }
+
+@media screen and (min-width: 1024px) {
+    .contactWrap {
+        height: 100em;
+        border: 1px solid white;
+    }
+    
+    .innerWrap {
+        width: 80%;
+        height: 50em;
+        margin: auto;
+        background: white;
+    }
+    
+    
+}

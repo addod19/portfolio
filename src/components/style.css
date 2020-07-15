@@ -114,8 +114,19 @@ p .sm__text {
     }
     .nav-btn {
         font-size: 60px;
+        display: none;
     }
     .show-nav {
+        display: flex;
+        flex: row;
         background-color: gold;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+    }
+    .primary {
+        font-size: 23px;
+        color: gold;
     }
 }
