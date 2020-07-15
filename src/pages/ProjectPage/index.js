@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
+
+import './style.css';
 
 export default class ProjectPage extends Component {
-    // static propTypes = {
-
-    // }
 
     render() {
         return (
-            <div>
+            <div className="projectWrap">
                 <h2> Projects Page</h2>
             </div>
         )
