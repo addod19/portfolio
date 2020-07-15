@@ -30,6 +30,7 @@
     display: flex;
     flex-direction: row;
     box-shadow: 5px 10px 5px white, -5px -5px 5px white;
+    /* box-shadow: 0 0 10px 0 #000; */
     /* border: 1px solid black; */
 }
 .tech-items {
@@ -50,6 +51,6 @@
 }
 @media screen and (min-width: 770px) and (max-width: 4070px) {
     .projectWrap {
-        height: 74em;
+        height: 100%;
     }
 }

@@ -21,8 +21,8 @@ export default class ProjectPage extends Component {
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <section className="text-center">
                             <h2 className="t1-color">Facebook Clone</h2>
-                            <img src={fbImg} alt="" className="style-img" />
-                            <div className="technologies">
+                            <img src={fbImg} alt="friendbook" className="style-img" />
+                            <div className="technologies mt-3">
                                 <ul className="tech-items">
                                     <li>Ruby on Rails</li>
                                     <li>SCSS</li>
@@ -41,8 +41,8 @@ export default class ProjectPage extends Component {
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <section className="text-center">
                             <h2 className="t1-color"> Todo </h2>
-                            <img src={todoImg} alt="" className="style-img" />
-                            <div className="technologies">
+                            <img src={todoImg} alt="todo" className="style-img" />
+                            <div className="technologies mt-3">
                                 <ul className="tech-items">
                                     <li>HTML</li>
                                     <li>CSS</li>
@@ -59,8 +59,8 @@ export default class ProjectPage extends Component {
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <section className="text-center">
                             <h2 className="t1-color">Tic Tac Toe </h2>
-                            <img src={ticImg} alt="" className="style-img" />
-                            <div className="technologies">
+                            <img src={ticImg} alt="tictactoe" className="style-img" />
+                            <div className="technologies mt-3">
                                 <ul className="tech-items">
                                     <li>HTML</li>
                                     <li>CSS</li>
@@ -76,8 +76,8 @@ export default class ProjectPage extends Component {
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <section className="text-center">
                             <h2 className="t1-color">Event Brite</h2>
-                            <img src={evImg} alt="" className="style-img" />
-                            <div className="technologies">
+                            <img src={evImg} alt="private events" className="style-img" />
+                            <div className="technologies mt-3">
                                 <ul className="tech-items">
                                     <li>Ruby on Rails</li>
                                     <li>Bootstrap</li>
@@ -94,8 +94,8 @@ export default class ProjectPage extends Component {
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <section className="text-center">
                             <h2 className="t1-color">Facebook Clone</h2>
-                            <img src={defaultImg} alt="" className="style-img" />
-                            <div className="technologies">
+                            <img src={defaultImg} alt="fb" className="style-img" />
+                            <div className="technologies mt-3">
                                 <ul className="tech-items">
                                     <li>Ruby on Rails</li>
                                     <li>SCSS</li>

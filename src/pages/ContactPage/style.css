@@ -1,6 +1,5 @@
 .contactWrap {
     height: 100em;
-    border: 1px solid white;
 }
 
 .innerWrap {
@@ -12,15 +11,14 @@
 
 @media screen and (min-width: 1024px) {
     .contactWrap {
-        height: 100em;
-        border: 1px solid white;
+        height: 100%;
     }
     
     .innerWrap {
         width: 80%;
-        height: 50em;
+        height: 30em;
         margin: auto;
-        background: white;
+        background: gold;
     }
     
     
