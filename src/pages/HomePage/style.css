@@ -79,6 +79,26 @@
     text-align: center;
 }
 
+.email {
+    background: rgb(102, 10, 82);
+    height: 10em;
+    width: 100%;
+    margin: auto;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-between;
+}
+.i-large {
+    font-size: 22px;
+    align-self: center;
+    text-align: center;
+    color: gold;
+}
+/* .ip-font {
+    font-size: 30px;
+} */
+
 @media screen and (min-width: 1024px) {
     .sm__txt {
         font-size: 30px;
@@ -199,6 +219,9 @@
         align-self: center;
         text-align: center;
         color: gold;
+    }
+    .ip-font {
+        font-size: 60px;
     }
 }
 

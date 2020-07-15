@@ -32,14 +32,14 @@ export default class HomePage extends Component {
                     <div className="story__wrap col-sm-12 col-md-8 col-lg-7">
                         <h1 className="text-center exp">Experience In:</h1>
                         <ul className="text-center grid">
-                            <li><FaHtml5 />HTML</li>
-                            <li><FaCss3Alt />CSS</li>
-                            <li><FaDatabase />DATABASE</li>
-                            <li>RUBY</li>
-                            <li>RUBY ON RAILS</li>
-                            <li><FaJs />JAVASCRIPT</li>
-                            <li><FaReact />REACT/REDUX</li>
-                            <li>TESTING (RSpec & Capybara, JEST) </li>
+                            <li className="ip-font"><FaHtml5 />HTML</li>
+                            <li className="ip-font"><FaCss3Alt />CSS</li>
+                            <li className="ip-font"><FaDatabase />DATABASE</li>
+                            <li className="ip-font">RUBY</li>
+                            <li className="ip-font">RUBY ON RAILS</li>
+                            <li className="ip-font"><FaJs />JAVASCRIPT</li>
+                            <li className="ip-font"><FaReact />REACT/REDUX</li>
+                            <li className="ip-font">TESTING (RSpec & Capybara, JEST) </li>
                         </ul>
                         <hr className="line" />
                         <div className="social-links">

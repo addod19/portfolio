@@ -1,3 +1,55 @@
 .projectWrap {
-    height: 100em;
+    height: auto;
+}
+.style-img {
+    width: 100%;
+    height: 10em;
+}
+.line {
+    font-size: 5px;
+}
+.line,
+.t1-color {
+    color: white;
+}
+.t1-color {
+    font-weight: 600;
+}
+.link {
+    display: grid;
+    grid-auto-flow: column;
+}
+.s-icons {
+    font-size: 30px;
+    color: gold;
+}
+.s-icons:hover {
+    color: white;
+}
+.technologies {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 10px 5px white, -5px -5px 5px white;
+    /* border: 1px solid black; */
+}
+.tech-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+}
+.tech-items li {
+    font-size: 20px;
+    color: gold;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 4061x) {
+    /* .projectWrap {
+        height: 70em;
+    } */
+}
+@media screen and (min-width: 770px) and (max-width: 4070px) {
+    .projectWrap {
+        height: 74em;
+    }
 }

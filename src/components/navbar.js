@@ -38,13 +38,19 @@ class Navbar extends Component {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/skills" className="primary"><FaFileImage />About</Link>
+                            <Link to="/skills" className="primary">
+                                <FaFileImage />About
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/contact" className="primary"><FaEthernet />Contact</Link>
+                            <Link to="/contact" className="primary">
+                                <FaEthernet />Contact
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/projects" className="primary"> <FaCode />Project</Link>
+                            <Link to="/projects" className="primary">
+                                <FaCode />Project
+                            </Link>
                         </li>                        
                     </ul>
                 </div>
