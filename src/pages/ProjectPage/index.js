@@ -33,8 +33,8 @@ export default class ProjectPage extends Component {
                                 </ul>
                             </div>
                             <div className="link">
-                                <a href="https://secret-sea-76381.herokuapp.com/" className="s-icons"><FaGithub /></a>
-                                <a href="https://github.com/addod19/facebook-clone" className="s-icons"><FaCode /></a>
+                                <a title="click me" href="https://secret-sea-76381.herokuapp.com/" className="s-icons"><FaGithub /></a>
+                                <a title="click me" href="https://github.com/addod19/facebook-clone" className="s-icons"><FaCode /></a>
                             </div>
                         </section>
                     </div>
@@ -51,8 +51,8 @@ export default class ProjectPage extends Component {
                                 </ul>
                             </div>
                             <div className="link">
-                                <a href="https://addod19.github.io/todo/" className="s-icons"><FaGithub /></a>
-                                <a href="https://github.com/addod19/todo" className="s-icons"><FaCode /></a>
+                                <a title="click me" href="https://addod19.github.io/todo/" className="s-icons"><FaGithub /></a>
+                                <a title="click me" href="https://github.com/addod19/todo" className="s-icons"><FaCode /></a>
                             </div>
                         </section>
                     </div>
@@ -68,8 +68,8 @@ export default class ProjectPage extends Component {
                                 </ul>
                             </div>
                             <div className="link">
-                                <a href="https://macnick.github.io/Tic-Tac-Toe-JS/" className="s-icons" ><FaGithub /></a>
-                                <a href="https://github.com/addod19/Tic-Tac-Toe-JS" className="s-icons"><FaCode /></a>
+                                <a title="click me" href="https://macnick.github.io/Tic-Tac-Toe-JS/" className="s-icons" ><FaGithub /></a>
+                                <a title="click me" href="https://github.com/addod19/Tic-Tac-Toe-JS" className="s-icons"><FaCode /></a>
                             </div>
                         </section>
                     </div>
@@ -86,8 +86,8 @@ export default class ProjectPage extends Component {
                                 </ul>
                             </div>
                             <div className="link">
-                                <a href="https://blooming-mesa-54776.herokuapp.com/" className="s-icons"><FaGithub /></a>
-                                <a href="https://github.com/addod19/private-events" className="s-icons"><FaCode /></a>
+                                <a title="click me" href="https://blooming-mesa-54776.herokuapp.com/" className="s-icons"><FaGithub /></a>
+                                <a title="click me" href="https://github.com/addod19/private-events" className="s-icons"><FaCode /></a>
                             </div>
                         </section>
                     </div>
@@ -105,8 +105,8 @@ export default class ProjectPage extends Component {
                                 </ul>
                             </div>
                             <div className="link">
-                                <a href="https://secret-sea-76381.herokuapp.com/" className="s-icons"><FaGithub /></a>
-                                <a href="https://github.com/addod19/facebook-clone" className="s-icons"><FaCode /></a>
+                                <a title="click me" href="https://secret-sea-76381.herokuapp.com/" className="s-icons"><FaGithub /></a>
+                                <a title="click me" href="https://github.com/addod19/facebook-clone" className="s-icons"><FaCode /></a>
                             </div>
                         </section>
                     </div>
