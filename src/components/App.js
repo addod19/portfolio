@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch} from 'react-router-dom';
 
+import Particles from 'react-particles-js';
 
 import HomePage from '../pages/HomePage';
 import ProjectsPage from '../pages/ProjectPage';
@@ -15,6 +16,7 @@ const App = () => {
 
   return(
     <div className="content">
+      <Particles canvasClassName="abs" />
       <Navbar />
       <Switch>
         <Route exact path='/' component={HomePage} />
@@ -24,6 +26,8 @@ const App = () => {
         <Route component={Error} />
       </Switch>
       <Footer />
+      
+
     </div>
   );
 }

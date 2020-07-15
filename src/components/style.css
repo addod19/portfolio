@@ -1,6 +1,10 @@
 * {
     border: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+.abs {
+    position: absolute;
 }
 .content {
     width: 100%;
@@ -23,6 +27,8 @@
     float: right;
     font-size: 33px;
     border: none;
+    background-color: gold;
+    color: indigo;
 }
 .show-nav {
     display: flex;
@@ -88,12 +94,16 @@ p .sm__text {
         align-items: center;
         height: auto;
         width: 100%;
-        background-color: gray;
+        background-color: gold;
     }
 
     li {
         font-size: 53px;
         color: black;
+    }
+    li:hover {
+        cursor: pointer;
+        color: white;
     }
 }
 @media screen and (min-width: 1024px) {

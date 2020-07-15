@@ -8,11 +8,17 @@
     color: white;
     font-size: 23px;
 }
+.t-color {
+    color: gold;
+    font-weight: 700;
+}
 .align-content {
     width: 80%;
     margin: auto;
-    border: 5px solid black;
+    border-radius: 5px;
     color: white;
+    background: gold;
+    box-shadow: 5px 10px 5px #888888, -5px -5px 5px white;
 }
 .sm__txt {
     margin: auto;
@@ -59,13 +65,17 @@
     height: 18em;
     /* margin: auto; */
 }
+.design {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
 @media screen and (min-width: 1024px) {
     .sm__txt {
         font-size: 30px;
     }
     .profile__wrap {
         height: 28em;
-        border: 1px solid black;
     }
     .profile_img {
         height: 100%;
@@ -90,6 +100,16 @@
     .fs {
         font-size: 60px;
     }
+    .design {
+        color: black;
+        font-size: 60px;
+        text-align: center;
+    }
+    .exp {
+        font-size: 70px;
+        color: gold;
+        font-weight: 900;
+    }
     .align-content {
         background-color: gold;
         border: 0;
@@ -101,8 +121,65 @@
         font-weight: 900;
     }
 }
-@media screen and (min-width: 300px) and (max-width: 766px) {
+@media screen and (min-width: 1000px) and (max-width: 1800px) {
+    .about__div {
+        display: flex;
+        flex-direction: row;
+        /* border: 1px solid violet; */
+    }
+
+    .profile__wrap {
+        /* border: 1px solid red; */
     
+    }
+    .profile_img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 5px 5px -5px white, -5px  5px 10px black;
+    }
+    .story__wrap {
+        /* border: 1px solid green; */
+        margin-top: 0;
+    }
+    .grid li {
+        /* display: grid; */
+        font-size: 20px;
+    }
+    .line {
+        font-size: 5px;
+        background-color: white;
+    }
+    .social-links {
+        height: auto;
+    }
+
+    .social-links ul {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    .s-links {
+        color: white;
+        font-size: 20px;
+        transition-property: font-size;
+    }
+    .s-links:hover {
+        color: gold;
+        font-size: 25px;
+    }
+    .no-marg {
+        position: relative;
+        top: -50px;
+    }
+
+    /* .contact {
+        /* height: 10em;
+        border: 1px solid black;
+    } */ 
+    /* .social-links ul li a {
+        font-size: 19px;
+        color: red;
+    } */
+  
 }
 /* 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
