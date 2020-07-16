@@ -5,10 +5,10 @@
 
 ## Screenshots
 
-<img src="./mp.png" alt="fist now">
-<img src="./mp1.png" alt="fist now">
-<img src="./mp2.png" alt="fist now">
-<img src="./mp3.png" alt="fist now">
+<img src="./first.png" alt="fist now">
+<img src="./second.png" alt="fist now">
+<img src="./third.png" alt="fist now">
+<img src="./forth.png" alt="fist now">
 
 
 
@@ -16,8 +16,8 @@
 
 - React
 - CSS
-- SASS
-- Gitconnected API
+- Redux
+
 
 
 ### Live version
