@@ -5,6 +5,7 @@
     width: 100%;
     height: 10em;
 }
+
 .line {
     font-size: 5px;
 }
@@ -52,5 +53,21 @@
 @media screen and (min-width: 770px) and (max-width: 4070px) {
     .projectWrap {
         height: 100%;
+    }
+    .style-img {
+        transition: height 0.5s ease-out;
+        width: 100%;
+        height: 10em;
+    }
+    .style-img:hover {
+        cursor: pointer;
+        height: 13em;
+    }
+    .tech-items {
+        border: 1px solid white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 }

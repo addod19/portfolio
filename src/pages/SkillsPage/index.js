@@ -6,7 +6,7 @@ export default class SkillsPage extends Component {
     render() {
         return (
             <div className="skills_wrap">
-                <h2>About Page</h2>
+                <h2 className="t-color">My Details</h2>
                 <div className="term-head"></div>
                 <section className="terminal">
                     <div className="cur_loc">
