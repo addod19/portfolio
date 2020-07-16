@@ -38,7 +38,7 @@ class Navbar extends Component {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/skills" className="primary">
+                            <Link to="/about" className="primary">
                                 <FaFileImage />About
                             </Link>
                         </li>

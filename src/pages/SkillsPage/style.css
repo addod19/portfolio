@@ -49,6 +49,10 @@
         color: white;
     }
 
+    .terminal {
+        margin-top: 0;
+    }
+
     .term-head {
         margin-top: 10%;
     }
