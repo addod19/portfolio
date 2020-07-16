@@ -44,22 +44,22 @@ export default class ContactPage extends Component {
         return (
             <div className="contactWrap">
                 <div className="innerWrap">
-                    <h2 className="text-center">Contact Page</h2>
+                    <h2 className="text-center t2-color">Contact Page</h2>
 
                     <form id="contact-form"  onSubmit={this.handleSubmit.bind(this)} method="POST">
                         <div className="form-group">
-                            <label htmlFor="name">Name</label>
+                            <label htmlFor="name t3-color">Name</label>
                             <input type="text" value={this.state.name} onChange={this.onNameChange.bind(this)} className="form-control" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="exampleInputEmail1">Email address</label>
+                            <label htmlFor="exampleInputEmail1 t3-color">Email address</label>
                             <input type="email" value={this.state.email} onChange={this.onEmailChange.bind(this)} className="form-control" aria-describedby="emailHelp" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="message">Message</label>
+                            <label htmlFor="message t3-color">Message</label>
                             <textarea value={this.state.message} onChange={this.onMessageChange.bind(this)} className="form-control" rows="5"></textarea>
                         </div>
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <button type="submit" className="btn btn-primary mod">Submit</button>
                     </form>
                 </div>
                 

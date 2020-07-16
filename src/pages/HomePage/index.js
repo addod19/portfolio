@@ -82,11 +82,11 @@ export default class HomePage extends Component {
                     </div>
                 </div>
                 <div className="email">
-                    <div  className="i-large">
-                    <FaHandPointRight  className="i-large"/>
+                    <div  className="i-large rotate">
+                        <FaHandPointRight  className="i-large"/>
                     </div>
                     <div  className="i-large">
-                    email: <FaMailBulk /> info@daniellarbiaddo.com
+                        email: <FaMailBulk /> info@daniellarbiaddo.com
                     </div>
                 </div>
             </div>

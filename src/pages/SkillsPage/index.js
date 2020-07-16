@@ -6,8 +6,10 @@ export default class SkillsPage extends Component {
     render() {
         return (
             <div className="skills_wrap">
-                <h2 className="t-color">My Details</h2>
-                <div className="term-head"></div>
+                <h2 className="t-color mt-5">My Details</h2>
+                <div className="term-head">
+
+                </div>
                 <section className="terminal">
                     <div className="cur_loc">
                         <div> > <span className="red">Daniel</span>.current_location</div>
@@ -40,9 +42,8 @@ export default class SkillsPage extends Component {
                     </div>
                     <div className="cur_loc">
                         <div> > <span className="red">Daniel</span>.contact</div>
-                        <div className="red">'Remote'</div>
+                        <div className="red wrap">['addodaniellarb@gmail.com', 'info@daniellarbiaddo.com']</div>
                     </div>
-                    <div className="term-foot"></div>
                 </section>
             </div>
         )

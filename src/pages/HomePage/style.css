@@ -8,9 +8,31 @@
     color: white;
     font-size: 23px;
 }
-.t-color {
+.t-color,
+.exp,
+.s-links {
     color: gold;
+}
+.t-color {
+    font-size: 44px;
     font-weight: 700;
+}
+.fs {
+    color: green;
+    font-weight: 700;
+}
+.exp,
+.ip-font {
+    font-weight: 700;
+}
+.s-links:hover {
+    color: white;
+}
+.s-links {
+    font-size: 30px;
+}
+.ip-font {
+    color: white;
 }
 .align-content {
     width: 80%;
@@ -86,14 +108,17 @@
     margin: auto;
     margin-top: 3em;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    justify-content: space-between;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
 }
 .i-large {
-    font-size: 22px;
+    font-size: 28px;
     align-self: center;
     text-align: center;
     color: gold;
+}
+.rotate {
+    transform: rotate(90deg);
 }
 /* .ip-font {
     font-size: 30px;
@@ -148,6 +173,9 @@
     .special, .dev {
         color: black;
         font-weight: 900;
+    }
+    .rotate {
+        transform: rotate(360deg);
     }
 }
 @media screen and (min-width: 1000px) and (max-width: 1800px) {
@@ -225,5 +253,78 @@
 }
 
 @media screen and (min-width: 767px) and (max-width: 999px) {
-    
+    .about__div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .profile_img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 5px 5px -5px white, -5px  5px 10px black;
+    }
+    .story__wrap {
+        margin-top: 0;
+    }
+    .grid li {
+        font-size: 20px;
+    }
+    .line {
+        font-size: 5px;
+        background-color: white;
+    }
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .social-links ul {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    .s-links {
+        color: white;
+        font-size: 45px;
+    }
+    .s-links:hover {
+        color: gold;
+        font-size: 50px;
+    }
+ 
+    .no-marg {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        text-align: center;
+    }
+
+    .t-color {
+        font-size: 50px;
+    }
+  
+    .homeWrap {
+        height: 100%;
+    }
+    .email {
+        background: rgb(102, 10, 82);
+        height: 10em;
+        width: 100%;
+        margin: auto;
+        margin-top: 3em;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        justify-content: space-between;
+    }
+    .i-large {
+        font-size: 40px;
+        align-self: center;
+        text-align: center;
+        color: gold;
+    }
+    .ip-font {
+        font-size: 50px;
+    }
+    .rotate {
+        transform: rotate(360deg);
+    }
 }
