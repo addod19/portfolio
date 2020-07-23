@@ -4,7 +4,7 @@
     margin: 0;
 }
 aside {
-    /* border: 1px solid black; */
+    background-color: #D3DE32;
 }
 .story__wrap {
     width: 100%;
@@ -35,7 +35,7 @@ aside {
     font-size: 30px;
 }
 .ip-font {
-    color: white;
+    color: #96BB7C;
 }
 .align-content {
     width: 80%;

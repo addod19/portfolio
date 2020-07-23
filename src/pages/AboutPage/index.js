@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import './style.css';
 
 export default class AboutPage extends Component {
-    render() {
-        return (
+  render() {
+    return (
             <div className="about_wrap">
                 <h2>About Page</h2>
                 <div className="term-head"></div>
@@ -45,6 +45,6 @@ export default class AboutPage extends Component {
                     <div className="term-foot"></div>
                 </section>
             </div>
-        )
-    }
+    );
+  }
 }

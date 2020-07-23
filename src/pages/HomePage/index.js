@@ -35,7 +35,7 @@ export default class HomePage extends Component {
           </div>
 
           <div className="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-7">
-            <main>          
+            <main>
               <div className="story__wrap col-sm-12 col-md-12 col-lg-12">
                 <h1 className="text-center exp">Experience In:</h1>
                 <ul className="text-center grid">
@@ -102,7 +102,7 @@ export default class HomePage extends Component {
                 </div>
 
               </div>
-            
+
               <div className="email">
                 <div className="i-large rotate">
                   <FaHandPointRight className="i-large" />

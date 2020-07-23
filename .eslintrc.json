@@ -1,21 +1,24 @@
 {
     "env": {
-        "browser": true,
-        "es2020": true
+      "browser": true,
+      "es6": true,
+      "jest": true
     },
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb"
-    ],
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 11
+      "ecmaVersion": 2018,
+      "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
+    "extends": ["airbnb-base"],
     "rules": {
-    }
-}
+      "no-shadow": "off",
+      "no-param-reassign": "off",
+      "import/no-unresolved": "off",
+      "no-console": "off",
+      "eol-last": "off",
+      "arrow-parens": "off"
+    },
+    "ignorePatterns": [
+      "dist/",
+      "build/"
+    ]
+  }
