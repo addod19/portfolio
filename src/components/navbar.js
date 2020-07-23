@@ -43,11 +43,6 @@ class Navbar extends Component {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/contact" className="primary">
-                                <FaEthernet />Contact
-                            </Link>
-                        </li>
-                        <li>
                             <Link to="/projects" className="primary">
                                 <FaCode />Project
                             </Link>

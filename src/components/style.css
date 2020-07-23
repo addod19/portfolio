@@ -9,8 +9,8 @@
 .content {
     width: 100%;
     height: auto;
-    background: linear-gradient(rgb(102, 10, 82), rgb(20, 68, 141));
-    border: 10px solid black;
+    background: #D3D3D3;
+    color: #A9A9A9;
 }
 .navbar {
     width: 100%;
@@ -127,6 +127,5 @@ p .sm__text {
     }
     .primary {
         font-size: 33px;
-        color: gold;
     }
 }

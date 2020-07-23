@@ -22,7 +22,7 @@
 }
 .s-icons {
     font-size: 30px;
-    color: gold;
+    /* color: gold; */
 }
 .s-icons:hover {
     color: white;
@@ -41,8 +41,8 @@
 }
 .tech-items li {
     font-size: 20px;
-    color: gold;
     font-weight: 700;
+    color: black;
 }
 
 @media screen and (max-width: 4061x) {

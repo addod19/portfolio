@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 import './style.css';
 
-export default class SkillsPage extends Component {
+export default class AboutPage extends Component {
     render() {
         return (
-            <div className="skills_wrap">
+            <div className="about_wrap">
                 <h2>About Page</h2>
                 <div className="term-head"></div>
                 <section className="terminal">

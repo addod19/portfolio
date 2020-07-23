@@ -3,6 +3,9 @@
     width: 100%;
     margin: 0;
 }
+aside {
+    /* border: 1px solid black; */
+}
 .story__wrap {
     width: 100%;
     color: white;
@@ -11,7 +14,7 @@
 .t-color,
 .exp,
 .s-links {
-    color: gold;
+    color: black;
 }
 .t-color {
     font-size: 44px;
@@ -39,7 +42,6 @@
     margin: auto;
     border-radius: 5px;
     color: white;
-    background: gold;
     box-shadow: 5px 10px 5px #888888, -5px -5px 5px white;
 }
 .sm__txt {
@@ -102,7 +104,7 @@
 }
 
 .email {
-    background: rgb(102, 10, 82);
+    /* background: rgb(102, 10, 82); */
     height: 10em;
     width: 100%;
     margin: auto;
@@ -115,7 +117,7 @@
     font-size: 28px;
     align-self: center;
     text-align: center;
-    color: gold;
+    color: black;
 }
 .rotate {
     transform: rotate(90deg);
@@ -145,10 +147,10 @@
         font-weight: 600;
     }
     .highlight {
-        color: gold;
+        color: black;
     }
     .bgInfo {
-        color: gold;
+        color: black;
         font-size: 60px;
     }
     .fs {
@@ -161,14 +163,14 @@
     }
     .exp {
         font-size: 70px;
-        color: gold;
+        color: black;
         font-weight: 900;
     }
     .align-content {
-        background-color: gold;
+        /* background-color: black; */
         border: 0;
         font-weight: 900;
-        color: rgb(102, 10, 82);
+        margin-top: 5%;
     }
     .special, .dev {
         color: black;
@@ -176,6 +178,20 @@
     }
     .rotate {
         transform: rotate(360deg);
+    }
+    .i-large {
+        font-size: 40px;
+    }
+    aside {
+        height: 100%;
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+    main {
+        height: 60em;
     }
 }
 @media screen and (min-width: 1000px) and (max-width: 1800px) {
@@ -214,7 +230,7 @@
         font-size: 45px;
     }
     .s-links:hover {
-        color: gold;
+        color: black;
         font-size: 50px;
     }
  
@@ -232,7 +248,6 @@
         height: 100%;
     }
     .email {
-        background: rgb(102, 10, 82);
         height: 10em;
         width: 100%;
         margin: auto;
@@ -245,7 +260,7 @@
         font-size: 50px;
         align-self: center;
         text-align: center;
-        color: gold;
+        color: black;
     }
     .ip-font {
         font-size: 60px;
@@ -288,7 +303,7 @@
         font-size: 45px;
     }
     .s-links:hover {
-        color: gold;
+        color: black;
         font-size: 50px;
     }
  
@@ -306,7 +321,7 @@
         height: 100%;
     }
     .email {
-        background: rgb(102, 10, 82);
+        /* background: rgb(102, 10, 82); */
         height: 10em;
         width: 100%;
         margin: auto;
@@ -319,12 +334,16 @@
         font-size: 40px;
         align-self: center;
         text-align: center;
-        color: gold;
+        color: black;
     }
     .ip-font {
         font-size: 50px;
     }
     .rotate {
         transform: rotate(360deg);
+    }
+
+    aside {
+        border: 1px solid black;
     }
 }
