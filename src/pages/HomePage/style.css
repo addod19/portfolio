@@ -6,6 +6,21 @@
 aside {
     background-color: #D3DE32;
 }
+main {
+    background-color: #006A71;
+}
+.d-c {
+    color: #006A71;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif 'Roboto', sans-serif;;
+}
+.hr {
+    color: #D3DE32;
+}
+.myIntro {
+    color: #006A71;
+    font-family: 'Roboto', sans-serif;
+}
 .story__wrap {
     width: 100%;
     color: white;
@@ -29,13 +44,16 @@ aside {
     font-weight: 700;
 }
 .s-links:hover {
-    color: white;
+    color: #006a71;
 }
 .s-links {
     font-size: 30px;
 }
 .ip-font {
-    color: #96BB7C;
+    color: #006a71;
+}
+.bskills {
+    color: black;
 }
 .align-content {
     width: 80%;
@@ -53,7 +71,6 @@ aside {
     padding: 1em;
     font-weight: 900;
     color: white;
-    border: 10em dotted black;
 }
 .name, .stack, .skill {
     font-size: 35px;
@@ -87,16 +104,13 @@ aside {
 .profile_img {
     width: 100%;
     height: 18em;
-    /* margin: auto; */
 }
 .design {
     color: black;
     font-size: 40px;
     text-align: center;
 }
-.s-link {
-    border: 1px solid green;
-}
+
 .no-marg {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -104,7 +118,6 @@ aside {
 }
 
 .email {
-    /* background: rgb(102, 10, 82); */
     height: 10em;
     width: 100%;
     margin: auto;
@@ -122,9 +135,6 @@ aside {
 .rotate {
     transform: rotate(90deg);
 }
-/* .ip-font {
-    font-size: 30px;
-} */
 
 @media screen and (min-width: 1024px) {
     .sm__txt {
@@ -167,7 +177,6 @@ aside {
         font-weight: 900;
     }
     .align-content {
-        /* background-color: black; */
         border: 0;
         font-weight: 900;
         margin-top: 5%;
@@ -193,7 +202,7 @@ aside {
     main {
         height: 60em;
     }
-}
+
 @media screen and (min-width: 1000px) and (max-width: 1800px) {
     .about__div {
         display: flex;
@@ -227,11 +236,11 @@ aside {
     }
     .s-links {
         color: white;
-        font-size: 45px;
+        font-size: 35px;
     }
     .s-links:hover {
-        color: black;
-        font-size: 50px;
+        color: #006a71;
+        font-size: 40px;
     }
  
     .no-marg {
@@ -253,17 +262,27 @@ aside {
         margin: auto;
         margin-top: 3em;
         display: grid;
-        grid-template-columns: 1fr 3fr;
         justify-content: space-between;
     }
     .i-large {
-        font-size: 50px;
+        font-size: 30px;
         align-self: center;
         text-align: center;
         color: black;
     }
     .ip-font {
         font-size: 60px;
+    }
+    .mwrap {
+        height: auto;
+        font-family: 'Oswald', sans-serif;
+    }
+    .style-img {
+        border: none;
+    }
+    .descp {
+        box-shadow: 5px 5px -5px white, -5px  5px 10px black;
+        background-image: linear-gradient(5px 5px -5px white, -5px  5px 10px black);
     }
 }
 
@@ -300,11 +319,11 @@ aside {
     }
     .s-links {
         color: white;
-        font-size: 45px;
+        font-size: 25px;
     }
     .s-links:hover {
         color: black;
-        font-size: 50px;
+        font-size: 27px;
     }
  
     .no-marg {
@@ -321,7 +340,6 @@ aside {
         height: 100%;
     }
     .email {
-        /* background: rgb(102, 10, 82); */
         height: 10em;
         width: 100%;
         margin: auto;
@@ -342,8 +360,10 @@ aside {
     .rotate {
         transform: rotate(360deg);
     }
+    
 
-    aside {
-        border: 1px solid black;
+    .descp {
+        box-shadow: 5px 5px -5px white, -5px  5px 10px black;
+        background-image: linear-gradient(5px 5px -5px white, -5px  5px 10px black);
     }
 }
