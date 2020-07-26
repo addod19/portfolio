@@ -9,10 +9,21 @@ aside {
 main {
     background-color: #006A71;
 }
+.designer {
+    font-size: 23px;
+    font-family: Robonto;
+}
 .d-c {
     color: #006A71;
     font-size: 30px;
     font-family: 'Oswald', sans-serif 'Roboto', sans-serif;;
+}
+.tech-items {
+    display: flex;
+    justify-content: space-around;
+}
+.descp {
+    font-size: 29px;
 }
 .hr {
     color: #D3DE32;
@@ -42,6 +53,7 @@ main {
 .exp,
 .ip-font {
     font-weight: 700;
+    font-size: 24px;
 }
 .s-links:hover {
     color: #006a71;
@@ -54,6 +66,8 @@ main {
 }
 .bskills {
     color: black;
+    font-weight: 800;
+    font-family: Robonto;
 }
 .align-content {
     width: 80%;
@@ -61,6 +75,9 @@ main {
     border-radius: 5px;
     color: white;
     box-shadow: 5px 10px 5px #888888, -5px -5px 5px white;
+    margin-top: 5%;
+    font-size: 23px;
+    font-weight: 600;
 }
 .sm__txt {
     margin: auto;
@@ -118,7 +135,7 @@ main {
 }
 
 .email {
-    height: 10em;
+    height: auto;
     width: 100%;
     margin: auto;
     margin-top: 3em;
@@ -202,6 +219,10 @@ main {
     main {
         height: 60em;
     }
+    .myIntro {
+        font-size: 17px;
+    }
+}
 
 @media screen and (min-width: 1000px) and (max-width: 1800px) {
     .about__div {
@@ -257,7 +278,7 @@ main {
         height: 100%;
     }
     .email {
-        height: 10em;
+        height: auto;
         width: 100%;
         margin: auto;
         margin-top: 3em;
@@ -283,6 +304,9 @@ main {
     .descp {
         box-shadow: 5px 5px -5px white, -5px  5px 10px black;
         background-image: linear-gradient(5px 5px -5px white, -5px  5px 10px black);
+    }
+    .rotate {
+        transform: rotate(90deg);
     }
 }
 
@@ -325,11 +349,23 @@ main {
         color: black;
         font-size: 27px;
     }
+
+    aside {
+        height: 100%;
+        width: 30%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
  
     .no-marg {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         text-align: center;
+    }
+    .myIntro {
+        font-size: 20px;
     }
 
     .t-color {
@@ -340,7 +376,7 @@ main {
         height: 100%;
     }
     .email {
-        height: 10em;
+        height: auto;
         width: 100%;
         margin: auto;
         margin-top: 3em;
@@ -363,7 +399,7 @@ main {
     
 
     .descp {
-        box-shadow: 5px 5px -5px white, -5px  5px 10px black;
+        box-shadow: inset 5px 5px -5px white, -5px  5px 10px black;
         background-image: linear-gradient(5px 5px -5px white, -5px  5px 10px black);
     }
 }
