@@ -1,7 +1,9 @@
 @import "@carbon/themes/scss/themes";
 // Use the gray 10 theme
 $carbon--theme: $carbon--theme--g10;
+
 @include carbon--theme();
 // Use the gray 90 theme
 $carbon--theme: $carbon--theme--g90;
+
 @include carbon--theme();
