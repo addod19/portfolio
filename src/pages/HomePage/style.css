@@ -26,6 +26,7 @@ main {
 .tech-items {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .descp {
@@ -487,8 +488,8 @@ main {
       );
   }
 }
-/* Home */
 
+/* Home */
 .projectWrap {
   height: auto;
 }
@@ -532,10 +533,6 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}
-
-.tech-items {
-  width: 100%;
 }
 
 .tech-items li {
