@@ -23,7 +23,7 @@
 
 ### Live version
 
-* [Portfolio](https://naughty-neumann-3ba7f8.netlify.app/)
+* [Portfolio](www.daniellarbiaddo.com/)
 
 ## Getting Started
 
@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. ``` git clone https://github.com/addod19/portfolio.git ```
 2. ``` cd portfolio ```
-3. ``` yarn i or npm i ```
+3. ``` yarn install or npm i ```
 4. ``` yarn start or npm start ```
 5. Explore my portfolio site
 
