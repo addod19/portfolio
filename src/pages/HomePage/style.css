@@ -25,13 +25,16 @@ main {
 }
 
 .tech-items {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
+  margin: 0;
 }
 
 .descp {
-  font-size: 29px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #000000;
 }
 
 .hr {
@@ -68,11 +71,11 @@ main {
 .exp,
 .ip-font {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .s-links {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .s-links:hover {
@@ -173,6 +176,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: space-evenly;
+  overflow: hidden;
 }
 
 .i-large {
@@ -369,7 +373,7 @@ main {
     background-image:
       linear-gradient(
         to bottom left,
-        5px 5px -5px white,
+        5px 5px -5px black
         -5px  5px 10px black
       );
   }
@@ -478,15 +482,7 @@ main {
   }
 
   .descp {
-    box-shadow:
-      inset 5px 5px -5px white,
-      -5px  5px 10px black;
-    background-image:
-      linear-gradient(
-        to bottom left,
-        5px 5px -5px white,
-        -5px  5px 10px black
-      );
+    color: #000000;
   }
 }
 
@@ -533,11 +529,11 @@ main {
 .technologies {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .tech-items li {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
   color: #d3de32;
 }
@@ -576,5 +572,9 @@ main {
     margin-top: 1em;
     height: auto;
     font-size: 25px;
+    color: #000000;
+  }
+  .hide-scroll {
+    overflow: hidden;
   }
 }

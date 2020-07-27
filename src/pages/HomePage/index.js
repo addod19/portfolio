@@ -10,9 +10,7 @@ import {
 import './style.css';
 
 import { gsap, Power3, Power4 } from 'gsap';
-// import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
-// import ScrollTrigger from 'gsap/ScrollTrigger';
-// import Typed from 'typed.js';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 import fbImg from '../../Images/fb.png';
 import todoImg from '../../Images/todo.png';
@@ -26,7 +24,13 @@ import restImg from '../../Images/rest.png';
 import libImg from '../../Images/lib.png';
 
 export default class HomePage extends React.Component {
-  static componentDidMount() {
+  constructor(props) {
+    super(props);
+
+    gsap.registerPlugin(ScrollTrigger);
+  }
+
+  componentDidMount() {
     gsap.from('.anim', {
       opacity: 0, duration: 1, y: -50, stagger: 0.6,
     });
@@ -52,15 +56,6 @@ export default class HomePage extends React.Component {
     gsap.to('.thinker', {
       opacity: 0, duration: 1, y: -50, stagger: 0.6, delay: 1.1,
     });
-
-    // let options = {
-    //   strings: ['Designer',
-    //   ' Creator',
-    //   'Thinker'
-    //   ],
-    //   typeSpeed: 40
-    // };
-    // let typed = new Typed('.typing', options);
   }
 
   render() {
@@ -147,7 +142,7 @@ export default class HomePage extends React.Component {
 
           <div className="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-7">
             <main>
-              <div className="col-12">
+              <div className="col-12 hide-scroll">
                 <section className="text-center mwrap">
                   <Slide right>
                   <h2 className="t1-color">Facebook Clone</h2>
@@ -184,7 +179,7 @@ export default class HomePage extends React.Component {
                 <section className="text-center">
                   <Slide right>
                   <h2 className="t1-color"> Todo </h2>
-                  <div className="animLeft">
+                  <div className="anim">
                     <img title="kindly click icons below" src={todoImg} alt="todo" className="style-img" />
                   </div>
                   </Slide>
@@ -426,7 +421,6 @@ export default class HomePage extends React.Component {
                   </div>
                 </section>
               </div>
-              {/* <Slide left> */}
               <div className="email">
                 <Flash >
                 <div className="i-large rotate">
@@ -441,7 +435,6 @@ export default class HomePage extends React.Component {
                   info@daniellarbiaddo.com
                 </div>
               </div>
-              {/* </Slide> */}
             </main>
           </div>
         </div>
