@@ -14,13 +14,13 @@ main {
 
 .designer {
   font-size: 23px;
-  font-family: Robonto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .d-c {
   color: #006a71;
   font-size: 30px;
-  font-family: 'Oswald', sans-serif 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .tech-items {
@@ -69,12 +69,12 @@ main {
   font-size: 24px;
 }
 
-.s-links:hover {
-  color: #006a71;
-}
-
 .s-links {
   font-size: 30px;
+}
+
+.s-links:hover {
+  color: #006a71;
 }
 
 .ip-font {
@@ -84,7 +84,7 @@ main {
 .bskills {
   color: black;
   font-weight: 800;
-  font-family: Robonto;
+  font-family: 'Robonto', sans-serif;
 }
 
 .align-content {
@@ -364,7 +364,12 @@ main {
 
   .descp {
     box-shadow: 5px 5px -5px white, -5px  5px 10px black;
-    background-image: linear-gradient(5px 5px -5px white, -5px  5px 10px black);
+    background-image:
+      linear-gradient(
+        to bottom left,
+        5px 5px -5px white,
+        -5px  5px 10px black
+      );
   }
 
   .rotate {
@@ -470,9 +475,15 @@ main {
     transform: rotate(360deg);
   }
 
-
   .descp {
-    box-shadow: inset 5px 5px -5px white, -5px  5px 10px black;
-    background-image: linear-gradient(5px 5px -5px white, -5px  5px 10px black);
+    box-shadow:
+      inset 5px 5px -5px white,
+      -5px  5px 10px black;
+    background-image:
+      linear-gradient(
+        to bottom left,
+        5px 5px -5px white,
+        -5px  5px 10px black
+      );
   }
 }
