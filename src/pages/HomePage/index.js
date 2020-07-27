@@ -5,15 +5,14 @@ import Flash from 'react-reveal/Flash';
 import {
   FaHtml5, FaCss3Alt, FaDatabase, FaJs, FaReact, FaGithub,
   FaTwitter, FaFacebook, FaLinkedin, FaMedium, FaAngellist,
-  FaHandPointRight, FaMailBulk, FaCode
+  FaHandPointRight, FaMailBulk, FaCode,
 } from 'react-icons/fa';
 import './style.css';
 
-import {gsap, Power3, Power4} from 'gsap';
+import { gsap, Power3, Power4 } from 'gsap';
 // import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import Typed from 'typed.js';
-
 
 import fbImg from '../../Images/fb.png';
 import todoImg from '../../Images/todo.png';
@@ -27,29 +26,41 @@ import restImg from '../../Images/rest.png';
 import libImg from '../../Images/lib.png';
 
 export default class HomePage extends Component {
-
   constructor(props) {
     super(props);
 
     gsap.registerPlugin(ScrollTrigger);
-
   }
 
   componentDidMount() {
-
-    gsap.from('.anim', { opacity: 0, duration: 1, y: -50, stagger: 0.6});
-    gsap.from('.animLeft', { opacity: 0, duration: 1, x: 150,
-      y: -50, ease: Power3.easeInOut
+    gsap.from('.anim', {
+      opacity: 0, duration: 1, y: -50, stagger: 0.6,
     });
-    gsap.from('.animRight', { opacity: 0, duration: 1, x: -150, y: 200, stagger: .5, ease:"back.out(2)"});
-    gsap.from('.animTop', { opacity: 0, duration: 1, x: 550,
-       ease: Power4.easeOut
+    gsap.from('.animLeft', {
+      opacity: 0,
+      duration: 1,
+      x: 150,
+      y: -50,
+      ease: Power3.easeInOut,
     });
-    gsap.to('.creator', { opacity: 0, duration: 1, y: -40, stagger: 0.5, ease: 'elastic(1, 0.3)'});
-    gsap.to('.thinker', { opacity: 0, duration: 1, y: -50, stagger: 0.6, delay: 1.1});
+    gsap.from('.animRight', {
+      opacity: 0, duration: 1, x: -150, y: 200, stagger: 0.5, ease: 'back.out(2)',
+    });
+    gsap.from('.animTop', {
+      opacity: 0,
+      duration: 1,
+      x: 550,
+      ease: Power4.easeOut,
+    });
+    gsap.to('.creator', {
+      opacity: 0, duration: 1, y: -40, stagger: 0.5, ease: 'elastic(1, 0.3)',
+    });
+    gsap.to('.thinker', {
+      opacity: 0, duration: 1, y: -50, stagger: 0.6, delay: 1.1,
+    });
 
     // let options = {
-    //   strings: ['Designer', 
+    //   strings: ['Designer',
     //   ' Creator',
     //   'Thinker'
     //   ],
@@ -57,6 +68,7 @@ export default class HomePage extends Component {
     // };
     // let typed = new Typed('.typing', options);
   }
+
   render() {
     return (
       <div className="homeWrap container-fluid">
@@ -69,10 +81,9 @@ export default class HomePage extends Component {
                   <div className="d-c anim creator">Creator</div>
                   <div className="d-c anim thinker">Thinker</div>
                 </div>
-                
 
                 <p className="myIntro">
-                  Hi, I am Daniel, currently, am <span className="work">working</span> as a <span className="tech">Technical Support Engineer</span> 
+                  Hi, I am Daniel, currently, am <span className="work">working</span> as a <span className="tech">Technical Support Engineer</span>
                   <span className="micro">@Microverse</span>.I am also open to new challenges in software development roles.
                   Kindly follow my works, words and photos below
                 </p>
@@ -152,12 +163,12 @@ export default class HomePage extends Component {
                   </Slide>
                   <Slide left>
                   <div className="descp">
-                    Welcome to Friendbook, a Facebook-like social network application. This application has the 
-                    functionalities of a social media application. Authorized users are able to create a post, 
+                    Welcome to Friendbook, a Facebook-like social network application. This application has the
+                    functionalities of a social media application. Authorized users are able to create a post,
                     comment on a post, like a post/comment, send and accept friend requests.
                   </div>
                   </Slide>
-                  
+
                   <div className="technologies mt-3">
                     <ul className="tech-items anim">
                       <li>Ruby on Rails</li>
@@ -182,15 +193,14 @@ export default class HomePage extends Component {
                     <img title="kindly click icons below" src={todoImg} alt="todo" className="style-img" />
                   </div>
                   </Slide>
-                  
+
                   <Slide left>
                   <div className="descp">
-                    In this project we created a simple todo list applying the concepts of single responsibility 
+                    In this project we created a simple todo list applying the concepts of single responsibility
                     and loosely coupled objects. We applied the revealing module design pattern.
                   </div>
                   </Slide>
 
-                  
                   <div className="technologies mt-3">
                     <ul className="tech-items m-auto anim">
                       <li className="mr-2">HTML</li>
@@ -239,8 +249,8 @@ export default class HomePage extends Component {
                   </Slide>
                   <Slide left>
                   <div className="descp">
-                  Events manager application.In this project we built a site similar to a private Eventbrite which 
-                  allows users to create events and then manage user signups. 
+                  Events manager application.In this project we built a site similar to a private Eventbrite which
+                  allows users to create events and then manage user signups.
                   </div>
                   </Slide>
                   <div className="technologies mt-3">
@@ -266,7 +276,7 @@ export default class HomePage extends Component {
                   </Slide>
                   <Slide left>
                   <div className="descp">
-                    Building a clone of smashingmagazine.com website, 
+                    Building a clone of smashingmagazine.com website,
                     aligning all elements with float and flex or grid.
                   </div>
                   </Slide>
@@ -291,11 +301,11 @@ export default class HomePage extends Component {
                   </Slide>
                   <Slide left>
                   <div className="descp">
-                    Building a Newsweek clone website using bootstrap classes. 
+                    Building a Newsweek clone website using bootstrap classes.
                     Considering mobile-first responsive design.
                   </div>
                   </Slide>
-                  
+
                   <div className="technologies mt-3">
                     <ul className="tech-items m-auto anim">
                       <li className="mr-2">HTML</li>
@@ -321,7 +331,7 @@ export default class HomePage extends Component {
                     Building a basic functionality of a calculator with React
                   </div>
                   </Slide>
-                  
+
                   <div className="technologies mt-3">
                     <ul className="tech-items m-auto anim">
                       <li className="mr-2">React</li>
@@ -344,11 +354,11 @@ export default class HomePage extends Component {
                   </Slide>
                   <Slide left>
                   <div className="descp">
-                    A weather app that pulls from the OpenWeatherMap API to allow users to search for 
+                    A weather app that pulls from the OpenWeatherMap API to allow users to search for
                     and view the forecast in cities worldwide. Built with JavaScript
                   </div>
                   </Slide>
-                  
+
                   <div className="technologies mt-3">
                     <ul className="tech-items anim">
                       <li>HTML</li>
@@ -372,11 +382,11 @@ export default class HomePage extends Component {
                   <img title="kindly click icons below" src={restImg} alt="restaurant" className="style-img" />
                   </Slide>
                   <Slide left>
-                  <div className="descp"> 
+                  <div className="descp">
                     Building a restaurant app with ES6 classes, ES6 modules, and Webpack
                   </div>
                   </Slide>
-                  
+
                   <div className="technologies mt-3">
                     <ul className="tech-items m-auto anim">
                       <li className="mr-2">HTML</li>
@@ -399,11 +409,11 @@ export default class HomePage extends Component {
                   </Slide>
                   <Slide left>
                   <div className="descp">
-                    Building a book store library using vanilla Javascript. In this project, 
+                    Building a book store library using vanilla Javascript. In this project,
                     we demonstrate the use of Object and Object Constructors
                   </div>
                   </Slide>
-                  
+
                   <div className="technologies mt-3">
                     <ul className="tech-items anim">
                       <li>HTML</li>

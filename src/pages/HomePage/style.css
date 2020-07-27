@@ -1,405 +1,478 @@
 
 .about__div {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
+
 aside {
-    background-color: #D3DE32;
+  background-color: #d3de32;
 }
+
 main {
-    background-color: #006A71;
+  background-color: #006a71;
 }
+
 .designer {
-    font-size: 23px;
-    font-family: Robonto;
+  font-size: 23px;
+  font-family: Robonto;
 }
+
 .d-c {
-    color: #006A71;
-    font-size: 30px;
-    font-family: 'Oswald', sans-serif 'Roboto', sans-serif;;
+  color: #006a71;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif 'Roboto', sans-serif;
 }
+
 .tech-items {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
+
 .descp {
-    font-size: 29px;
+  font-size: 29px;
 }
+
 .hr {
-    color: #D3DE32;
+  color: #d3de32;
 }
+
 .myIntro {
-    color: #006A71;
-    font-family: 'Roboto', sans-serif;
+  color: #006a71;
+  font-family: 'Roboto', sans-serif;
 }
+
 .story__wrap {
-    width: 100%;
-    color: white;
-    font-size: 23px;
+  width: 100%;
+  color: white;
+  font-size: 23px;
 }
+
 .t-color,
 .exp,
 .s-links {
-    color: black;
+  color: black;
 }
+
 .t-color {
-    font-size: 44px;
-    font-weight: 700;
+  font-size: 44px;
+  font-weight: 700;
 }
+
 .fs {
-    color: green;
-    font-weight: 700;
+  color: green;
+  font-weight: 700;
 }
+
 .exp,
 .ip-font {
-    font-weight: 700;
-    font-size: 24px;
+  font-weight: 700;
+  font-size: 24px;
 }
+
 .s-links:hover {
-    color: #006a71;
+  color: #006a71;
 }
+
 .s-links {
-    font-size: 30px;
+  font-size: 30px;
 }
+
 .ip-font {
-    color: #006a71;
+  color: #006a71;
 }
+
 .bskills {
-    color: black;
-    font-weight: 800;
-    font-family: Robonto;
+  color: black;
+  font-weight: 800;
+  font-family: Robonto;
 }
+
 .align-content {
-    width: 80%;
-    margin: auto;
-    border-radius: 5px;
-    color: white;
-    box-shadow: 5px 10px 5px #888888, -5px -5px 5px white;
-    margin-top: 5%;
-    font-size: 23px;
-    font-weight: 600;
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 5px 10px 5px #888, -5px -5px 5px white;
+  margin-top: 5%;
+  font-size: 23px;
+  font-weight: 600;
 }
+
 .sm__txt {
-    margin: auto;
+  margin: auto;
 }
+
 .intro {
-    text-align: center;
-    font-size: 30px;
-    padding: 1em;
-    font-weight: 900;
-    color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 1em;
+  font-weight: 900;
+  color: white;
 }
-.name, .stack, .skill {
-    font-size: 35px;
-    color: black;
+
+.name,
+.stack,
+.skill {
+  font-size: 35px;
+  color: black;
 }
 
 .experience {
-    width: 100%;
-    height: 20em;
-    margin-top: 10%;
-    color: white;
+  width: 100%;
+  height: 20em;
+  margin-top: 10%;
+  color: white;
 }
+
 .size {
-    font-size: 70px;
-    padding: 10px;
+  font-size: 70px;
+  padding: 10px;
 }
+
 .icons-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 50%;
-    margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 50%;
+  margin: auto;
 }
+
 .icon {
-    display: flex;
-    flex-direction: column;
-} 
+  display: flex;
+  flex-direction: column;
+}
+
 .profile__wrap {
-    width: 100%;
-    height: 180px;
+  width: 100%;
+  height: 180px;
 }
+
 .profile_img {
-    width: 100%;
-    height: 18em;
+  width: 100%;
+  height: 18em;
 }
+
 .design {
-    color: black;
-    font-size: 40px;
-    text-align: center;
+  color: black;
+  font-size: 40px;
+  text-align: center;
 }
 
 .no-marg {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
 }
 
 .email {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-evenly;
+}
+
+.i-large {
+  font-size: 28px;
+  align-self: center;
+  text-align: center;
+  color: black;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .sm__txt {
+    font-size: 30px;
+  }
+
+  .profile__wrap {
+    height: 28em;
+  }
+
+  .profile_img {
+    height: 100%;
+  }
+
+  .story__wrap {
+    margin-top: 5em;
+  }
+
+  .homeWrap {
+    height: auto;
+  }
+
+  .mColor {
+    font-size: 45px;
+    font-weight: 600;
+  }
+
+  .highlight {
+    color: black;
+  }
+
+  .bgInfo {
+    color: black;
+    font-size: 60px;
+  }
+
+  .fs {
+    font-size: 60px;
+  }
+
+  .design {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .exp {
+    font-size: 70px;
+    color: black;
+    font-weight: 900;
+  }
+
+  .align-content {
+    border: 0;
+    font-weight: 900;
+    margin-top: 5%;
+  }
+
+  .special,
+  .dev {
+    color: black;
+    font-weight: 900;
+  }
+
+  .rotate {
+    transform: rotate(360deg);
+  }
+
+  .i-large {
+    font-size: 40px;
+  }
+
+  aside {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+
+  main {
+    height: 60em;
+  }
+
+  .myIntro {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1800px) {
+  .about__div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .profile_img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px -5px white, -5px  5px 10px black;
+  }
+
+  .story__wrap {
+    margin-top: 0;
+  }
+
+  .grid li {
+    font-size: 20px;
+  }
+
+  .line {
+    font-size: 5px;
+    background-color: white;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .social-links ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .s-links {
+    color: white;
+    font-size: 35px;
+  }
+
+  .s-links:hover {
+    color: #006a71;
+    font-size: 40px;
+  }
+
+  .no-marg {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+  }
+
+  .t-color {
+    font-size: 50px;
+  }
+
+  .homeWrap {
+    height: 100%;
+  }
+
+  .email {
     height: auto;
     width: 100%;
     margin: auto;
     margin-top: 3em;
     display: grid;
-    grid-template-columns: 1fr;
-    justify-content: space-evenly;
-}
-.i-large {
-    font-size: 28px;
+    justify-content: space-between;
+  }
+
+  .i-large {
+    font-size: 30px;
     align-self: center;
     text-align: center;
     color: black;
-}
-.rotate {
+  }
+
+  .ip-font {
+    font-size: 60px;
+  }
+
+  .mwrap {
+    height: auto;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .style-img {
+    border: none;
+  }
+
+  .descp {
+    box-shadow: 5px 5px -5px white, -5px  5px 10px black;
+    background-image: linear-gradient(5px 5px -5px white, -5px  5px 10px black);
+  }
+
+  .rotate {
     transform: rotate(90deg);
-}
-
-@media screen and (min-width: 1024px) {
-    .sm__txt {
-        font-size: 30px;
-    }
-    .profile__wrap {
-        height: 28em;
-    }
-    .profile_img {
-        height: 100%;
-    }
-    .story__wrap {
-        margin-top: 5em;
-    }
-    .homeWrap {
-        height: auto;
-    }
-    .mColor {
-        font-size: 45px;
-        font-weight: 600;
-    }
-    .highlight {
-        color: black;
-    }
-    .bgInfo {
-        color: black;
-        font-size: 60px;
-    }
-    .fs {
-        font-size: 60px;
-    }
-    .design {
-        color: black;
-        font-size: 60px;
-        text-align: center;
-    }
-    .exp {
-        font-size: 70px;
-        color: black;
-        font-weight: 900;
-    }
-    .align-content {
-        border: 0;
-        font-weight: 900;
-        margin-top: 5%;
-    }
-    .special, .dev {
-        color: black;
-        font-weight: 900;
-    }
-    .rotate {
-        transform: rotate(360deg);
-    }
-    .i-large {
-        font-size: 40px;
-    }
-    aside {
-        height: 100%;
-        width: 40%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-    }
-    main {
-        height: 60em;
-    }
-    .myIntro {
-        font-size: 17px;
-    }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1800px) {
-    .about__div {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .profile_img {
-        width: 100%;
-        border-radius: 5px;
-        box-shadow: 5px 5px -5px white, -5px  5px 10px black;
-    }
-    .story__wrap {
-        margin-top: 0;
-    }
-    .grid li {
-        font-size: 20px;
-    }
-    .line {
-        font-size: 5px;
-        background-color: white;
-    }
-    .social-links {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-
-    .social-links ul {
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-    }
-    .s-links {
-        color: white;
-        font-size: 35px;
-    }
-    .s-links:hover {
-        color: #006a71;
-        font-size: 40px;
-    }
- 
-    .no-marg {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        text-align: center;
-    }
-
-    .t-color {
-        font-size: 50px;
-    }
-  
-    .homeWrap {
-        height: 100%;
-    }
-    .email {
-        height: auto;
-        width: 100%;
-        margin: auto;
-        margin-top: 3em;
-        display: grid;
-        justify-content: space-between;
-    }
-    .i-large {
-        font-size: 30px;
-        align-self: center;
-        text-align: center;
-        color: black;
-    }
-    .ip-font {
-        font-size: 60px;
-    }
-    .mwrap {
-        height: auto;
-        font-family: 'Oswald', sans-serif;
-    }
-    .style-img {
-        border: none;
-    }
-    .descp {
-        box-shadow: 5px 5px -5px white, -5px  5px 10px black;
-        background-image: linear-gradient(5px 5px -5px white, -5px  5px 10px black);
-    }
-    .rotate {
-        transform: rotate(90deg);
-    }
+  }
 }
 
 @media screen and (min-width: 767px) and (max-width: 999px) {
-    .about__div {
-        display: flex;
-        flex-direction: row;
-    }
+  .about__div {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .profile_img {
-        width: 100%;
-        border-radius: 5px;
-        box-shadow: 5px 5px -5px white, -5px  5px 10px black;
-    }
-    .story__wrap {
-        margin-top: 0;
-    }
-    .grid li {
-        font-size: 20px;
-    }
-    .line {
-        font-size: 5px;
-        background-color: white;
-    }
-    .social-links {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
+  .profile_img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px -5px white, -5px  5px 10px black;
+  }
 
-    .social-links ul {
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-    }
-    .s-links {
-        color: white;
-        font-size: 25px;
-    }
-    .s-links:hover {
-        color: black;
-        font-size: 27px;
-    }
+  .story__wrap {
+    margin-top: 0;
+  }
 
-    aside {
-        height: 100%;
-        width: 30%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-    }
- 
-    .no-marg {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        text-align: center;
-    }
-    .myIntro {
-        font-size: 20px;
-    }
+  .grid li {
+    font-size: 20px;
+  }
 
-    .t-color {
-        font-size: 50px;
-    }
-  
-    .homeWrap {
-        height: 100%;
-    }
-    .email {
-        height: auto;
-        width: 100%;
-        margin: auto;
-        margin-top: 3em;
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        justify-content: space-between;
-    }
-    .i-large {
-        font-size: 40px;
-        align-self: center;
-        text-align: center;
-        color: black;
-    }
-    .ip-font {
-        font-size: 50px;
-    }
-    .rotate {
-        transform: rotate(360deg);
-    }
-    
+  .line {
+    font-size: 5px;
+    background-color: white;
+  }
 
-    .descp {
-        box-shadow: inset 5px 5px -5px white, -5px  5px 10px black;
-        background-image: linear-gradient(5px 5px -5px white, -5px  5px 10px black);
-    }
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .social-links ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .s-links {
+    color: white;
+    font-size: 25px;
+  }
+
+  .s-links:hover {
+    color: black;
+    font-size: 27px;
+  }
+
+  aside {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+
+  .no-marg {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+  }
+
+  .myIntro {
+    font-size: 20px;
+  }
+
+  .t-color {
+    font-size: 50px;
+  }
+
+  .homeWrap {
+    height: 100%;
+  }
+
+  .email {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-between;
+  }
+
+  .i-large {
+    font-size: 40px;
+    align-self: center;
+    text-align: center;
+    color: black;
+  }
+
+  .ip-font {
+    font-size: 50px;
+  }
+
+  .rotate {
+    transform: rotate(360deg);
+  }
+
+
+  .descp {
+    box-shadow: inset 5px 5px -5px white, -5px  5px 10px black;
+    background-image: linear-gradient(5px 5px -5px white, -5px  5px 10px black);
+  }
 }

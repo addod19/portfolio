@@ -1,59 +1,63 @@
 .about_wrap {
-    width: 100%;
-    height: auto;
-    /* background: black; */
-    color: white;
+  width: 100%;
+  height: auto;
+
+  /* background: black; */
+  color: white;
 }
+
 .about_wrap h2 {
-    text-align: center;
+  text-align: center;
 }
+
 .terminal {
-    width: 80%;
-    background: black;
-    margin: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+  width: 80%;
+  background: black;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .term-head {
-    height: 2em;
-    width: 80%;
-    background: grey;
-    margin: auto;
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
-    display: flex;
-    flex-direction: column;
+  height: 2em;
+  width: 80%;
+  background: grey;
+  margin: auto;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cur_loc {
-    display: block;
-    font-size: 30px;
-    float: left;
+  display: block;
+  font-size: 30px;
+  float: left;
 }
+
 .red {
-    color: red;
+  color: red;
 }
 
 @media screen and (min-width: 800px) and (max-width: 4099px) {
-    .terminal .cur_loc {
-        font-size: 23px;
-    }
+  .terminal .cur_loc {
+    font-size: 23px;
+  }
 
-    .about_wrap {
-        width: 100%;
-        height: 100%;
-        color: white;
-    }
+  .about_wrap {
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
 
-    .terminal {
-        margin-top: 0;
-    }
+  .terminal {
+    margin-top: 0;
+  }
 
-    .term-head {
-        margin-top: 10%;
-    }
+  .term-head {
+    margin-top: 10%;
+  }
 }
