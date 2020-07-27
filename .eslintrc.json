@@ -9,7 +9,8 @@
       "sourceType": "module"
     },
     "parser": "babel-eslint",
-    "extends": ["airbnb-base"],
+    "extends": ["airbnb-base", "eslint:recommended",
+      "plugin:react/recommended"],
     "rules": {
       "no-shadow": "off",
       "no-param-reassign": "off",

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Slide from 'react-reveal/Slide';
 import Flash from 'react-reveal/Flash';
 
@@ -11,8 +11,8 @@ import './style.css';
 
 import { gsap, Power3, Power4 } from 'gsap';
 // import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import Typed from 'typed.js';
+// import ScrollTrigger from 'gsap/ScrollTrigger';
+// import Typed from 'typed.js';
 
 import fbImg from '../../Images/fb.png';
 import todoImg from '../../Images/todo.png';
@@ -25,14 +25,8 @@ import weatherImg from '../../Images/weather.png';
 import restImg from '../../Images/rest.png';
 import libImg from '../../Images/lib.png';
 
-export default class HomePage extends Component {
-  constructor(props) {
-    super(props);
-
-    gsap.registerPlugin(ScrollTrigger);
-  }
-
-  componentDidMount() {
+export default class HomePage extends React.Component {
+  static componentDidMount() {
     gsap.from('.anim', {
       opacity: 0, duration: 1, y: -50, stagger: 0.6,
     });
@@ -163,9 +157,10 @@ export default class HomePage extends Component {
                   </Slide>
                   <Slide left>
                   <div className="descp">
-                    Welcome to Friendbook, a Facebook-like social network application. This application has the
-                    functionalities of a social media application. Authorized users are able to create a post,
-                    comment on a post, like a post/comment, send and accept friend requests.
+                    Welcome to Friendbook, a Facebook-like social network application.
+                    This application has the functionalities of a social media application.
+                    Authorized users are able to create a post, comment on a post,
+                    like a post/comment, send and accept friend requests.
                   </div>
                   </Slide>
 
@@ -196,8 +191,9 @@ export default class HomePage extends Component {
 
                   <Slide left>
                   <div className="descp">
-                    In this project we created a simple todo list applying the concepts of single responsibility
-                    and loosely coupled objects. We applied the revealing module design pattern.
+                    In this project we created a simple todo list applying the concepts of
+                    single responsibility and loosely coupled objects.
+                    We applied the revealing module design pattern.
                   </div>
                   </Slide>
 
@@ -249,8 +245,9 @@ export default class HomePage extends Component {
                   </Slide>
                   <Slide left>
                   <div className="descp">
-                  Events manager application.In this project we built a site similar to a private Eventbrite which
-                  allows users to create events and then manage user signups.
+                    Events manager application.In this project we built a site similar to a
+                    private Eventbrite which allows users to create events and then manage
+                    user signups.
                   </div>
                   </Slide>
                   <div className="technologies mt-3">
@@ -354,8 +351,9 @@ export default class HomePage extends Component {
                   </Slide>
                   <Slide left>
                   <div className="descp">
-                    A weather app that pulls from the OpenWeatherMap API to allow users to search for
-                    and view the forecast in cities worldwide. Built with JavaScript
+                    A weather app that pulls from the OpenWeatherMap API to allow users to
+                    search for and view the forecast in cities worldwide. Built with
+                    JavaScript
                   </div>
                   </Slide>
 
