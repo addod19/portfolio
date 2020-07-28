@@ -1,3 +1,5 @@
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["render", "componentDidMount"] }] */
+
 import React from 'react';
 import Slide from 'react-reveal/Slide';
 import Flash from 'react-reveal/Flash';
@@ -177,12 +179,12 @@ export default class HomePage extends React.Component {
               <hr></hr>
               <div className="col-12 tClass">
                 <section className="text-center">
-                  <Slide right>
+                  {/* <Slide> */}
                   <h2 className="t1-color"> Todo </h2>
                   <div className="anim">
                     <img title="kindly click icons below" src={todoImg} alt="todo" className="style-img" />
                   </div>
-                  </Slide>
+                  {/* </Slide> */}
 
                   <Slide left>
                   <div className="descp">

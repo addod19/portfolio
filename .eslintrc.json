@@ -8,10 +8,10 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
     },
-    "parser": "babel-eslint",
-    "extends": ["airbnb-base", "eslint:recommended",
-      "plugin:react/recommended"],
+    "extends": ["airbnb-base",  "plugin:react/recommended"],
+    "plugins": ["react"],
     "rules": {
+      "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
       "no-shadow": "off",
       "no-param-reassign": "off",
       "import/no-unresolved": "off",
