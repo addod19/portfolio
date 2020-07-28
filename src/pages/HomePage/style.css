@@ -34,7 +34,7 @@ main {
 .descp {
   font-size: 22px;
   font-weight: 800;
-  color: #000000;
+  color: #000;
 }
 
 .hr {
@@ -96,9 +96,7 @@ main {
   font-size: 23px;
   font-weight: 600;
 }
-.style-img {
-  height: 5em;
-}
+
 .sm__txt {
   margin: auto;
 }
@@ -177,6 +175,7 @@ main {
   .profile_img {
     height: 100%;
   }
+
   .homeWrap {
     height: auto;
   }
@@ -258,11 +257,13 @@ main {
   .profile_img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 5px 5px -5px #000000, -5px  5px 10px black;
+    box-shadow: 5px 5px -5px #000, -5px  5px 10px black;
   }
+
   .grid li {
     font-size: 20px;
   }
+
   .social-links {
     display: flex;
     flex-direction: column;
@@ -350,6 +351,7 @@ main {
   .grid li {
     font-size: 20px;
   }
+
   .social-links {
     display: flex;
     flex-direction: column;
@@ -424,7 +426,7 @@ main {
   }
 
   .descp {
-    color: #000000;
+    color: #000;
   }
 }
 
@@ -441,9 +443,6 @@ main {
 
 .t1-color {
   color: white;
-}
-
-.t1-color {
   font-weight: 600;
   overflow: hidden;
 }
@@ -474,13 +473,11 @@ main {
   color: #d3de32;
 }
 
-@media screen and (max-width: 4061px) {
-}
-
 @media screen and (min-width: 770px) and (max-width: 4070px) {
   .projectWrap {
     height: 100%;
   }
+
   .tech-items {
     color: #d3de32;
     display: flex;
@@ -493,8 +490,9 @@ main {
     margin-top: 1em;
     height: auto;
     font-size: 25px;
-    color: #000000;
+    color: #000;
   }
+
   .hide-scroll {
     overflow: hidden;
   }
