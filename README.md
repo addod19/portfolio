@@ -1,7 +1,6 @@
 # My Portfolio 
 
-> Using react to build my personalized portfolio with the help of gitconnected API. I extracted data from the API for the page
-
+>  Using react to build my personalized portfolio with the help of GSAP and react-reveal animation.
 
 ## Screenshots
 
