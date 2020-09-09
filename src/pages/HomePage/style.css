@@ -5,23 +5,36 @@
 }
 
 aside {
-  background-color: #d3de32;
+  /* background-color: #5390d9; */
 }
 
 main {
-  background-color: #006a71;
+  /* background-color: #006a71; */
   height: 100%;
 }
-
+.typing {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 68px;
+  line-height: 105.3%;
+}
+.headerStyle {
+  font-size: 23px;
+}
+.headColor,
+.descp {
+  color: #727274;;
+}
 .designer {
   font-size: 23px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .d-c {
-  color: #006a71;
+  color: #000000;
   font-size: 30px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .tech-items {
@@ -33,29 +46,26 @@ main {
 
 .descp {
   font-size: 22px;
-  font-weight: 800;
-  color: #000;
 }
 
 .hr {
   color: #d3de32;
 }
-
+.diffBg {
+  background-color: white;
+  margin-top: 1%;
+  border-radius: 10px;
+}
 .myIntro {
-  color: #006a71;
-  font-family: 'Roboto', sans-serif;
+  color:#727274;
+  font-family: 'Poppins', sans-serif;
 }
 
-.t-color,
 .exp,
 .s-links {
-  color: black;
+  color: #cad2c5;
 }
 
-.t-color {
-  font-size: 44px;
-  font-weight: 700;
-}
 
 .fs {
   color: green;
@@ -73,16 +83,16 @@ main {
 }
 
 .s-links:hover {
-  color: #006a71;
+  color: #727274;;
 }
 
 .ip-font {
-  color: #006a71;
+  color: #F9855B;
 }
 
 .bskills {
   color: black;
-  font-weight: 800;
+  font-weight: 400;
   font-family: 'Robonto', sans-serif;
 }
 
@@ -90,9 +100,8 @@ main {
   width: 80%;
   margin: auto;
   border-radius: 5px;
-  color: white;
-  box-shadow: 5px 10px 5px #888, -5px -5px 5px white;
-  margin-top: 5%;
+  background-color: white;
+  margin-top: 1%;
   font-size: 23px;
   font-weight: 600;
 }
@@ -155,7 +164,7 @@ main {
   font-size: 18px;
   align-self: center;
   text-align: center;
-  color: black;
+  color: #F9855B;
   font-weight: 500;
 }
 
@@ -178,6 +187,7 @@ main {
 
   .homeWrap {
     height: auto;
+    background-color: #E5E5E5;
   }
 
   .mColor {
@@ -213,7 +223,7 @@ main {
   .align-content {
     border: 0;
     font-weight: 900;
-    margin-top: 5%;
+    margin-top: 0;
   }
 
   .special,
@@ -231,7 +241,7 @@ main {
   }
 
   aside {
-    height: 100%;
+    height: auto;
     width: 40%;
     position: fixed;
     z-index: 1;
@@ -240,7 +250,7 @@ main {
   }
 
   main {
-    height: 60em;
+    height: auto;
   }
 
   .myIntro {
@@ -276,13 +286,12 @@ main {
   }
 
   .s-links {
-    color: white;
-    font-size: 35px;
+    color: #F9855B;;
+    font-size: 25px;
   }
 
   .s-links:hover {
-    color: #006a71;
-    font-size: 40px;
+    color: #E5E5E5;
   }
 
   .no-marg {
@@ -291,9 +300,6 @@ main {
     text-align: center;
   }
 
-  .t-color {
-    font-size: 50px;
-  }
 
   .homeWrap {
     height: 100%;
@@ -312,29 +318,24 @@ main {
     font-size: 30px;
     align-self: center;
     text-align: center;
-    color: black;
+    color: #F9855B;
   }
 
   .ip-font {
-    font-size: 60px;
+    font-size: 25px;
   }
 
   .mwrap {
     height: auto;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   .style-img {
     border: none;
   }
 
-  .descp {
-    background-image:
-      linear-gradient(
-        to bottom left,
-        5px 5px -5px black
-        -5px  5px 10px black
-      );
+  .diffBg {
+    background-color: white;
   }
 
   .rotate {
@@ -370,7 +371,6 @@ main {
 
   .s-links:hover {
     color: black;
-    font-size: 27px;
   }
 
   aside {
@@ -392,10 +392,6 @@ main {
     font-size: 20px;
   }
 
-  .t-color {
-    font-size: 50px;
-  }
-
   .homeWrap {
     height: 100%;
   }
@@ -414,19 +410,15 @@ main {
     font-size: 40px;
     align-self: center;
     text-align: center;
-    color: black;
+    color: #F9855B;
   }
 
   .ip-font {
-    font-size: 50px;
+    font-size: 28px;
   }
 
   .rotate {
     transform: rotate(360deg);
-  }
-
-  .descp {
-    color: #000;
   }
 }
 
@@ -454,11 +446,11 @@ main {
 
 .s-icons {
   font-size: 30px;
-  color: white;
+  color: #F9855B;
 }
 
 .s-icons:hover {
-  color: white;
+  color: #727274;
 }
 
 .technologies {
@@ -470,7 +462,7 @@ main {
 .tech-items li {
   font-size: 17px;
   font-weight: 700;
-  color: #d3de32;
+  color: #cad2c5;
 }
 
 @media screen and (min-width: 770px) and (max-width: 4070px) {
@@ -479,7 +471,7 @@ main {
   }
 
   .tech-items {
-    color: #d3de32;
+    color: #cad2c5;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -489,8 +481,7 @@ main {
   .descp {
     margin-top: 1em;
     height: auto;
-    font-size: 25px;
-    color: #000;
+    font-size: 20px;
   }
 
   .hide-scroll {
