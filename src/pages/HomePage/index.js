@@ -195,7 +195,7 @@ export default class HomePage extends React.Component {
                     <ul className="tech-items m-auto anim">
                       <li className="mr-2">Phaser3</li>
                       <li className="mr-2">Babel</li>
-                      <li className="mr-2">JavaScript</li>
+                      <li className="mr-2">JS</li>
                       <li className="mr-2">Webpack</li>
                     </ul>
                   </div>
@@ -205,6 +205,39 @@ export default class HomePage extends React.Component {
                     <a title="online version" target="__blank"
                     href="https://addod19.github.io/js_game_capstone/" className="s-icons"><FaCode /></a>
                   </div>
+                  </div>
+                </section>
+              </div>
+              <hr></hr>
+              <div className="col-12">
+                <section className="text-center">
+                  <Slide right>
+                    <span className="headerStyle">Catalogue of Recipes</span>
+                    <img title="kindly click icons below" src={store} alt="recipes" className="style-img" />
+                  </Slide>
+                  <div className="diffBg">
+                    <Slide left>
+                    <div className="descp">
+                      A fast and dynamic Single Page Application (SPA), built with React/Redux,
+                      axios, promises, styled components etc.
+                    </div>
+                    </Slide>
+                    <div className="technologies mt-3">
+                      <ul className="tech-items anim">
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>SASS</li>
+                        <li>Jest</li>
+                        <li>Enzyme</li>
+                        <li>Redux-thunk</li>
+                      </ul>
+                    </div>
+                    <div className="link">
+                      <a title="github repo" target="__blank"
+                      href="https://github.com/addod19/redux_recipe" className="s-icons"><FaGithub /></a>
+                      <a title="online version" target="__blank"
+                      href="https://redux-recipe.herokuapp.com/" className="s-icons"><FaCode /></a>
+                    </div>
                   </div>
                 </section>
               </div>
@@ -231,40 +264,9 @@ export default class HomePage extends React.Component {
                     </div>
                     <div className="link">
                       <a title="github repo" target="__blank"
-                        href="https://github.com/addod19/Tic-Tac-Toe-JS" className="s-icons"><FaGithub /></a>
+                        href="https://github.com/addod19/React-Bookstore" className="s-icons"><FaGithub /></a>
                       <a title="online version" target="__blank"
-                        href="https://macnick.github.io/Tic-Tac-Toe-JS/" className="s-icons"><FaCode /></a>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <hr></hr>
-              <div className="col-12">
-                <section className="text-center">
-                  <Slide right>
-                    <span className="headerStyle">Catalogue of Recipes</span>
-                    <img title="kindly click icons below" src={store} alt="recipes" className="style-img" />
-                  </Slide>
-                  <div className="diffBg">
-                    <Slide left>
-                    <div className="descp">
-                      A fast and dynamic Single Page Application (SPA), built with React/Redux,
-                      axios, promises, styled components etc.
-                    </div>
-                    </Slide>
-                    <div className="technologies mt-3">
-                      <ul className="tech-items anim">
-                        <li>Ruby on Rails</li>
-                        <li>Bootstrap</li>
-                        <li>SASS</li>
-                        <li>HTML</li>
-                      </ul>
-                    </div>
-                    <div className="link">
-                      <a title="github repo" target="__blank"
-                      href="https://github.com/addod19/private-events" className="s-icons"><FaGithub /></a>
-                      <a title="online version" target="__blank"
-                      href="https://blooming-mesa-54776.herokuapp.com/" className="s-icons"><FaCode /></a>
+                        href="https://redux-book.herokuapp.com/" className="s-icons"><FaCode /></a>
                     </div>
                   </div>
                 </section>
