@@ -74,32 +74,32 @@ export default class HomePage extends React.Component {
                 </p>
                 <div className="no-marg">
                     <div>
-                      <a href="https://github.com/addod19" className="s-links animTop">
+                      <a href="https://github.com/addod19" target="__blank" className="s-links animTop">
                         <FaGithub />
                       </a>
                     </div>
                     <div>
-                      <a href="https://www.linkedin.com/in/daniel-larbi-addo/" className="s-links">
+                      <a href="https://www.linkedin.com/in/daniel-larbi-addo/" target="__blank" className="s-links">
                         <FaLinkedin />
                       </a>
                     </div>
                     <div>
-                      <a href="https://angel.co/u/daniel-larbi-addo" className="s-links">
+                      <a href="https://angel.co/u/daniel-larbi-addo" target="__blank" className="s-links">
                         <FaAngellist />
                       </a>
                     </div>
                     <div>
-                      <a href="https://twitter.com/DanielLarbiAdd1" className="s-links">
+                      <a href="https://twitter.com/DanielLarbiAdd1" target="__blank" className="s-links">
                         <FaTwitter />
                       </a>
                     </div>
                     <div>
-                      <a href="https://medium.com/@addodaniellarbi" className="s-links">
+                      <a href="https://medium.com/@addodaniellarbi" target="__blank" className="s-links">
                         <FaMedium />
                       </a>
                     </div>
                     <div>
-                      <a href="https://web.facebook.com/daniel.larbi.addo/" className="s-links">
+                      <a href="https://web.facebook.com/daniel.larbi.addo/" target="__blank" className="s-links">
                         <FaFacebook />
                       </a>
                     </div>
