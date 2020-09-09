@@ -68,7 +68,7 @@ export default class HomePage extends React.Component {
                 </div>
 
                 <p className="myIntro">
-                  Hi, I am Daniel, currently, am <span className="work">working</span> as a <span className="tech">Technical Support Engineer</span>
+                  Hi, I am <span className="dan">Daniel</span>, currently, am working as a <span className="tech">Technical Support Engineer</span>
                   <span className="micro">@Microverse</span>.I am also open to new challenges in software development roles.
                   Kindly follow my works, words and photos below
                 </p>
