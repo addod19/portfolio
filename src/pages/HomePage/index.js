@@ -7,14 +7,13 @@ import Flash from 'react-reveal/Flash';
 import {
   FaHtml5, FaCss3Alt, FaDatabase, FaJs, FaReact, FaGithub,
   FaTwitter, FaFacebook, FaLinkedin, FaMedium, FaAngellist,
-  FaHandPointRight, FaMailBulk, FaCode, FaWhatsapp
+  FaHandPointRight, FaMailBulk, FaCode, FaWhatsapp,
 } from 'react-icons/fa';
 import './style.css';
-import CallMe from '../../Images/phone.svg';
 
 import { gsap, Power3, Power4 } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-
+import CallMe from '../../Images/phone.svg';
 import rails from '../../Images/rails.jpg';
 import game from '../../Images/game.jpg';
 import store from '../../Images/store.jpg';
