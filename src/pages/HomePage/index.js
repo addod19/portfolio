@@ -7,9 +7,10 @@ import Flash from 'react-reveal/Flash';
 import {
   FaHtml5, FaCss3Alt, FaDatabase, FaJs, FaReact, FaGithub,
   FaTwitter, FaFacebook, FaLinkedin, FaMedium, FaAngellist,
-  FaHandPointRight, FaMailBulk, FaCode,
+  FaHandPointRight, FaMailBulk, FaCode, FaWhatsapp
 } from 'react-icons/fa';
 import './style.css';
+import CallMe from '../../Images/phone.svg';
 
 import { gsap, Power3, Power4 } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -135,11 +136,15 @@ export default class HomePage extends React.Component {
               </div>
             </aside>
           </div>
-
+            <hr />
           <div className="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-7">
             <main>
               <div className="col-12 hide-scroll">
                 <section className="text-center mwrap">
+                <div className="call">
+                  <FaWhatsapp className="s-links" /> : <span className="number">
+                    +233207312909</span>
+                </div>
                   <Slide right>
                   <span className="headerStyle">Facebook Clone</span>
                   <div className="ImgWrap">
@@ -272,6 +277,10 @@ export default class HomePage extends React.Component {
                 </section>
               </div>
               <hr></hr>
+              <div className="call">
+                <img src={CallMe} alt="call" className="callSize" /> : <span className="number">
+                  +233207312909</span>
+              </div>
               <div className="email">
                 <Flash >
                 <div className="i-large rotate">

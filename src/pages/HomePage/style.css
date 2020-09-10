@@ -6,7 +6,28 @@
 main {
   height: 100%;
 }
+.homeWrap {
+  background-color: #E5E5E5;
+  border: 5px solid white;
+}
 
+.call {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 35px;
+  width: 60%;
+  margin-left: 20%;
+  background-color: white;
+  border-radius: 4px;
+}
+.callSize {
+  height: 23px;
+  width: 20px;
+  transform: rotate(180deg);
+  color: #F9855B;
+}
 .typing {
   font-family: 'Poppins';
   font-style: normal;
@@ -70,6 +91,7 @@ main {
 
 .s-links {
   font-size: 25px;
+  color: #F9855B;
 }
 
 .s-links:hover {
@@ -179,6 +201,7 @@ main {
   .homeWrap {
     height: auto;
     background-color: #E5E5E5;
+    border: none;
   }
 
   .mColor {
@@ -287,6 +310,7 @@ main {
 
   .homeWrap {
     height: 100%;
+    border: none;
   }
 
   .email {
@@ -378,6 +402,8 @@ main {
 
   .homeWrap {
     height: 100%;
+    background-color: #cad2c5;
+    border: none;
   }
 
   .email {
@@ -443,7 +469,8 @@ main {
   justify-content: space-around;
 }
 
-.tech-items li {
+.tech-items li,
+.number {
   font-size: 17px;
   font-weight: 700;
   color: #cad2c5;
