@@ -111,7 +111,7 @@ main {
 }
 
 .align-content {
-  width: 80%;
+  width: 100%;
   margin: auto;
   border-radius: 5px;
   background-color: white;
@@ -237,6 +237,7 @@ main {
 
   .align-content {
     border: 0;
+    width: 90%;
     font-weight: 900;
     margin-top: 0;
   }
