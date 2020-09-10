@@ -140,10 +140,10 @@ export default class HomePage extends React.Component {
             <main>
               <div className="col-12 hide-scroll">
                 <section className="text-center mwrap">
-                <div className="call">
-                  <FaWhatsapp className="s-links" /> : <span className="number">
-                    +233207312909</span>
-                </div>
+                  <div className="call anim">
+                    <FaWhatsapp className="s-links" /> : <span className="number">
+                      +233207312909</span>
+                  </div>
                   <Slide right>
                   <span className="headerStyle">Facebook Clone</span>
                   <div className="ImgWrap">
@@ -276,7 +276,7 @@ export default class HomePage extends React.Component {
                 </section>
               </div>
               <hr></hr>
-              <div className="call">
+              <div className="call animTop">
                 <img src={CallMe} alt="call" className="callSize" /> : <span className="number">
                   +233207312909</span>
               </div>
