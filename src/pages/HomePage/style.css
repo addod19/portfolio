@@ -440,8 +440,8 @@ main {
 }
 
 .style-img {
+  object-fit: contain;
   width: 100%;
-  min-height: 10em;
   height: 20em;
 }
 
