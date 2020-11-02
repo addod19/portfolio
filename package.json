@@ -21,7 +21,8 @@
     "react-scripts": "^3.4.3",
     "redux": "^4.0.5",
     "scrollmagic-plugin-gsap": "^1.0.4",
-    "shards-react": "^1.0.3"
+    "shards-react": "^1.0.3",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

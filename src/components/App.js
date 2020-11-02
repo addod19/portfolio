@@ -5,11 +5,8 @@ import HomePage from '../pages/HomePage';
 
 const App = () => (
   <div className="content">
-    {/* <Particles canvasClassName="abs" /> */}
-    {/* <Navbar /> */}
     <Switch>
       <Route exact path="/" component={HomePage} />
-
       <Route component={Error} />
     </Switch>
   </div>
