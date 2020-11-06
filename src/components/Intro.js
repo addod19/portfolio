@@ -23,7 +23,6 @@ const IntroStyle = styled.section`
   @media(max-width: 768px) {
     width: 100%;
     display: flex;
-    border: 1px solid white;
   }
   @media (min-width:500px) {
     border: none;
@@ -108,8 +107,6 @@ const Description = styled.div`
   left: -170px;
   top: -350px;
 
-  border: 1px solid red;
-
 
   font-family: Inter;
   font-style: normal;
@@ -155,7 +152,6 @@ const SocialLinks = styled.ul`
 
 const SLinks = styled.li`
   color: #CFCFCF;
-
 `;
 
 const AColor = styled.a`
@@ -275,9 +271,6 @@ const Intro = () => {
       <Design1></Design1>
       <Design2></Design2>
       <Design3></Design3>
-      {/* <Design4></Design4>
-      <Design5></Design5>
-      <Design6></Design6> */}
       <SocialLinks>
         <SLinks>
           <AColor href="https://github.com/addod19" target="_blank" rel="noopener noreferrer" className="s-links animTop">
@@ -291,7 +284,7 @@ const Intro = () => {
         </SLinks>
         <SLinks>
         <AColor href="https://angel.co/u/daniel-larbi-addo" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-          <FaAngellist />
+          <FaAngellist  className="rotate" />
         </AColor>  
         </SLinks>
         <li>

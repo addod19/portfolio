@@ -21,7 +21,6 @@ const AboutMeWrap = styled.section`
 `;
 
 const FirstRow = styled.div`
-  // border: 1px solid white;
   height: 50% ;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -38,7 +37,6 @@ const SecondRow = styled.div`
   align-items: center;
 
   @media(max-width: 769px) {
-    // border: 1px solid red;
     margin-left: 0px;
     margin-top: 5px;
     height: auto;
@@ -58,7 +56,6 @@ const Divider = styled.div`
 `;
 const Language = styled.div`
   @media(max-width: 769px) {
-    // border: 1px solid white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -85,12 +82,10 @@ const LList = styled.div`
 
   @media(max-width: 769px) {
     justify-content: center;
-    // border: 1px solid green;
   }
 `;
 const FrameWorks = styled.div`
   @media(max-width: 769px) {
-    // border: 1px solid white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -111,7 +106,6 @@ const FList = styled.div`
 `;
 const Skills = styled.div`
   @media(max-width: 769px) {
-    // border: 1px solid white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -135,7 +129,6 @@ const TextCol = styled.div`
   margin-top: 20%;
   width: 100%;
   height: auto;
-  // border: 1px solid white;
 
   @media(max-width: 769px) {
     width: 100%;
@@ -175,12 +168,7 @@ const About = styled.div`
   }
 `;
 const MyDescription = styled.div`
-  // position: relative;
-  // width: 566px;
   z-index: 1;
-  // height: 148px;
-  // left: 0px;
-  // top: 232px;
   magin-left: 0px;
 
   font-family: Inter;

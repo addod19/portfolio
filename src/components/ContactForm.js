@@ -2,14 +2,18 @@ import React, {useState, useEffect} from 'react';
 
 import axios from 'axios';
 import { set } from 'gsap';
+import styled from "styled-components";
+
+const FormWrapper = styled.div`
+
+  @media(max-width: 769px) {
+    height: 450px;
+    border: none;
+  }
+`;
 
 const ContactForm = () => {
-  // const [name, email, message] = props;
-  // console.log(props);
 
-  // const [name, setName] = useState('Enter Name');
-  // const [email, setEmail] = useState('Enter Email');
-  // const [message, setMessage] = useState('Enter Message');
   const [sendMsg, setSendMsg] = useState({
     name: '',
     email: '',
@@ -24,22 +28,11 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.warn(e.target.name);
-    // if (name && email && message) {
-    //   const sender = { id: new Date().getTime().toString(), name, email, message };
-    //   console.log(sender);
-    //   setSendMsg((...sendMsg) => {
-    //     return [...sendMsg, sender];
-    //   });
-    //   setSendMsg({});
-    // } else {
-    //   console.log('empty values');
-    // }
-
+    
     axios({
       method: "POST", 
       url:"http://localhost:3002/send", 
-      data:  this.state
+      data:  sendMsg
     }).then((response)=>{
       if (response.data.status === 'success') {
         alert("Message Sent."); 
@@ -51,10 +44,9 @@ const ContactForm = () => {
   }
 
   const handleChange = e => setSendMsg({ ...sendMsg, [e.target.name]: e.target.value });
-  // const handleEmailChange = e => setEmail({ ...formData, [e.target.name]: e.target.value });
-  // const handleMessageChange = e => setMessage({ ...formData, [e.target.name]: e.target.value });
+  
   return ( 
-    <>
+    <FormWrapper>
       <form id="contact-form" onSubmit={() => handleSubmit()} method="POST">
         <div className="form-group">
             <label htmlFor="name">Name</label>
@@ -70,7 +62,7 @@ const ContactForm = () => {
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
-    </>
+    </FormWrapper>
   );
 }
  

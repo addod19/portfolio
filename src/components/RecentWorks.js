@@ -17,7 +17,7 @@ import {
 const Recent = styled.div`
   width: 100%;
 
-  @media(min-width: 447px) {
+  @media(max-width: 769px) {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -64,8 +64,9 @@ const MainRow = styled.div`
   height: 448px;
 
   @media(max-width: 768px) {
-    display: flex;
-    flex-direction: column;
+    display: gird;
+    grid-template-columns: 1fr;
+    height: auto;
   }
 
   @media (min-width:500px) {
@@ -124,7 +125,6 @@ const ImageWrap = styled.div`
     height: 237px;
     left: 24px;
     top: 0px;
-    border: 1px solid red;
   }
 `;
 
@@ -139,15 +139,14 @@ const Details = styled.section`
 
   @media(max-width: 768px) {
     width: 100%;
-    height: 500px;
-    // border: 1px solid black;
+    height: auto;
   }
 `;
 
 const Header = styled.h2`
   position: static;
   width: 448px;
-  height: 48px;
+  height: auto;
   left: 0px;
   top: 0px;
 
@@ -204,9 +203,8 @@ const Header = styled.h2`
 `;
 
 const Description = styled.div`
-  // position: static;
   width: 448px;
-  height: 140px;
+  height: auto;
   left: 0px;
   top: 72px;
 
@@ -231,9 +229,10 @@ const Description = styled.div`
   margin: 0px 24px;
   @media(max-width: 769px) and (min-width: 400px) {
     width: 100%;
-    height: 320px;
+    height: auto;
     margin: 0px;
     padding: 5px;
+    font-size: 16px;
   }
 `;
 
@@ -243,14 +242,13 @@ const Skills = styled.ul`
   left: 0;
 
   @media(max-width: 769px) and (min-width: 400px) {
-
+    width: 100%;
   }
 `;
 
 const Skill1 = styled.li`
   font-size: 18px;
   width: 80px;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   margin: 2px;
@@ -258,6 +256,11 @@ const Skill1 = styled.li`
   /* Neutrals/N90 */
 
   border: 1px solid #8993A4;
+
+  @media(max-width: 769px) and (min-width: 400px) {
+    width: auto;
+    font-size: 15px;
+  }
   
 `;
 const Skill2 = styled.li`
@@ -270,11 +273,16 @@ const Skill2 = styled.li`
   /* Neutrals/N90 */
 
   border: 1px solid #8993A4;
+
+  @media(max-width: 769px) and (min-width: 400px) {
+    width: auto;
+    font-size: 15px;
+    
+  }
 `;
 const Skill3 = styled.li`
   font-size: 18px;
   width: 80px;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   margin: 2px;
@@ -282,6 +290,11 @@ const Skill3 = styled.li`
   /* Neutrals/N90 */
 
   border: 1px solid #8993A4;
+
+  @media(max-width: 769px) and (min-width: 400px) {
+    width: auto;
+    font-size: 15px; 
+  }
 
 `;
 const H1 = styled.h1`
@@ -326,6 +339,7 @@ const MoreProjects = styled.section`
     height: auto;
     grid-template-columns: 1fr;
     margin: 0px;
+    margin-top: 20px;
   }
 `;
 

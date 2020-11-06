@@ -6,25 +6,24 @@ import MyContact from './ContactForm';
 
 const ContactWrap = styled.div`
   width: 100%;
-  height: 550px;
-  // border: 1px solid red;
+  height: auto;
+  margin-top: 20px;
 
   @media(max-width: 768px) {
-    border: none;
     width: 100%;
+    margin-top: 0px;
   }
 `;
 
 const Main = styled.main`
-  height: 450px;
+  height: auto;
   display: grid;
-  grid-template-column: repeat(2, 1fr);
-  // border: 1px solid green;
+  grid-template-columns: repeat(2, 1fr);
+
 
   @media(max-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    border: none;
+    grid-template-columns: 1fr;
+
   }
 `;
 
@@ -35,8 +34,6 @@ const Divider = styled.div`
   right: 0px;
   top: 0px;
 
-  /* Neutrals/N40 */
-
   background: #DFE1E6;
 `;
 
@@ -44,7 +41,10 @@ const FooterLinks = styled.footer`
   height: 90px;
   display: flex;
   justify-content: center;
-  // margin-top: 45px;
+
+  @media(max-width: 769px) {
+    height: auto;
+  }
 `;
 
 const ContactMsg = styled.div`
@@ -53,7 +53,6 @@ const ContactMsg = styled.div`
   height: 356px;
   left: 0px;
   top: 0px;
-  // border: 1px solid red;
 
   font-family: Inter;
   font-style: normal;
@@ -77,32 +76,11 @@ const ContactMsg = styled.div`
   margin: 0px 24px;
 
   @media(max-width: 768px) {
-    border: none;
-    font-size: 23px;
-    line-height: 25px;
+    font-size: 18px;
+    margin-left: -14px;
+    line-height: 20px;
+    height: 200px;
   }
-`;
-
-const ContactForm = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  // border: 1px solid black;
-
-  position: relative;
-  width: 584px;
-  left: 679px;
-  top: -380px;
-
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
-  align-self: flex-start;
-  flex-grow: 0;
-  margin: 24px 0px;
 `;
 
 const Wrp = styled.div`
@@ -111,6 +89,12 @@ const Wrp = styled.div`
   width: 30%;
   height: 50px;
   margin-top: 40px;
+
+  @media(max-width: 769px) {
+    grid-gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+  }
 `;
 const AColor = styled.a`
   color: #CFCFCF;
@@ -121,6 +105,11 @@ const AColor = styled.a`
 
   @media(max-width: 768px) {
     transform: rotate(100deg);
+    color: #F55800;
+
+    &:hover {
+      color: #CFCFCF;
+    }
   }
 `;
 
@@ -137,9 +126,7 @@ const Contact = () => {
           I'm always interested in hearing about new projects, 
           so if you'd like to chat please get in touch.
         </ContactMsg>
-        <ContactForm className="col-sm-12 col-xs-12">
-          <MyContact />
-        </ContactForm>
+       <MyContact />
       </Main>
       <Divider></Divider>
       <FooterLinks>
