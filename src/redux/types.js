@@ -1,0 +1,1 @@
+const SENDMSG = 'SEND MEESSAGE';

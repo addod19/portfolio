@@ -444,7 +444,16 @@ main {
   width: 100%;
   height: 20em;
 }
-
+/* .cSize {
+  height: 3rem;
+  width: 3rem;
+} */
+.rot {
+  
+  @media(max-width: 768px) {
+    transform: rotate(100deg);
+  }
+}
 .t1-color {
   color: white;
   font-weight: 600;
