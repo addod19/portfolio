@@ -132,7 +132,7 @@ const Contact = () => {
       <FooterLinks>
         <Wrp>
           <SLinks>
-            <AColor href="https://github.com/addod19" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <AColor href="https://www.facebook.com/daniel.larbi.addo/" target="_blank" rel="noopener noreferrer" className="s-links animTop">
               <FaFacebook className="rot"/>
             </AColor>  
           </SLinks>
@@ -142,17 +142,17 @@ const Contact = () => {
             </AColor>  
           </SLinks>
           <SLinks>
-            <AColor href="https://github.com/addod19" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <AColor href="https://www.linkedin.com/in/daniel-larbi-addo/" target="_blank" rel="noopener noreferrer" className="s-links animTop">
               <FaLinkedinIn className="rot"/>
             </AColor>  
           </SLinks>
           <SLinks>
-            <AColor href="https://github.com/addod19" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <AColor href="https://medium.com/@addodaniellarbi" target="_blank" rel="noopener noreferrer" className="s-links animTop">
               <FaMedium className="rot"/>
             </AColor>  
           </SLinks>
           <SLinks>
-            <AColor href="https://github.com/addod19" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <AColor href="https://twitter.com/DanielLarbiAdd1" target="_blank" rel="noopener noreferrer" className="s-links animTop">
               <FaTwitter className="rot"/>
             </AColor>  
           </SLinks>

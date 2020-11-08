@@ -28,6 +28,10 @@ const FirstRow = styled.div`
   @media(max-width: 769px) and (min-width: 400px) {
     grid-template-columns: 1fr;
   }
+
+  @media(min-width: 770px) {
+    height: auto;
+  }
 `;
 const SecondRow = styled.div`
   height: 50%;
@@ -273,6 +277,13 @@ const DesignC = styled.div`
     height: 520px;
     border: none;
     left: -7px;
+  }
+
+  @media(min-width: 770px) {
+    border: none;
+    height: auto;
+    left: 0;
+    border: 1px solid white;
   }
 
 `;

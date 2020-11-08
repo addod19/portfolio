@@ -453,6 +453,37 @@ const Links = styled.div`
   top: 300px;
   background: #1C1A19;
 `;
+
+const AWrap = styled.div`
+border: 1px solid black;
+  height: 60%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  @media(min-width: 200px) {
+    height: auto;
+    margin-top: 25px;
+    border: none;
+  }
+`;
+const Code = styled.a`
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 30px;
+  color: #F55800;
+  &:hover {
+    color: white;
+  }
+`;
+const Live = styled.a`
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 30px;
+  color: #F55800;
+  &:hover {
+    color: white;
+  }
+`;
 const RecentWorks = () => {
   return (
     <React.Fragment>
@@ -485,14 +516,39 @@ const RecentWorks = () => {
         <MoreProjects>
           <Pro1>
             <Links>
-              
+              <AWrap className="link">
+                <Code title="github repo" target="_blank" rel="noopener noreferrer"
+                  href="https://github.com/addod19/facebook-clone" className="s-icons"><FaGithub />
+                </Code>
+                <Live title="online version" target="_blank" rel="noopener noreferrer"
+                  href="https://secret-sea-76381.herokuapp.com/" className="s-icons"><FaCode />
+                </Live>
+              </AWrap>
             </Links>
           </Pro1>
           <Pro2>
-            <Links></Links>
+            <Links>
+              <AWrap className="link">
+                <Code title="github repo" target="_blank" rel="noopener noreferrer"
+                  href="https://github.com/addod19/React-Bookstore" className="s-icons"><FaGithub />
+                </Code>
+                <Live title="online version" target="_blank" rel="noopener noreferrer"
+                  href="https://redux-book.herokuapp.com/" className="s-icons"><FaCode />
+                </Live>
+              </AWrap>
+            </Links>
           </Pro2>
           <Pro3>
-            <Links></Links>
+            <Links>
+              <AWrap className="link">
+                <Code title="github repo" target="_blank" rel="noopener noreferrer"
+                  href="https://github.com/addod19/redux_recipe" className="s-icons"><FaGithub />
+                </Code>
+                <Live title="online version" target="_blank" rel="noopener noreferrer"
+                  href="https://redux-recipe.herokuapp.com/" className="s-icons"><FaCode />
+                </Live>
+              </AWrap>
+            </Links>
           </Pro3>
           <Pro4></Pro4>
           <Pro5></Pro5>
