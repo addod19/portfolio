@@ -434,7 +434,7 @@ const Design3 = styled.div`
 const FStack = styled.h2`
   @media only screen and (max-width: 600px) {
     position: relative;
-    left: -20px;
+    left: -200px;
     width: 50%;
   }
 `;
