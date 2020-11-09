@@ -15,45 +15,14 @@ const AboutMeWrap = styled.section`
     height: 1400px;
     display: flex;
     flex-direction: column;
-    // border: 1px solid red;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    // width: 100%;
+
   }
 
 `;
 
-const FirstRow = styled.div`
-  height: 50% ;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  @media only screen and (max-width: 600px) {
-    grid-template-columns: 1fr;
-    // width: 100%;
-    border: 1px solid white;
-  }
-
-  // @media(min-width: 770px) {
-  //   height: auto;
-  // }
-`;
-const SecondRow = styled.div`
-  height: 50%;
-  margin-left: 10%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-
-  @media only screen and (max-width: 600px) {
-    margin-left: 0px;
-    margin-top: 5px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-`;
 const Divider = styled.div`  
   height: 0px;
   left: 0px;
@@ -68,13 +37,7 @@ const Divider = styled.div`
     margin-left: 0;
   }
 `;
-const Language = styled.div`
-  @media(max-width: 769px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-`;
+
 const LHead = styled.h3`
   color: white;
   display: flex;
@@ -98,13 +61,7 @@ const LList = styled.div`
     justify-content: center;
   }
 `;
-const FrameWorks = styled.div`
-  @media(max-width: 769px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-`;
+
 const FHead = styled.h3`
   color: white;
   display: flex;
@@ -118,13 +75,7 @@ const FHead = styled.h3`
 const FList = styled.div`
   color: white;
 `;
-const Skills = styled.div`
-  @media(max-width: 769px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-`;
+
 const SHead = styled.h3`
   color: white;
   display: flex;
@@ -139,16 +90,6 @@ const SList = styled.div`
   color: white;
 `;
 
-const TextCol = styled.div`
-  margin-top: 20%;
-  width: 100%;
-  height: auto;
-
-  @media(max-width: 769px) {
-    width: 100%;
-    height: 300px;
-  }
-`;
 const About = styled.div`
   position: static;
   width: 566px;
@@ -292,23 +233,7 @@ const Circle = styled.div`
   border-radius: 40%;
 `;
 const Skill = styled.div``;
-const DesignC = styled.div`
-  border: 1px solid green;
-  width: 100%;
 
-  @media(max-width: 769px) and (min-width: 400px) {
-    height: 520px;
-    border: none;
-    left: -7px;
-  }
-
-  @media(min-width: 770px) {
-    border: none;
-    height: auto;
-    left: 0;
-    border: 1px solid white;
-  }
-`;
 const Col1 = styled.div`
   width: 50%;
   height: 500px;

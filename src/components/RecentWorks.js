@@ -3,16 +3,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 import rails from '../../src/Images/fb.png';
-import free from '../../src/Images/bgq.png';
 import game from '../../src/Images/ga.png';
 import recipe from '../../src/Images/rec.png';
 import book from '../../src/Images/cms.png';
-import calc from '../../src/Images/cac.png';
 
-import {
-  FaHtml5, FaCss3Alt, FaDatabase, FaJs, FaReact, FaGithub,
-   FaMailBulk, FaCode,
-} from 'react-icons/fa';
+import { FaGithub, FaCode } from 'react-icons/fa';
 
 const Recent = styled.div`
   width: 100%;
@@ -361,7 +356,6 @@ const Pro1 = styled.div`
   border-radius: 5px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   
-  // border: 1px solid violet;
 `;
 const Pro2 = styled.div`
   width: 100%;
@@ -373,7 +367,6 @@ const Pro2 = styled.div`
   border-radius: 5px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   
-  // border: 1px solid violet;
 `;
 const Pro3 = styled.div`
   width: 100%;
@@ -385,78 +378,12 @@ const Pro3 = styled.div`
   background-size: 100% 100%;
   border-radius: 5px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  
-  // border: 1px solid violet;
-`;
-const Pro4 = styled.div`
-  // width: 100%;
-  // height: 320px;
-  background: url(${calc});
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
-  
-  // border: 1px solid violet;
-`;
-const Pro5 = styled.div`
-  // width: 100%;
-  // height: 320px;
-  background: url(${free});
-  // background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
-  
-  // border: 1px solid violet;
-`;
-const SeePro = styled.button`
-  position: relative;
-  width: 369px;
-  height: 58px;
-  left: 0px;
-  top: -60px;
 
-  background: #F55800;
-`;
-
-const Transparent = styled.div`
-  border: 1px solid black;
-  opacity: 0.5;
-  background: black;
-  height: 320px;
-  width: 100%;
-`;
-const TitlePost = styled.div`
-  width: 337px;
-  height: 81px;
-  left: 16px;
-  top: 8px;
-
-  font-family: Crete Round;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 44px;
-  /* or 137% */
-
-
-  /* Neutrals/N0 */
-
-  color: #FFFFFF;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 0px 24px;
 `;
 
 const Links = styled.div`
   width: 100%;
   height: 100px;
-  // border: 1px solid blue;
   position: relative;
   top: 300px;
   background: #1C1A19;

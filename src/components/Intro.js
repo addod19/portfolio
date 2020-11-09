@@ -59,7 +59,6 @@ const IntroText = styled.div`
   @media only screen and (max-width: 600px) {
     font-size: 40px;
     width: 100%;
-    // border: 2px solid yellow;
     left: 2px;
     top: 0px;
   }
@@ -230,41 +229,8 @@ const Design3 = styled.div`
     display: none;
   }
 `;
-const Design4 = styled.div`
-  width: 100px;
-  height: 60px;
-  border: none;
-  position: relative;
-  right: -1100px;
-  transform: rotate(60deg);
-  background-color: white;
 
-  @media(max-width: 768px) {
-    display: none;
-  }
-`;
-const Design5 = styled.div`
-  width: 100px;
-  height: 60px;
-  border: none;
-  position: relative;
-  right: -1100px;
-  transform: rotate(60deg);
-  background-color: #F55800;
-`;
-const Design6 = styled.div`
-  width: 100px;
-  height: 60px;
-  border: none;
-  position: relative;
-  right: -1100px;
-  transform: rotate(60deg);
-  background-color: white;
 
-  @media(max-width: 768px) {
-    display: none;
-  }
-`;
 const ImgDesign = styled.img`
   position: absolute;
   left: 65.74%;

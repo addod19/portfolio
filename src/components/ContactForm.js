@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
 import axios from 'axios';
-import { set } from 'gsap';
 import styled from "styled-components";
 
 const FormWrapper = styled.div`
