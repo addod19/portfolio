@@ -17,10 +17,11 @@ import {
 const Recent = styled.div`
   width: 100%;
 
-  @media(max-width: 769px) {
+  @media only screen and (max-width: 600px) {
     width: 100%;
     display: flex;
     flex-direction: column;
+    
   }
 `;
 
@@ -55,6 +56,10 @@ const Divider = styled.div`
     width: 90%;
     left: 10%;
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: -20px;
+  }
 `;
 
 const MainRow = styled.div`
@@ -78,7 +83,7 @@ const MainRow = styled.div`
   }
 `;
 
-const SeeProject = styled.div`
+const SeeProject = styled.a`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -91,6 +96,11 @@ const SeeProject = styled.div`
   top: 300px;
 
   background: #F55800;
+  color: black;
+  &:hover {
+    color: white;
+  }
+  border-radius: 10px;
 
   /* Inside Auto Layout */
 
@@ -102,10 +112,12 @@ const SeeProject = styled.div`
   @media(max-width: 769px) and (min-width: 400px) {
     display: grid;
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    color: black;
+    
+  }
 `;
 const ImageWrap = styled.div`
-  // width: 60%;
-  // height: 400px;
   position: static;
   width: 584px;
   height: 400px;
@@ -172,33 +184,10 @@ const Header = styled.h2`
   flex-grow: 0;
   margin: 0px 24px;
 
-  @media(max-width: 768px) {
-    position: static;
-    width: 327px;
-    left: 0px;
-    top: 0px;
-
-    font-family: Crete Round;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 44px;
-    /* or 137% */
-
-    display: flex;
-    align-items: center;
-
-    /* Neutrals/N900 */
-
-    color: #091E42;
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 0;
-    align-self: center;
-    flex-grow: 0;
-    margin: 0px 12px;
+  @media only screen and (max-width: 600px){
+    font-size: 22px;
+    color: #F55800;
+    margin-left: 0px;
   }
 `;
 
@@ -227,12 +216,19 @@ const Description = styled.div`
   align-self: center;
   flex-grow: 0;
   margin: 0px 24px;
-  @media(max-width: 769px) and (min-width: 400px) {
+  @media only screen and (max-width: 600px){
     width: 100%;
     height: auto;
     margin: 0px;
     padding: 5px;
     font-size: 16px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: -35px;
+    font-size: 17px;
+    padding: 20px;
   }
 `;
 
@@ -241,8 +237,9 @@ const Skills = styled.ul`
   margin-top: 15px;
   left: 0;
 
-  @media(max-width: 769px) and (min-width: 400px) {
+  @media only screen and (max-width: 600px) {
     width: 100%;
+    display: flex;
   }
 `;
 
@@ -257,9 +254,10 @@ const Skill1 = styled.li`
 
   border: 1px solid #8993A4;
 
-  @media(max-width: 769px) and (min-width: 400px) {
+  @media only screen and (max-width: 600px) {
     width: auto;
     font-size: 15px;
+    padding: 2px;
   }
   
 `;
@@ -274,10 +272,10 @@ const Skill2 = styled.li`
 
   border: 1px solid #8993A4;
 
-  @media(max-width: 769px) and (min-width: 400px) {
+  @media only screen and (max-width: 600px) {
     width: auto;
     font-size: 15px;
-    
+    padding: 2px;
   }
 `;
 const Skill3 = styled.li`
@@ -291,16 +289,15 @@ const Skill3 = styled.li`
 
   border: 1px solid #8993A4;
 
-  @media(max-width: 769px) and (min-width: 400px) {
+  @media only screen and (max-width: 600px) {
     width: auto;
-    font-size: 15px; 
+    font-size: 15px;
+    padding: 2px;
   }
 
 `;
 const H1 = styled.h1`
   position: static;
-  // width: 315px;
-  // height: 52px;
   left: 0px;
   top: 0px;
 
@@ -331,7 +328,6 @@ const MoreProjects = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  // border: 1px solid black;
   height: auto;
   margin: 20px;
   @media(max-width: 769px) {
@@ -487,7 +483,7 @@ const Live = styled.a`
 const RecentWorks = () => {
   return (
     <React.Fragment>
-      <Recent className="container">
+      <Recent>
         <FirstRow className="row">
           <H1 className="col-md-5">My Recent Works</H1>
           <Divider className="col-md-7"></Divider>
@@ -507,10 +503,12 @@ const RecentWorks = () => {
             </Description>
             <Skills>
               <Skill1 >Ruby</Skill1>
-              <Skill2 >JAVASCRIPT</Skill2>
+              <Skill2 >JS</Skill2>
               <Skill3 >RAILS</Skill3>
             </Skills>
-            <SeeProject>See Project</SeeProject>
+            <SeeProject href="https://github.com/addod19/facebook-clone" target="_blank" rel="noopener noreferrer">
+              See Project
+            </SeeProject>
           </Details>
         </MainRow>
         <MoreProjects>

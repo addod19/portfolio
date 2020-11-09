@@ -75,11 +75,13 @@ const ContactMsg = styled.div`
   flex-grow: 0;
   margin: 0px 24px;
 
-  @media(max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     font-size: 18px;
     margin-left: -14px;
     line-height: 20px;
     height: 200px;
+    width: 100%;
+    margin: auto;
   }
 `;
 

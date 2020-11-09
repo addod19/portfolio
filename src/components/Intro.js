@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import {
    FaGithub,
   FaTwitter, FaFacebook, FaMedium, FaAngellist,
-  FaHandPointRight, FaLinkedinIn,
+  FaLinkedinIn,
 } from 'react-icons/fa';
 import ImgD from '../Images/Group.png';
 
@@ -20,20 +20,14 @@ const IntroStyle = styled.section`
   display: flex;
   flex-direction: column;
 
-  // @media(max-width: 768px) {
-  //   width: 100%;
-  //   display: flex;
-  // }
   @media only screen and (max-width: 600px) {
     width: 100%;
     display: flex;
-    // border: 10px solid red;
   }
 
-  // @media(max-width: 400px) {
-  //   width: 100%;
-  //   display: flex;
-  // }
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+  }
 `;
 
 const IntroText = styled.div`
@@ -68,6 +62,9 @@ const IntroText = styled.div`
     // border: 2px solid yellow;
     left: 2px;
     top: 0px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
   }
 `;
 
@@ -107,6 +104,9 @@ const SupportText = styled.div`
     left: 5px;
     font-size: 25px;
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+  }
 `;
 
 const Description = styled.div`
@@ -115,7 +115,7 @@ const Description = styled.div`
   height: 123px;
   left: -170px;
   top: -350px;
-
+  
 
   font-family: Inter;
   font-style: normal;
@@ -144,6 +144,9 @@ const Description = styled.div`
     left: 0px;
     padding: 10px;
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: -50px;
+  }
 `;
 
 const SocialLinks = styled.ul`
@@ -156,6 +159,7 @@ const SocialLinks = styled.ul`
     top: 350px;
     left: -30px;
     width: 100%;
+    height: 300px;
   }
 `;
 
@@ -272,12 +276,10 @@ const ImgDesign = styled.img`
 
   @media only screen and (max-width: 600px) {
     display: none;
-    // visibility: hidden;
   }
-
-  // @media(min-width: 770px) {
-  //   display: none;
-  // }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: none;
+  }
 `;
 const Intro = () => {
   return (
@@ -289,10 +291,10 @@ const Intro = () => {
         I'm a software developer
       </SupportText>
       <Description>
-      Hello I’m a software developer! I can help you build a product , 
-      feature or website. Look through some of my work and experience! 
-      If you like what you see and have a project you need coded, don’t 
-      hestiate to contact me.
+        Hello I’m a software developer! I can help you build a product , 
+        feature or website. Look through some of my work and experience! 
+        If you like what you see and have a project you need coded, don’t 
+        hestiate to contact me.
       </Description>
       <Design1></Design1>
       <Design2></Design2>
@@ -332,10 +334,7 @@ const Intro = () => {
       <Design1></Design1>
       <Design2></Design2>
       <Design3></Design3>
-      <ImgDesign src={ImgD} alt="" />
-      {/* <Design4></Design4>
-      <Design5></Design5>
-      <Design6></Design6> */}
+      <ImgDesign src={ImgD} alt="helper design" />
     </IntroStyle>
   );
 }

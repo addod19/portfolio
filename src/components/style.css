@@ -3,7 +3,14 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+ .name {
+   color: #F55800 !important;
+ }
 
+ .btn {
+   background-color: #F55800 !important;
+   border: none;
+ }
 .abs {
   position: absolute;
 }
@@ -20,7 +27,10 @@ li {
   color: black;
 }
 @media(max-width: 769px) {
-  
-}
 
+}
+h2 { 
+  color: white;
+  margin-left: 280px;
+}
 

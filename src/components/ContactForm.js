@@ -5,13 +5,18 @@ import { set } from 'gsap';
 import styled from "styled-components";
 
 const FormWrapper = styled.div`
-
+  
   @media(max-width: 769px) {
     height: 450px;
     border: none;
   }
 `;
-
+const Btn = styled.button`
+  border: none;
+  &:hover {
+    color: white;
+  }
+`;
 const ContactForm = () => {
 
   const [sendMsg, setSendMsg] = useState({
@@ -60,7 +65,7 @@ const ContactForm = () => {
             <label htmlFor="message">Message</label>
             <textarea className="form-control" name="message" onChange={handleChange} value={message} required rows="5"></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <Btn type="submit" className="btn form-control mb-2">Submit</Btn>
       </form>
     </FormWrapper>
   );

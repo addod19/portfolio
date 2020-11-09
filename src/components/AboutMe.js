@@ -6,16 +6,20 @@ import FindMe from '../Images/fm.png';
 
 const AboutMeWrap = styled.section`
   width: 1440px;
-  height: 1000px;
-  left: 0px;
-  top: 2680px;
+  height: 800px;
 
   background: #262626;
 
-  @media(max-width: 768px) {
+  @media only screen and (max-width: 600px)  {
     width: 100%;
-    height: 100%;
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid red;
+  }
 
+  @media (min-width: 768px) and (max-width: 1024px) {
+    // width: 100%;
   }
 
 `;
@@ -25,13 +29,15 @@ const FirstRow = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  @media(max-width: 769px) and (min-width: 400px) {
+  @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
+    // width: 100%;
+    border: 1px solid white;
   }
 
-  @media(min-width: 770px) {
-    height: auto;
-  }
+  // @media(min-width: 770px) {
+  //   height: auto;
+  // }
 `;
 const SecondRow = styled.div`
   height: 50%;
@@ -40,7 +46,7 @@ const SecondRow = styled.div`
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
 
-  @media(max-width: 769px) {
+  @media only screen and (max-width: 600px) {
     margin-left: 0px;
     margin-top: 5px;
     height: auto;
@@ -57,6 +63,10 @@ const Divider = styled.div`
   margin-left: 5%;
 
   border: 1px solid #FFFFFF;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: 0;
+  }
 `;
 const Language = styled.div`
   @media(max-width: 769px) {
@@ -100,7 +110,7 @@ const FHead = styled.h3`
   display: flex;
   flex-direction: row;
 
-  @media(max-width: 769px) {
+  @media only screen and (max-width: 600px) {
     justify-content: center;
   }
 `;
@@ -166,8 +176,10 @@ const About = styled.div`
   flex-grow: 0;
   margin: 0px 24px;
 
-  @media(max-width: 769px) {
+  @media only screen and (max-width: 600px) {
     width: 100%;
+    height: auto;
+    font-size: 60px;
     margin: 0px;
   }
 `;
@@ -202,6 +214,13 @@ const MyDescription = styled.div`
 `;
 const ImgCol = styled.img`
   margin-top: 10%;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    position: absolute;
+    width: 100px;
+    left: 300px;
+    margin-top: 30%;
+  }
 `;
 
 const SmallImg = styled.img`
@@ -213,6 +232,10 @@ const SmallImg = styled.img`
   -ms-transform: rotate(25deg);
   -o-transform: rotate(25deg);
   transform: rotate(25deg);
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+  }
 `;
 
 const RotateRec = styled.div`
@@ -285,13 +308,141 @@ const DesignC = styled.div`
     left: 0;
     border: 1px solid white;
   }
+`;
+const Col1 = styled.div`
+  width: 50%;
+  height: 500px;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+`;
+const Col2 = styled.div`
+  width: 50%;
+  height: 500px;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: 500px;
+  }
 
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 200px;
+  }
+`;
+const Row1 = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+`;
+const Row2 = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  height: 250px;
+  margin-top: 20px;
+  width: 100%;
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    border: none;
+    height: 450px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    display: flex;
+  }
+`;
+const Lan = styled.div`
+  height: 150px;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: 0px;
+    padding: 40px;
+    height: auto;
+  }
+`;
+const Fram = styled.div`
+  height: 150px;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: 0px;
+    padding: 40px;
+    height: auto;
+  }
+`;
+const Skll = styled.div`
+  height: 150px;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: 0px;
+    padding: 40px;
+    height: auto;
+  }
+`;
+const Design1 = styled.div`
+  width: 100px;
+  height: 60px;
+  border: none;
+  position: relative;
+  left: 160px;
+  transform: rotate(60deg);
+  background-color: #F55800;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+
+`;
+const Design2 = styled.div`
+  width: 100px;
+  height: 60px;
+  border: none;
+  position: relative;
+  left: 160px;
+  transform: rotate(60deg);
+  background-color: white;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+
+`;
+const Design3 = styled.div`
+  width: 100px;
+  height: 60px;
+  border: none;
+  position: relative;
+  left: 160px;
+  transform: rotate(60deg);
+  background-color: #F55800;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+
+`;
+
+const FStack = styled.h2`
+  @media only screen and (max-width: 600px) {
+    position: relative;
+    left: -20px;
+    width: 50%;
+  }
 `;
 const AboutMe = () => {
   return (
-    <AboutMeWrap id="about" className="container">
-      <FirstRow className="row">
-        <TextCol className="col-sm-12">
+    <AboutMeWrap id="about">
+      <Row1>
+        <Col1>
           <About>About Me</About>
           <MyDescription>
             Hello I’m a software developer! I can help you build a product ,
@@ -299,15 +450,20 @@ const AboutMe = () => {
             If you like what you see and have a project you need coded, don’t
             hesitate to contact me.
           </MyDescription>
-        </TextCol>
-        <DesignC className="col-sm-12">
+          {/* <h2>Full Stack Developer</h2> */}
+          <Design1></Design1>
+          <Design2></Design2>
+          <Design3></Design3>
+          <FStack>Full Stack Developer</FStack>
+        </Col1>
+        <Col2>
           <ImgCol src={DesignHub} alt="" />
           <SmallImg src={FindMe} alt="" />
-        </DesignC>
-      </FirstRow>
+        </Col2>
+      </Row1>
       <Divider></Divider>
-      <SecondRow>
-        <Language>
+      <Row2>
+        <Lan>
           <LHead>
             <RotateRec></RotateRec>
             <Lang>Language</Lang>
@@ -316,8 +472,8 @@ const AboutMe = () => {
           <LList>Ruby</LList>
           <LList>HTML</LList>
           <LList>CSS</LList>
-        </Language>
-        <FrameWorks>
+        </Lan>
+        <Fram>
           <FHead>
             <Rec></Rec>
             <Framwork>FrameWorks</Framwork>
@@ -326,8 +482,8 @@ const AboutMe = () => {
           <FList>React/Redux</FList>
           <FList>Boostrap</FList>
           <FList>Material UI</FList>
-        </FrameWorks>
-        <Skills>
+        </Fram>
+        <Skll>
           <SHead>
             <Circle></Circle>
             <Skill>Skills</Skill>
@@ -336,8 +492,8 @@ const AboutMe = () => {
           <SList>Terminal</SList>
           <SList>GitLab</SList>
           <SList>Heroku</SList>
-        </Skills>
-      </SecondRow>
+        </Skll>
+      </Row2>
     </AboutMeWrap>
   );
 }
