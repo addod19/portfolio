@@ -243,6 +243,17 @@ const Skills = styled.ul`
   }
 `;
 
+const Techs = styled.ul`
+  display: flex;
+  margin-top: 15px;
+  left: 0;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    display: flex;
+  }
+`;
+
 const Skill1 = styled.li`
   font-size: 18px;
   width: 80px;
@@ -480,6 +491,43 @@ const Live = styled.a`
     color: white;
   }
 `;
+
+const Text = styled.div`
+  position: absolute;
+  width: 30.8%;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+`;
+const LiveP = styled.a`
+  display: flex;
+  flex-direction: row;
+  margin-left: 160px;
+  margin-top: -20px;
+  width: 15%;
+  height: 40px;
+  padding: 20px;
+  background-color: #F55800;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  padding: 2px;
+  &:hover {
+    color: white;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 40%;
+    height: 30px;
+  }
+`;
 const RecentWorks = () => {
   return (
     <React.Fragment>
@@ -509,10 +557,19 @@ const RecentWorks = () => {
             <SeeProject href="https://github.com/addod19/facebook-clone" target="_blank" rel="noopener noreferrer">
               See Project
             </SeeProject>
+            <LiveP href="https://secret-sea-76381.herokuapp.com/">Live project</LiveP>
           </Details>
         </MainRow>
         <MoreProjects>
           <Pro1>
+            <Text>
+              Building a web game with business specification using JS ES6 and Phaser3 JS framework
+              <Techs>
+                <Skill1 >JS</Skill1>
+                <Skill2 >Webpack</Skill2>
+                <Skill3 >Phaser3</Skill3>
+              </Techs>
+            </Text>
             <Links>
               <AWrap className="link">
                 <Code title="github repo" target="_blank" rel="noopener noreferrer"
@@ -525,6 +582,14 @@ const RecentWorks = () => {
             </Links>
           </Pro1>
           <Pro2>
+            <Text>
+              A bookstore app built with react and redux.
+              <Techs>
+                <Skill1 >Thunk</Skill1>
+                <Skill2 >React/Redux</Skill2>
+                <Skill3 >Axios</Skill3>
+              </Techs>
+            </Text>
             <Links>
               <AWrap className="link">
                 <Code title="github repo" target="_blank" rel="noopener noreferrer"
@@ -537,6 +602,14 @@ const RecentWorks = () => {
             </Links>
           </Pro2>
           <Pro3>
+            <Text>
+              Catalogue of recipes built with react and redux
+              <Techs>
+                <Skill1 >React</Skill1>
+                <Skill2 >Prop-Types</Skill2>
+                <Skill3 >Heroku</Skill3>
+              </Techs>
+            </Text>
             <Links>
               <AWrap className="link">
                 <Code title="github repo" target="_blank" rel="noopener noreferrer"
@@ -547,10 +620,7 @@ const RecentWorks = () => {
                 </Live>
               </AWrap>
             </Links>
-          </Pro3>
-          <Pro4></Pro4>
-          <Pro5></Pro5>
-          
+          </Pro3>          
         </MoreProjects>
       </Recent>
     </React.Fragment>
