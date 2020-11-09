@@ -2,57 +2,23 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const ListStyle = styled.ul`
-  // display: flex;
-  // flex-direction: row;
-  // align-items: flex-end;
-  // padding: 0px;
-
-  position: absolute;
-  // width: 255px;
-  // height: 40px;
-  right: 194px;
-  // top: calc(50% - 40px/2);
-`;
+const ListStyle = styled.ul``;
 
 const Portfolio = styled.li`
-
-  // width: 63px;
-  // height: 20px;
-  margin-left: 2px;
-  top: 10px;
 
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  /* identical to box height, or 133% */
 
   display: flex;
   align-items: center;
   text-align: center;
-  
-
-  color: #FFFFFF;
-
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 10px 0px;
 
 `;
 
 const About = styled.li`
-  // width: 45px;
-  // height: 20px;
-  left: 15px;
-  top: 10px;
-
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
@@ -63,48 +29,19 @@ const About = styled.li`
   display: flex;
   align-items: center;
   text-align: center;
-
-    color: #FFFFFF;
-
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 10px 0px;
-
 `;
 
 const Contact = styled.li`
 
-  // width: 59px;
-  // height: 20px;
-  left: 12px;
-  top: 10px;
-
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  /* identical to box height, or 133% */
 
   display: flex;
   align-items: center;
   text-align: center;
-
-  color: #FFFFFF;
-
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 10px 0px;
 
 `;
 

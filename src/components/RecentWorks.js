@@ -247,6 +247,7 @@ const Techs = styled.ul`
   display: flex;
   margin-top: 15px;
   left: 0;
+  border: 0;
 
   @media only screen and (max-width: 600px) {
     width: 100%;
