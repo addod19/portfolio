@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styled from 'styled-components';
 
@@ -8,6 +8,8 @@ import recipe from '../../src/Images/rec.png';
 import book from '../../src/Images/cms.png';
 
 import { FaGithub, FaCode } from 'react-icons/fa';
+import CustomModal from './CustomModal';
+import Modal from 'react-modal';
 
 const Recent = styled.div`
   width: 100%;
@@ -113,31 +115,28 @@ const SeeProject = styled.a`
   }
 `;
 const ImageWrap = styled.div`
-  position: static;
-  width: 584px;
-  height: 400px;
-  left: 0px;
-  top: 0px;
+  height: 200px;
 
   /* Inside Auto Layout */
 
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 24px 0px;
+  // flex: none;
+  // order: 0;
+  // align-self: center;
+  // flex-grow: 0;
+  // margin: 24px 0px;
 
-  @media(max-width: 768px) {
-    width: 100%;
-    height: 237px;
-    left: 24px;
-    top: 0px;
-  }
+  // @media(max-width: 768px) {
+  //   width: 100%;
+  //   height: 237px;
+  //   left: 24px;
+  //   top: 0px;
+  // }
 `;
 
 const Img = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  // height: 100%;
+  border: 1px solid red;
 `;
 
 const Details = styled.section`
@@ -390,7 +389,7 @@ const Links = styled.div`
 `;
 
 const AWrap = styled.div`
-border: 1px solid black;
+  border: 1px solid black;
   height: 60%;
   margin-top: 10%;
   display: flex;
@@ -456,10 +455,74 @@ const LiveP = styled.a`
     height: 30px;
   }
 `;
+const projects = [
+  {
+    image: '/Images/fb.png',
+    alt: 'Facebook App',
+    title: 'Facebook Clone',
+    description: 'Authenticated user can post, comment, send/accept/reject friend request',
+    codeLink: 'https://github.com/addod19/facebook-clone',
+    liveUrl: 'https://secret-sea-76381.herokuapp.com/',
+    tech: ['Rails', 'CSS3', 'Ruby', 'Bootstraap'],
+  },
+  {
+    image: '/Images/rec.png',
+    alt: 'Recipe App',
+    title: 'Recipe App',
+    description: 'This application allows any user to check for their favorite recipe and how to prepare it',
+    codeLink: 'https://github.com/addod19/todo',
+    liveUrl: 'https://addod19.github.io/todo/',
+    tech: ['HTML5', 'CSS3'],
+  },
+  {
+    image: '/Images/ga.png',
+    alt: 'Shooter Game',
+    title: 'Shooter Game',
+    description: 'A user enters their name and starts to enjoy the game.',
+    codeLink: 'https://github.com/addod19/js_game_capstone',
+    liveUrl: 'https://addod19.github.io/js_game_capstone/',
+    tech: ['HTML5', 'CSS3'],
+  },
+  {
+    image: '/Images/cms.png',
+    alt: 'BookStore',
+    title: 'BookStore',
+    description: 'This is a bootstrap project aimed at cloning the Intuit signin/signup page',
+    codeLink: 'https://github.com/abruzy/HTML-Forms',
+    liveUrl: 'https://redux-book.herokuapp.com/',
+    tech: ['HTML5', 'CSS3'],
+  },
+  {
+    image: `/Images/${rails}`,
+    alt: 'Shooter Game',
+    title: 'Shooter Game',
+    description: 'This is a bootstrap project aimed at cloning the Intuit signin/signup page',
+    codeLink: '',
+    liveUrl: '',
+    tech: ['HTML5', 'CSS3'],
+  },
+  {
+    image: `/Images/${rails}`,
+    alt: 'BookStore',
+    title: 'BookStore',
+    description: 'A user can select any categories of book in the category list, remove book from list',
+    codeLink: 'https://github.com/addod19/React-Bookstore',
+    liveUrl: 'https://redux-book.herokuapp.com/',
+    tech: ['HTML5', 'CSS3'],
+  },
+  
+];
+
+
+Modal.setAppElement("#root");
 const RecentWorks = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentProject, setCurrentProject] = useState([0]);
+  console.log(projects);
   return (
     <React.Fragment>
-      <Recent>
+      
+      {/* <Recent>
         <FirstRow className="row">
           <H1 className="col-md-5">My Recent Works</H1>
           <Divider className="col-md-7"></Divider>
@@ -501,10 +564,10 @@ const RecentWorks = () => {
             <Links>
               <AWrap className="link">
                 <Code title="github repo" target="_blank" rel="noopener noreferrer"
-                  href="https://github.com/addod19/facebook-clone" className="s-icons"><FaGithub />
+                  href="https://github.com/addod19/js_game_capstone" className="s-icons"><FaGithub />
                 </Code>
                 <Live title="online version" target="_blank" rel="noopener noreferrer"
-                  href="https://secret-sea-76381.herokuapp.com/" className="s-icons"><FaCode />
+                  href="https://addod19.github.io/js_game_capstone/" className="s-icons"><FaCode />
                 </Live>
               </AWrap>
             </Links>
@@ -550,7 +613,40 @@ const RecentWorks = () => {
             </Links>
           </Pro3>          
         </MoreProjects>
-      </Recent>
+      </Recent> */}
+      <div className="row">
+      {
+            projects.map((project, projectIdx) => (
+              
+              <div key={projectIdx} className="col-md-4 ">
+                <div className="ImgW">
+                  <img src={project.image} alt={project.alt} className="col-md-4 col-sm-12 col-xs-12 img-fluid res" />
+                </div>
+                <div className="">
+                  <h4 className="text-center">{project.title}</h4>
+
+                  <div className="">
+                    {
+                      project.tech.map((language, languageIdx) => <span key={languageIdx} className="py-1 px-2 m-1 bg-light-green rounded">{language}</span>)
+                    }
+                  </div>
+                  <button
+                    type="button"
+                    className="p-2 my-2 rounded bg-normal-green text-white focus:outline-none focus:bg-darker-green hover:shadow-xl"
+                    onClick={() => {
+                      setCurrentProject(project);
+                      setModalIsOpen(true);
+                    }}
+                  >
+                    See project
+                  </button>
+                </div>
+              </div>
+            ))
+    }
+      </div>
+      <CustomModal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} title={currentProject.title} description={currentProject.description} imageUrl={currentProject.image} codeLink={currentProject.codeLink} liveUrl={currentProject.liveUrl} tech={currentProject.tech} />
+              
     </React.Fragment>
   );
 }

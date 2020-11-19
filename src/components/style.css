@@ -34,3 +34,14 @@ h2 {
   margin-left: 280px;
 }
 
+.ImgW {
+  width: 410px;
+  height: 200px;
+  border: 1px solid black;;
+}
+
+.res {
+  width: 1600px !important;
+  height: 100% !important;
+  border: 1px solid brown;
+}

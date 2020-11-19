@@ -76,9 +76,9 @@ const ContactMsg = styled.div`
   margin: 0px 24px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 18px;
+    font-size: 28px;
     margin-left: -14px;
-    line-height: 20px;
+    line-height: 30px;
     height: 200px;
     width: 100%;
     margin: auto;
@@ -133,11 +133,6 @@ const Contact = () => {
       <Divider></Divider>
       <FooterLinks>
         <Wrp>
-          <SLinks>
-            <AColor href="https://www.facebook.com/daniel.larbi.addo/" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-              <FaFacebook className="rot"/>
-            </AColor>  
-          </SLinks>
           <SLinks>
             <AColor href="https://github.com/addod19" target="_blank" rel="noopener noreferrer" className="s-links animTop">
               <FaGithub className="rot"/>

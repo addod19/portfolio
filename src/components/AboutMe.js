@@ -1,8 +1,8 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import DesignHub from '../Images/designhub.png';
-import FindMe from '../Images/fm.png';
+
+import ImgAbt from '../Images/group1.png';
 
 const AboutMeWrap = styled.section`
   width: 1440px;
@@ -12,9 +12,10 @@ const AboutMeWrap = styled.section`
 
   @media only screen and (max-width: 600px)  {
     width: 100%;
-    height: 1400px;
+    height: auto;
     display: flex;
     flex-direction: column;
+    // border: 1px solid red;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -49,6 +50,10 @@ const LHead = styled.h3`
 `;
 const Lang = styled.div`
   margin: 2px;
+
+  @media only screen and (max-width: 600px) {
+    
+  }
 `;
 
 const Framwork = styled.div`
@@ -69,6 +74,25 @@ const FHead = styled.h3`
 
   @media only screen and (max-width: 600px) {
     justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    // border: 1px solid white;
+
+    position: static;
+    width: 281px;
+    height: auto;
+    left: 0px;
+    top: 0px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
   }
 `;
 
@@ -118,10 +142,10 @@ const About = styled.div`
   margin: 0px 24px;
 
   @media only screen and (max-width: 600px) {
-    width: 100%;
+    width: 140%;
     height: auto;
     font-size: 60px;
-    margin: 0px;
+    margin-left: -35px;
   }
 `;
 const MyDescription = styled.div`
@@ -147,10 +171,11 @@ const MyDescription = styled.div`
   align-self: center;
   flex-grow: 0;
   margin: 0px 24px;
-  @media(max-width: 768px) and (min-width: 400px) {
-    width: 100%;
-    margin-left: 0;
+  @media only screen and (max-width: 600px) {
+    width: 140%;
+    margin-left: -40px;
     border: none;
+    // border: 1px solid pink;
   }
 `;
 const ImgCol = styled.img`
@@ -183,9 +208,9 @@ const RotateRec = styled.div`
   position: static;
   width: 18px;
   height: 18px;
-  left: 12px;
+  left: 16px;
   top: 20.73px;
-
+  z-index: 1;
   background: #F55800;
   transform: rotate(-45deg);
 
@@ -196,6 +221,10 @@ const RotateRec = styled.div`
   align-self: center;
   flex-grow: 0;
   margin: 12px 0px;
+
+  @media only screen and (max-width: 600px) {
+  
+  }
 `;
 const Rec = styled.div`
   position: static;
@@ -237,10 +266,11 @@ const Skill = styled.div``;
 const Col1 = styled.div`
   width: 50%;
   height: 500px;
+  padding: 50px;
   @media only screen and (max-width: 600px) {
     width: 100%;
-    height: 400px;
-    overflow: hidden;
+    height: auto;
+    // border: 1px solid white;
   }
 `;
 const Col2 = styled.div`
@@ -248,7 +278,7 @@ const Col2 = styled.div`
   height: 500px;
   @media only screen and (max-width: 600px) {
     width: 100%;
-    height: 500px;
+    height: auto;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -264,6 +294,7 @@ const Row1 = styled.div`
     height: auto;
     display: flex;
     flex-direction: column;
+    // border: 1px solid green;
   }
   
 `;
@@ -278,7 +309,7 @@ const Row2 = styled.div`
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
     border: none;
-    height: 450px;
+    height: auto;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -289,6 +320,27 @@ const Row2 = styled.div`
 const Lan = styled.div`
   height: 150px;
 
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 225.46px;
+    height: auto;
+    left: 51.77px;
+    top: 120px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+  }
+
   @media (min-width: 768px) and (max-width: 1024px) {
     margin-left: 0px;
     padding: 40px;
@@ -298,19 +350,54 @@ const Lan = styled.div`
 const Fram = styled.div`
   height: 150px;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    margin-left: 0px;
-    padding: 40px;
+  @media only screen and (max-width: 600px) {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 281px;
     height: auto;
+    left: 24px;
+    top: 425.46px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 24px;
+
   }
 `;
 const Skll = styled.div`
   height: 150px;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    margin-left: 0px;
-    padding: 40px;
+  @media only screen and (max-width: 600px) {
+    // margin-left: 0px;
+    // padding: 40px;
+    // height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 169px;
     height: auto;
+    left: 80px;
+    top: 785.46px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 24px;
   }
 `;
 const Design1 = styled.div`
@@ -359,8 +446,47 @@ const Design3 = styled.div`
 const FStack = styled.h2`
   @media only screen and (max-width: 600px) {
     position: relative;
-    left: -200px;
-    width: 50%;
+    left: -300px;
+    TOP: 30px;
+    width: 100%;
+    // border: 1px solid white;
+  }
+`;
+
+const ImgDesign = styled.img`
+  display: flex;
+  margin-top: 50px;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin-left: 50%;
+    margin-top: 0;
+  }
+`;
+const Resume = styled.div`
+  width: 150px;
+  height: 40px;
+  padding: 5px;
+  background-color: #F55800;
+  color: white;
+  margin-left: 23px;
+  // border:1px solid red;
+  &:hover {
+    border-radius: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-left: -35px;
+    position: relative;
+    bottom: -50px;
+  }
+`;
+
+const ResLink = styled.a`
+  margin-left: 6%;
+  color: white;
+  &:hover {
+    text-decoration: none;
+    color: grey;
   }
 `;
 const AboutMe = () => {
@@ -371,19 +497,19 @@ const AboutMe = () => {
           <About>About Me</About>
           <MyDescription>
             Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience!
-            If you like what you see and have a project you need coded, don’t
-            hesitate to contact me.
+            feature or website. Take a look at some of my work and experience!
+            So if you'd like to work together, please get in touch.
           </MyDescription>
-          {/* <h2>Full Stack Developer</h2> */}
-          <Design1></Design1>
-          <Design2></Design2>
-          <Design3></Design3>
           <FStack>Full Stack Developer</FStack>
+          <Resume>
+            <ResLink target="_blank" rel="noopener noreferrer"
+              href="https://docs.google.com/document/d/15ORaVl9x50n_nSYa0_JAnQvXzvONjBF4qSuVUqk5_hg/edit">
+              View My Resume
+            </ResLink>
+          </Resume>
         </Col1>
         <Col2>
-          <ImgCol src={DesignHub} alt="" />
-          <SmallImg src={FindMe} alt="" />
+          <ImgDesign src={ImgAbt} alt="helper design" />
         </Col2>
       </Row1>
       <Divider></Divider>

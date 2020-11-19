@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import {
    FaGithub,
-  FaTwitter, FaFacebook, FaMedium, FaAngellist,
+  FaTwitter, FaMedium, FaAngellist,
   FaLinkedinIn,
 } from 'react-icons/fa';
 import ImgD from '../Images/Group.png';
@@ -258,9 +258,8 @@ const Intro = () => {
       </SupportText>
       <Description>
         Hello I’m a software developer! I can help you build a product , 
-        feature or website. Look through some of my work and experience! 
-        If you like what you see and have a project you need coded, don’t 
-        hestiate to contact me.
+        feature or website. Take a look at some of my work and experience! If you like what you see and have a project you need coded,
+        don’t hesitate to contact me.
       </Description>
       <Design1></Design1>
       <Design2></Design2>
@@ -291,11 +290,7 @@ const Intro = () => {
           <FaLinkedinIn />
         </AColor> 
         </li>
-        <SLinks>
-          <AColor href="https://github.com/addod19" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-            <FaFacebook />
-          </AColor>  
-        </SLinks>
+        
       </SocialLinks>
       <Design1></Design1>
       <Design2></Design2>

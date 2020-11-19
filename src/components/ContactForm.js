@@ -12,6 +12,9 @@ const FormWrapper = styled.div`
 `;
 const Btn = styled.button`
   border: none;
+  color: white;
+  width: 50%;
+  margin-left: 25%;
   &:hover {
     color: white;
   }
@@ -35,6 +38,10 @@ const ContactForm = () => {
     
     axios({
       method: "POST", 
+      headers: { 
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify({email, message}), 
       url:"http://localhost:3002/send", 
       data:  sendMsg
     }).then((response)=>{
@@ -64,7 +71,7 @@ const ContactForm = () => {
             <label htmlFor="message">Message</label>
             <textarea className="form-control" name="message" onChange={handleChange} value={message} required rows="5"></textarea>
         </div>
-        <Btn type="submit" className="btn form-control mb-2">Submit</Btn>
+        <Btn type="submit" className="btn form-control mb-2">Get In Touch</Btn>
       </form>
     </FormWrapper>
   );
