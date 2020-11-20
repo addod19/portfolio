@@ -20,13 +20,21 @@ const IntroStyle = styled.section`
   display: flex;
   flex-direction: column;
 
+  // @media only screen and (max-width: 600px) {
+  //   width: 100%;
+  //   display: flex;
+  // }
+
   @media only screen and (max-width: 600px) {
-    width: 100%;
     display: flex;
-  }
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 24px;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-
+    width: 100%;
+    height: 590px;
+    left: 0px;
+    top: 92px;
   }
 `;
 
@@ -57,10 +65,35 @@ const IntroText = styled.div`
   margin: 0px 24px;
 
   @media only screen and (max-width: 600px) {
-    font-size: 40px;
-    width: 100%;
-    left: 2px;
-    top: 0px;
+    // font-size: 40px;
+    // width: 100%;
+    // left: 2px;
+    // top: 0px;
+    position: static;
+    width: 327px;
+    height: auto;
+    margin-right: -10px !important;
+    top: 120px;
+
+    font-family: Crete Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    /* or 114% */
+
+    letter-spacing: 0.37px;
+
+    /* Theme 3 / Primary 1 */
+
+    color: #FF6B00;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 12px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     
@@ -97,11 +130,37 @@ const SupportText = styled.div`
   margin: 0px 24px;
 
   @media only screen and (max-width: 600px) {
+    // width: 100%;
+    // height: auto;
+    // top: -350px;
+    // left: 5px;
+    // font-size: 25px;
+    position: absolute;
     width: 100%;
     height: auto;
-    top: -370px;
-    left: 5px;
-    font-size: 25px;
+    top: 300px;
+    left: 15px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+
+    display: flex;
+    align-items: center;
+
+    /* Theme 3 / Primary 4 */
+
+    color: #FFF5E1;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 12px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     
@@ -138,10 +197,36 @@ const Description = styled.div`
   margin: 0px 24px;
 
   @media only screen and (max-width: 600px) {
+    // width: 100%;
+    // height: auto;
+    // left: 0px;
+    // padding: 10px;
+    position: absolute;
     width: 100%;
     height: auto;
-    left: 0px;
-    padding: 10px;
+    left: 2px;
+    top: 340px;
+
+    /* Theme 1 / Body Reguler 2 */
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+
+    /* Theme 3 / Neutral 11 */
+
+    color: #FFFFFF;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 12px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     margin-left: -50px;
@@ -153,17 +238,18 @@ const SocialLinks = styled.ul`
   top: -200px;
   height: 100%;
   @media only screen and (max-width: 600px) {
-    transform: rotate(90deg);
+    display: flex;
+    height: 100px;
     position: relative;
-    top: 350px;
-    left: -30px;
-    width: 100%;
-    height: 300px;
+    left: -50px;
+    top: 180px;
+    
   }
 `;
 
 const SLinks = styled.li`
   color: #CFCFCF;
+  margin: 6px;
 `;
 
 const AColor = styled.a`
@@ -251,7 +337,7 @@ const Intro = () => {
   return (
     <IntroStyle>
       <IntroText>
-        <span className="mt-5">Hi, there. I'm Daniel</span>
+        <span>Hi, there. I'm Daniel</span>
       </IntroText>
       <SupportText>
         I'm a software developer
@@ -276,20 +362,20 @@ const Intro = () => {
           </AColor>  
         </SLinks>
         <SLinks>
-        <AColor href="https://angel.co/u/daniel-larbi-addo" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-          <FaAngellist  className="rotate" />
-        </AColor>  
+          <AColor href="https://angel.co/u/daniel-larbi-addo" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <FaAngellist  className="rotate" />
+          </AColor>  
         </SLinks>
-        <li>
-        <AColor href="https://medium.com/@addodaniellarbi" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-          <FaMedium />
-        </AColor> 
-        </li>
-        <li>
-        <AColor href="https://www.linkedin.com/in/daniel-larbi-addo/" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-          <FaLinkedinIn />
-        </AColor> 
-        </li>
+        <SLinks>
+          <AColor href="https://medium.com/@addodaniellarbi" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <FaMedium />
+          </AColor> 
+        </SLinks>
+        <SLinks>
+          <AColor href="https://www.linkedin.com/in/daniel-larbi-addo/" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <FaLinkedinIn />
+          </AColor> 
+        </SLinks>
         
       </SocialLinks>
       <Design1></Design1>
