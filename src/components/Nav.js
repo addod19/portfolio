@@ -46,33 +46,44 @@ const Contact = styled.li`
 `;
 
 const PLink = styled.a`
-  color: #FFFFFF;
+  color: white !important;
 
   &:hover {
     color: #F55800;
   }
 `;
 const ALink = styled.a`
-  color: #FFFFFF;
+  color: white !important;
   &:hover {
     color: #F55800;
   }
 `;
 const CLink = styled.a`
-  color: #FFFFFF;
+  color: white !important;
   &:hover {
     color: #F55800;
   }
 `;
-
+const MyNav = styled.nav`
+  background: #3C3A39 !important;
+`;
+const Burg = styled.button`
+  background: none !important;
+`;
+const Span = styled.span`
+  color: white !important;
+`;
+const Name = styled.a`
+  color: white !important;
+`;
 const Nav = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <button className="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <a className="navbar-brand name" href="/">Daniel</a>
+      <MyNav className="navbar navbar-expand-lg navbar-light bg-light">
+        <Burg className="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <Span className="navbar-toggler-icon"></Span>
+        </Burg>
+        <Name className="navbar-brand name" href="/">Daniel</Name>
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ListStyle className="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -87,7 +98,7 @@ const Nav = () => {
             </Contact>
           </ListStyle>
         </div>
-      </nav>
+      </MyNav>
     </>
   );
 }
