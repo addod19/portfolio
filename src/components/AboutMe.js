@@ -420,7 +420,7 @@ const AboutMe = () => {
         <Lan>
           <LHead>
             <RotateRec></RotateRec>
-            <Lang>Language</Lang>
+            <Lang>Languages</Lang>
           </LHead>
           <LList>JavaScript</LList>
           <LList>Ruby</LList>

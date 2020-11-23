@@ -248,7 +248,7 @@ const Design1 = styled.div`
   position: relative;
   left: 160px;
   transform: rotate(60deg);
-  background-color: #F55800;
+  background-color: #FF985C;
 
   @media(max-width: 768px) {
     display: none;
@@ -278,7 +278,7 @@ const Design3 = styled.div`
   position: relative;
   left: 160px;
   transform: rotate(60deg);
-  background-color: #F55800;
+  background-color: #FF985C;
 
   @media only screen and (max-width: 600px) {
     display: none;
@@ -296,7 +296,9 @@ const ImgDesign = styled.img`
   transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
 
   @media only screen and (max-width: 600px) {
-    display: none;
+    width: 150px;
+    top: 70%;
+    transform: matrix(0.96, 0.27, 0.27, -0.96, 0, 0);
   }
 `;
 

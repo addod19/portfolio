@@ -125,7 +125,7 @@ const Contact = () => {
       <Main className="row">
         <ContactMsg className="col-sm-12 col-xs-12">
           I'm always interested in hearing about new projects, 
-          so if you'd like to chat please get in touch.
+          so if you'd like to work please get in touch.
         </ContactMsg>
        <MyContact />
       </Main>

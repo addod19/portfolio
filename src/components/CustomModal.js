@@ -11,16 +11,14 @@ const Title = styled.h2`
   left: -280px;
 `;
 const Live = styled.a`
-  // margin-left: 20px;
-  // margin-right: 20px;
   font-size: 30px;
   color: #F55800;
   width: 200px;
   height: auto;
-  background: #FF6B00;
-  border: 1px solid red;
+  background: #FF985C;
   &:hover {
-    color: white;
+    color: black !important;
+    text-decoration: none;
   }
   @media only screen and (max-width: 600px) {
     font-size: 16px;
@@ -28,14 +26,12 @@ const Live = styled.a`
 `;
 
 const Code = styled.a`
-  // margin-left: 20px;
-  // margin-right: 20px;
   font-size: 30px;
   color: #F55800;
-  border: 1px solid green;
-  background: #FF6B00;
+  background: #FF985C;
   &:hover {
-    color: white;
+    color: black !important;
+    text-decoration: none;
   }
   @media only screen and (max-width: 600px) {
     font-size: 16px;
@@ -112,10 +108,10 @@ const CustomModal = ({modalIsOpen, setModalIsOpen, imageUrl, title, description,
         <p className="text-justify">{description}</p>
         <MobileLink className="project-info pt-6 items-center">  
           <Live href={liveUrl} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} mr-3 hidden lg:flex`}>
-            See live
+            Live
           </Live>
           <Code href={codeLink} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} hidden lg:flex`}>
-            See Source
+            Code
           </Code>
         </MobileLink>
       </ModalW>

@@ -138,10 +138,17 @@ const MobileImg = styled.div`
 `;
 
 const Lang = styled.div`
+  height: 50px;
+  margin-top: 10px;
   @media only screen and (max-width: 600px) {
     width: 100%;
     text-overflow: ellipsis;
   }
+`;
+
+const TechStyle = styled.span`
+  border: 1px solid grey;
+  height: auto;
 `;
 const projects = [
   {
@@ -226,7 +233,7 @@ const RecentWorks = () => {
                   <span>{project.description}</span>
                   <Lang>
                     {
-                      project.tech.map((language, languageIdx) => <span key={languageIdx} className="py-1 px-2 m-1 rounded">{language}</span>)
+                      project.tech.map((language, languageIdx) => <TechStyle key={languageIdx} className="py-1 px-2 m-1 rounded">{language}</TechStyle>)
                     }
                   </Lang>
                   <SeePro
