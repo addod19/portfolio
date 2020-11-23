@@ -204,6 +204,9 @@ const Description = styled.div`
     flex-grow: 0;
     margin: 0px 12px;
   }
+  @media only screen and (max-width: 600px) {
+    left: -10px;
+  }
 `;
 
 const SocialLinks = styled.ul`

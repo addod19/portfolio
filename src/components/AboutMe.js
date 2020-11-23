@@ -161,9 +161,8 @@ const MyDescription = styled.div`
   flex-grow: 0;
   margin: 0px 24px;
   @media only screen and (max-width: 600px) {
-    width: 140%;
+    width: 130%;
     margin-left: -40px;
-    border: none;
   }
 `;
 
@@ -266,10 +265,6 @@ const Row2 = styled.div`
     margin-left: 0;
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    width: 100%;
-    display: flex;
-  }
 `;
 const Lan = styled.div`
   height: 150px;
