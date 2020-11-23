@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import Modal from 'react-modal';
 import styled from 'styled-components';
 
-import { FaGithub, FaCode } from 'react-icons/fa';
-
 const Title = styled.h2`
   text-align: center;
   color: black;
@@ -108,11 +106,6 @@ const CustomModal = ({modalIsOpen, setModalIsOpen, imageUrl, title, description,
         <Title>
           {title}
         </Title>
-        {/* <div className="flex flex-wrap items-center my-2 text-xs p-2 ml-2 lr-2">
-          {
-            tech// tech.map(tec => <span key={tec} className="py-1 px-2 m-1 bg-light-green rounded">{tec}</span>)
-          }
-        </div> */}
         <div className="h-auto modalImg">
           <img src={imageUrl} alt="" className="object-cover max-w-full" />
         </div>
@@ -125,19 +118,6 @@ const CustomModal = ({modalIsOpen, setModalIsOpen, imageUrl, title, description,
             See Source
           </Code>
         </MobileLink>
-        
-        
-
-        {/* <div className="flex justify-between items-center mt-1">
-          <a href={liveUrl} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} mr-2 w-40 md:hidden`}>
-            See live
-            <img src="/vectors/live.svg" alt="see live" className="pl-2" />
-          </a>
-          <a href={codeLink} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} w-40 md:hidden`}>
-            See Source
-            <img src="/vectors/source.png" alt="source" className="pl-2" />
-          </a>
-        </div> */}
       </ModalW>
     </Modal>
   );

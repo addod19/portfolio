@@ -20,11 +20,6 @@ const IntroStyle = styled.section`
   display: flex;
   flex-direction: column;
 
-  // @media only screen and (max-width: 600px) {
-  //   width: 100%;
-  //   display: flex;
-  // }
-
   @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
@@ -65,10 +60,6 @@ const IntroText = styled.div`
   margin: 0px 24px;
 
   @media only screen and (max-width: 600px) {
-    // font-size: 40px;
-    // width: 100%;
-    // left: 2px;
-    // top: 0px;
     position: static;
     width: 327px;
     height: auto;
@@ -94,9 +85,6 @@ const IntroText = styled.div`
     order: 0;
     flex-grow: 0;
     margin: 0px 12px;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
   }
 `;
 
@@ -130,11 +118,6 @@ const SupportText = styled.div`
   margin: 0px 24px;
 
   @media only screen and (max-width: 600px) {
-    // width: 100%;
-    // height: auto;
-    // top: -350px;
-    // left: 5px;
-    // font-size: 25px;
     position: absolute;
     width: 100%;
     height: auto;
@@ -161,9 +144,6 @@ const SupportText = styled.div`
     order: 1;
     flex-grow: 0;
     margin: 0px 12px;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
   }
 `;
 
@@ -197,10 +177,6 @@ const Description = styled.div`
   margin: 0px 24px;
 
   @media only screen and (max-width: 600px) {
-    // width: 100%;
-    // height: auto;
-    // left: 0px;
-    // padding: 10px;
     position: absolute;
     width: 100%;
     height: auto;
@@ -227,9 +203,6 @@ const Description = styled.div`
     order: 2;
     flex-grow: 0;
     margin: 0px 12px;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    margin-left: -50px;
   }
 `;
 
@@ -259,7 +232,7 @@ const AColor = styled.a`
     color: white;
   }
 
-  @media(max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     transform: rotate(100deg);
   }
 `;
@@ -290,11 +263,7 @@ const Design2 = styled.div`
   transform: rotate(60deg);
   background-color: white;
 
-  @media(max-width: 768px) {
-    display: none;
-  }
-
-  @media(main-width: 770px) {
+  @media only screen and (max-width: 600px) {
     display: none;
   }
 `;
@@ -307,11 +276,7 @@ const Design3 = styled.div`
   transform: rotate(60deg);
   background-color: #F55800;
 
-  @media(max-width: 768px) {
-    display: none;
-  }
-
-  @media(main-width: 770px) {
+  @media only screen and (max-width: 600px) {
     display: none;
   }
 `;
@@ -327,9 +292,6 @@ const ImgDesign = styled.img`
   transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
 
   @media only screen and (max-width: 600px) {
-    display: none;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
     display: none;
   }
 `;

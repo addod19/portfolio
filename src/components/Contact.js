@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaGithub, FaLinkedinIn, FaMedium, FaTwitter } from 'react-icons/fa';
+import { FaAngellist, FaGithub, FaLinkedinIn, FaMedium, FaTwitter } from 'react-icons/fa';
 
 import styled from 'styled-components';
 import MyContact from './ContactForm';
@@ -9,7 +9,7 @@ const ContactWrap = styled.div`
   height: auto;
   margin-top: 20px;
 
-  @media(max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     width: 100%;
     margin-top: 0px;
   }
@@ -99,8 +99,7 @@ const Wrp = styled.div`
   }
 `;
 const AColor = styled.a`
-  color: #CFCFCF;
-
+  color: #505F79;
   &:hover {
     color: #F55800;
   }
@@ -151,6 +150,11 @@ const Contact = () => {
           <SLinks>
             <AColor href="https://twitter.com/DanielLarbiAdd1" target="_blank" rel="noopener noreferrer" className="s-links animTop">
               <FaTwitter className="rot"/>
+            </AColor>  
+          </SLinks>
+          <SLinks>
+            <AColor href="https://angel.co/u/daniel-larbi-addo" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+              <FaAngellist className="rot"/>
             </AColor>  
           </SLinks>
         </Wrp>

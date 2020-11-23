@@ -5,9 +5,11 @@ import styled from "styled-components";
 
 const FormWrapper = styled.div`
   
-  @media(max-width: 769px) {
+  @media only screen and (max-width: 600px){
     height: 450px;
     border: none;
+    width: 90%;
+    margin: auto;
   }
 `;
 const Btn = styled.button`

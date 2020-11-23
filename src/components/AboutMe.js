@@ -10,18 +10,12 @@ const AboutMeWrap = styled.section`
 
   background: #262626;
 
-  @media only screen and (max-width: 600px)  {
+  @media only screen and (max-width: 600px) {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    // border: 1px solid red;
   }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-
-  }
-
 `;
 
 const Divider = styled.div`  
@@ -34,7 +28,7 @@ const Divider = styled.div`
 
   border: 1px solid #FFFFFF;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media only screen and (max-width: 600px) {
     margin-left: 0;
   }
 `;
@@ -43,17 +37,13 @@ const LHead = styled.h3`
   color: white;
   display: flex;
   flex-direction: row;
-  @media(max-width: 769px) {
+  @media only screen and (max-width: 600px) {
     justify-content: center;
   }
 
 `;
 const Lang = styled.div`
   margin: 2px;
-
-  @media only screen and (max-width: 600px) {
-    
-  }
 `;
 
 const Framwork = styled.div`
@@ -78,7 +68,6 @@ const FHead = styled.h3`
     flex-direction: row;
     align-items: center;
     padding: 8px 12px;
-    // border: 1px solid white;
 
     position: static;
     width: 281px;
@@ -105,7 +94,7 @@ const SHead = styled.h3`
   display: flex;
   flex-direction: row;
 
-  @media(max-width: 769px) {
+  @media only screen and (max-width: 600px) {
     justify-content: center;
   }
 `;
@@ -175,34 +164,9 @@ const MyDescription = styled.div`
     width: 140%;
     margin-left: -40px;
     border: none;
-    // border: 1px solid pink;
-  }
-`;
-const ImgCol = styled.img`
-  margin-top: 10%;
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    position: absolute;
-    width: 100px;
-    left: 300px;
-    margin-top: 30%;
   }
 `;
 
-const SmallImg = styled.img`
-  position: relative;
-  bottom: 60px;
-  width: 200px;
-  -webkit-transform:rotate(25deg);
-  -moz-transform: rotate(25deg);
-  -ms-transform: rotate(25deg);
-  -o-transform: rotate(25deg);
-  transform: rotate(25deg);
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-
-  }
-`;
 
 const RotateRec = styled.div`
   position: static;
@@ -221,10 +185,6 @@ const RotateRec = styled.div`
   align-self: center;
   flex-grow: 0;
   margin: 12px 0px;
-
-  @media only screen and (max-width: 600px) {
-  
-  }
 `;
 const Rec = styled.div`
   position: static;
@@ -270,7 +230,6 @@ const Col1 = styled.div`
   @media only screen and (max-width: 600px) {
     width: 100%;
     height: auto;
-    // border: 1px solid white;
   }
 `;
 const Col2 = styled.div`
@@ -279,10 +238,6 @@ const Col2 = styled.div`
   @media only screen and (max-width: 600px) {
     width: 100%;
     height: auto;
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    width: 200px;
   }
 `;
 const Row1 = styled.div`
@@ -294,15 +249,13 @@ const Row1 = styled.div`
     height: auto;
     display: flex;
     flex-direction: column;
-    // border: 1px solid green;
   }
-  
 `;
 const Row2 = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  justify-items: center;
+  margin-left: 70px;
   height: 250px;
   margin-top: 20px;
   width: 100%;
@@ -310,6 +263,7 @@ const Row2 = styled.div`
     grid-template-columns: 1fr;
     border: none;
     height: auto;
+    margin-left: 0;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -348,7 +302,7 @@ const Lan = styled.div`
   }
 `;
 const Fram = styled.div`
-  height: 150px;
+  height: auto;
 
   @media only screen and (max-width: 600px) {
 
@@ -377,9 +331,6 @@ const Skll = styled.div`
   height: 150px;
 
   @media only screen and (max-width: 600px) {
-    // margin-left: 0px;
-    // padding: 40px;
-    // height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,48 +351,7 @@ const Skll = styled.div`
     margin: 0px 24px;
   }
 `;
-const Design1 = styled.div`
-  width: 100px;
-  height: 60px;
-  border: none;
-  position: relative;
-  left: 160px;
-  transform: rotate(60deg);
-  background-color: #F55800;
 
-  @media only screen and (max-width: 600px) {
-    display: none;
-  }
-
-`;
-const Design2 = styled.div`
-  width: 100px;
-  height: 60px;
-  border: none;
-  position: relative;
-  left: 160px;
-  transform: rotate(60deg);
-  background-color: white;
-
-  @media only screen and (max-width: 600px) {
-    display: none;
-  }
-
-`;
-const Design3 = styled.div`
-  width: 100px;
-  height: 60px;
-  border: none;
-  position: relative;
-  left: 160px;
-  transform: rotate(60deg);
-  background-color: #F55800;
-
-  @media only screen and (max-width: 600px) {
-    display: none;
-  }
-
-`;
 
 const FStack = styled.h2`
   @media only screen and (max-width: 600px) {
@@ -449,7 +359,6 @@ const FStack = styled.h2`
     left: -300px;
     TOP: 30px;
     width: 100%;
-    // border: 1px solid white;
   }
 `;
 
@@ -469,7 +378,6 @@ const Resume = styled.div`
   background-color: #F55800;
   color: white;
   margin-left: 23px;
-  // border:1px solid red;
   &:hover {
     border-radius: 20px;
   }
@@ -530,7 +438,8 @@ const AboutMe = () => {
             <Framwork>FrameWorks</Framwork>
           </FHead>
           <FList>Ruby on Rails</FList>
-          <FList>React/Redux</FList>
+          <FList>React</FList>
+          <FList>Redux</FList>
           <FList>Boostrap</FList>
           <FList>Material UI</FList>
         </Fram>
