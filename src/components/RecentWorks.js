@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 
 import styled from 'styled-components';
 
-import rails from '../../src/Images/fb.png';
 import game from '../../src/Images/ga.png';
 import recipe from '../../src/Images/rec.png';
 import book from '../../src/Images/cms.png';
 
-import { FaGithub, FaCode } from 'react-icons/fa';
+
 import CustomModal from './CustomModal';
 import Modal from 'react-modal';
 
@@ -24,7 +23,8 @@ const Recent = styled.div`
 
 const FirstRow = styled.div`
   display: flex;
-  margin-left: 10%;
+  width: 90%;
+  margin: auto;
 
   @media(max-width: 768px) {
     display: grid;
@@ -33,11 +33,11 @@ const FirstRow = styled.div`
 `;
 
 const Divider = styled.div`
-  position: static;
-  width: 794px;
+  position: absolute;
+  width: 894px;
   height: 0px;
-  left: 339px;
-  top: 26px;
+  left: 380px;
+  top: 952px;
 
   border: 1px solid #212121;
 
@@ -49,9 +49,12 @@ const Divider = styled.div`
   flex-grow: 0;
   margin: 24px 0px;
 
-  @media(max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     width: 90%;
     left: 10%;
+    // border: 1px solid red;
+    top: 680px;
+    margin-left: -16px;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -328,6 +331,34 @@ const H1 = styled.h1`
   align-self: center;
   flex-grow: 0;
   margin: 24px 0px;
+
+  @media only screen and (max-width: 600px) {
+    position: relative;
+    width: 100%;
+    left: -40px;
+    top: 0px;
+
+    font-family: Crete Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 52px;
+    /* or 130% */
+
+    display: flex;
+    align-items: center;
+
+    /* Theme 3 / Neutral 1 */
+
+    color: #1C1A19;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+  }
 `;
 
 const MoreProjects = styled.section`
@@ -455,6 +486,58 @@ const LiveP = styled.a`
     height: 30px;
   }
 `;
+const RecentW = styled.section`
+
+@media only screen and (max-width: 600px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0px;
+
+  position: relative;
+  width: 375px;
+  height: 3455px;
+  left: 0px;
+  top: 682px;
+}
+`;
+
+const SeePro = styled.button`
+  background: #FF6B00;
+`;
+const ProjectW = styled.div`
+  width: 90%;
+  margin: auto;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+`;
+
+const Proj = styled.div`
+  @media only screen and (max-width: 600px) {
+    // border: 1px solid red;
+    // margin-top: 40px;
+    // margin-left: 30px;
+  }
+  
+`;
+const MobileImg = styled.div`
+  @media only screen and (max-width: 600px) {
+    // border: 1px solid black;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    // height: 100%;
+  }
+`;
+
+const Lang = styled.div`
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    // border: 1px solid black;
+    text-overflow: ellipsis;
+  }
+`;
 const projects = [
   {
     image: '/Images/fb.png',
@@ -463,16 +546,16 @@ const projects = [
     description: 'Authenticated user can post, comment, send/accept/reject friend request',
     codeLink: 'https://github.com/addod19/facebook-clone',
     liveUrl: 'https://secret-sea-76381.herokuapp.com/',
-    tech: ['Rails', 'CSS3', 'Ruby', 'Bootstraap'],
+    tech: ['Rails', 'SCSS', 'OmniAuth', 'Bootstrap'],
   },
   {
     image: '/Images/rec.png',
     alt: 'Recipe App',
     title: 'Recipe App',
     description: 'This application allows any user to check for their favorite recipe and how to prepare it',
-    codeLink: 'https://github.com/addod19/todo',
-    liveUrl: 'https://addod19.github.io/todo/',
-    tech: ['HTML5', 'CSS3'],
+    codeLink: 'https://github.com/addod19/redux_recipe',
+    liveUrl: 'https://redux-recipe.herokuapp.com/',
+    tech: ['React', 'CSS3', 'Jest', 'Axios'],
   },
   {
     image: '/Images/ga.png',
@@ -481,34 +564,34 @@ const projects = [
     description: 'A user enters their name and starts to enjoy the game.',
     codeLink: 'https://github.com/addod19/js_game_capstone',
     liveUrl: 'https://addod19.github.io/js_game_capstone/',
-    tech: ['HTML5', 'CSS3'],
+    tech: ['JS', 'Phaser', 'CSS3'],
   },
   {
     image: '/Images/cms.png',
     alt: 'BookStore',
     title: 'BookStore',
     description: 'This is a bootstrap project aimed at cloning the Intuit signin/signup page',
-    codeLink: 'https://github.com/abruzy/HTML-Forms',
+    codeLink: 'https://github.com/addod19/redux_recipe',
     liveUrl: 'https://redux-book.herokuapp.com/',
-    tech: ['HTML5', 'CSS3'],
+    tech: ['React', 'Redux', 'CSS3'],
   },
   {
-    image: `/Images/${rails}`,
-    alt: 'Shooter Game',
-    title: 'Shooter Game',
-    description: 'This is a bootstrap project aimed at cloning the Intuit signin/signup page',
-    codeLink: '',
-    liveUrl: '',
-    tech: ['HTML5', 'CSS3'],
+    image: '/Images/todo.png',
+    alt: 'Todo app',
+    title: 'Todo',
+    description: 'Applying the concepts of Single Responsibility and Loosely Coupled Objects while building our todo app.',
+    codeLink: 'https://github.com/addod19/todo',
+    liveUrl: 'https://addod19.github.io/todo/',
+    tech: ['JavaScript', 'UI Kit', 'CSS3', 'HTML'],
   },
   {
-    image: `/Images/${rails}`,
-    alt: 'BookStore',
-    title: 'BookStore',
-    description: 'A user can select any categories of book in the category list, remove book from list',
-    codeLink: 'https://github.com/addod19/React-Bookstore',
-    liveUrl: 'https://redux-book.herokuapp.com/',
-    tech: ['HTML5', 'CSS3'],
+    image: '/Images/newsw.png',
+    alt: 'Newsweek',
+    title: 'Newsweek clone',
+    description: 'A practical demonstration of designing a website with bootstrap framework. ',
+    codeLink: 'https://github.com/addod19/using-bootstrap',
+    liveUrl: 'https://addod19.github.io/using-bootstrap/',
+    tech: ['HTML5', 'CSS3', 'Bootstrap'],
   },
   
 ];
@@ -518,136 +601,47 @@ Modal.setAppElement("#root");
 const RecentWorks = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState([0]);
-  console.log(projects);
+
   return (
-    <React.Fragment>
-      
-      {/* <Recent>
-        <FirstRow className="row">
-          <H1 className="col-md-5">My Recent Works</H1>
-          <Divider className="col-md-7"></Divider>
-        </FirstRow>
-        <MainRow id="portfolio" className="row">
-          <ImageWrap className="col-md-6 col-sm-12 col-xs-12">
-            <Img src={rails} alt="" />
-          </ImageWrap>
-          <Details className="col-md-6 col-sm-12 col-xs-12">
-            <Header>Social Media App  </Header>
-            <Description>
-              Welcome to Friendbook, a Facebook-like social network application. 
-              This application has the functionalities of a social media application. 
-              Authorized users are able to perform the [Features] stated in the section below. 
-              The features of this application tend to mimic most basic features of the facebook
-              social media application.
-            </Description>
-            <Skills>
-              <Skill1 >Ruby</Skill1>
-              <Skill2 >JS</Skill2>
-              <Skill3 >RAILS</Skill3>
-            </Skills>
-            <SeeProject href="https://github.com/addod19/facebook-clone" target="_blank" rel="noopener noreferrer">
-              See Project
-            </SeeProject>
-            <LiveP href="https://secret-sea-76381.herokuapp.com/">Live project</LiveP>
-          </Details>
-        </MainRow>
-        <MoreProjects>
-          <Pro1>
-            <Text>
-              Building a web game with business specification using JS ES6 and Phaser3 JS framework
-              <Techs>
-                <Skill1 >JS</Skill1>
-                <Skill2 >Webpack</Skill2>
-                <Skill3 >Phaser3</Skill3>
-              </Techs>
-            </Text>
-            <Links>
-              <AWrap className="link">
-                <Code title="github repo" target="_blank" rel="noopener noreferrer"
-                  href="https://github.com/addod19/js_game_capstone" className="s-icons"><FaGithub />
-                </Code>
-                <Live title="online version" target="_blank" rel="noopener noreferrer"
-                  href="https://addod19.github.io/js_game_capstone/" className="s-icons"><FaCode />
-                </Live>
-              </AWrap>
-            </Links>
-          </Pro1>
-          <Pro2>
-            <Text>
-              A bookstore app built with react and redux.
-              <Techs>
-                <Skill1 >Thunk</Skill1>
-                <Skill2 >React/Redux</Skill2>
-                <Skill3 >Axios</Skill3>
-              </Techs>
-            </Text>
-            <Links>
-              <AWrap className="link">
-                <Code title="github repo" target="_blank" rel="noopener noreferrer"
-                  href="https://github.com/addod19/React-Bookstore" className="s-icons"><FaGithub />
-                </Code>
-                <Live title="online version" target="_blank" rel="noopener noreferrer"
-                  href="https://redux-book.herokuapp.com/" className="s-icons"><FaCode />
-                </Live>
-              </AWrap>
-            </Links>
-          </Pro2>
-          <Pro3>
-            <Text>
-              Catalogue of recipes built with react and redux
-              <Techs>
-                <Skill1 >React</Skill1>
-                <Skill2 >Prop-Types</Skill2>
-                <Skill3 >Heroku</Skill3>
-              </Techs>
-            </Text>
-            <Links>
-              <AWrap className="link">
-                <Code title="github repo" target="_blank" rel="noopener noreferrer"
-                  href="https://github.com/addod19/redux_recipe" className="s-icons"><FaGithub />
-                </Code>
-                <Live title="online version" target="_blank" rel="noopener noreferrer"
-                  href="https://redux-recipe.herokuapp.com/" className="s-icons"><FaCode />
-                </Live>
-              </AWrap>
-            </Links>
-          </Pro3>          
-        </MoreProjects>
-      </Recent> */}
-      <div className="row">
+    <Recent className="mb-3">
+      <FirstRow className="row">
+        <H1 className="col-md-5">My Recent Works</H1>
+        <Divider className="col-md-7"></Divider>
+      </FirstRow>
+      <ProjectW className="row">
       {
             projects.map((project, projectIdx) => (
               
-              <div key={projectIdx} className="col-md-4 ">
-                <div className="ImgW">
-                  <img src={project.image} alt={project.alt} className="col-md-4 col-sm-12 col-xs-12 img-fluid res" />
-                </div>
+              <Proj key={projectIdx} className="col-md-4">
+                <MobileImg className="ImgW">
+                  <img src={project.image} alt={project.alt} className="img" />
+                </MobileImg>
                 <div className="">
                   <h4 className="text-center">{project.title}</h4>
 
-                  <div className="">
+                  <Lang>
                     {
-                      project.tech.map((language, languageIdx) => <span key={languageIdx} className="py-1 px-2 m-1 bg-light-green rounded">{language}</span>)
+                      project.tech.map((language, languageIdx) => <span key={languageIdx} className="py-1 px-2 m-1 rounded">{language}</span>)
                     }
-                  </div>
-                  <button
+                  </Lang>
+                  <SeePro
                     type="button"
-                    className="p-2 my-2 rounded bg-normal-green text-white focus:outline-none focus:bg-darker-green hover:shadow-xl"
+                    className="p-2 my-2 rounded text-white"
                     onClick={() => {
                       setCurrentProject(project);
                       setModalIsOpen(true);
                     }}
                   >
-                    See project
-                  </button>
+                    See Project
+                  </SeePro>
                 </div>
-              </div>
+              </Proj>
             ))
     }
-      </div>
+      </ProjectW>
       <CustomModal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} title={currentProject.title} description={currentProject.description} imageUrl={currentProject.image} codeLink={currentProject.codeLink} liveUrl={currentProject.liveUrl} tech={currentProject.tech} />
               
-    </React.Fragment>
+    </Recent>
   );
 }
  
