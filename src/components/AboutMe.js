@@ -119,7 +119,7 @@ const About = styled.div`
   /* or 113% */
 
 
-  color: #F55800;
+  color: #FF985C;
 
 
   /* Inside Auto Layout */
@@ -174,7 +174,7 @@ const RotateRec = styled.div`
   left: 16px;
   top: 20.73px;
   z-index: 1;
-  background: #F55800;
+  background: #FF985C;
   transform: rotate(-45deg);
 
   /* Inside Auto Layout */
@@ -192,7 +192,7 @@ const Rec = styled.div`
   left: 12px;
   top: 20.73px;
 
-  background: #F55800;
+  background: #FF985C;
 
   /* Inside Auto Layout */
 
@@ -209,7 +209,7 @@ const Circle = styled.div`
   left: 12px;
   top: 20.73px;
 
-  background: #F55800;
+  background: #FF985C;
 
   /* Inside Auto Layout */
 
@@ -370,7 +370,7 @@ const Resume = styled.div`
   width: 150px;
   height: 40px;
   padding: 5px;
-  background-color: #F55800;
+  background-color: #FF985C;
   color: white;
   margin-left: 23px;
   &:hover {

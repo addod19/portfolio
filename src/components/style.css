@@ -4,11 +4,11 @@
   overflow-x: hidden;
 }
  .name {
-   color: #F55800 !important;
+   color: #FF985C !important;
  }
 
  .btn {
-   background-color: #F55800 !important;
+   background-color: #FF985C !important;
    border: none;
  }
 .abs {
@@ -46,9 +46,9 @@ h2 {
   height: 100%;
   object-fit: contain;
 
-  @media only and screen (max-width: 600px) {
+  /* @media only and screen (max-width: 600px) {
     width: 100%;
-  }
+  } */
 }
 .modalImg {
   width: 380px;

@@ -113,7 +113,7 @@ const H1 = styled.h1`
 `;
 
 const SeePro = styled.button`
-  background: #FF6B00;
+  background: #545454;
 `;
 const ProjectW = styled.div`
   width: 90%;

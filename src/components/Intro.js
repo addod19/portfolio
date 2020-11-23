@@ -48,7 +48,8 @@ const IntroText = styled.div`
   /* or 113% */
 
 
-  color: #F55800;
+  // color: #F55800;
+  color: #FF985C;
 
 
   /* Inside Auto Layout */
@@ -298,11 +299,15 @@ const ImgDesign = styled.img`
     display: none;
   }
 `;
+
+const Span = styled.span`
+  color: #FF985C;
+`;
 const Intro = () => {
   return (
     <IntroStyle>
       <IntroText>
-        <span>Hi, there. I'm Daniel</span>
+        <Span>Hi, there. I'm Daniel</Span>
       </IntroText>
       <SupportText>
         I'm a software developer

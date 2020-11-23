@@ -99,9 +99,9 @@ const Wrp = styled.div`
   }
 `;
 const AColor = styled.a`
-  color: #505F79;
+  color: #FF985C !important;
   &:hover {
-    color: #F55800;
+    color: black !important;
   }
 
   @media(max-width: 768px) {

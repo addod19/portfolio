@@ -19,6 +19,7 @@ const Btn = styled.button`
   margin-left: 25%;
   &:hover {
     color: white;
+    background: black !important;
   }
 `;
 const ContactForm = () => {
