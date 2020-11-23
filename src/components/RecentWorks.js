@@ -148,7 +148,7 @@ const projects = [
     image: '/Images/fb.png',
     alt: 'Facebook App',
     title: 'Facebook Clone',
-    description: 'Authenticated user can post, comment, send/accept/reject friend request',
+    description: 'An authenticated user can post, comment, send/accept/reject a friend request.',
     codeLink: 'https://github.com/addod19/facebook-clone',
     liveUrl: 'https://secret-sea-76381.herokuapp.com/',
     tech: ['Rails', 'SCSS', 'OmniAuth', 'Bootstrap'],
@@ -157,7 +157,7 @@ const projects = [
     image: '/Images/rec.png',
     alt: 'Recipe App',
     title: 'Recipe App',
-    description: 'This application allows any user to check for their favorite recipe and how to prepare it',
+    description: 'This application allows any user to check for their favorite recipe and how to prepare.',
     codeLink: 'https://github.com/addod19/redux_recipe',
     liveUrl: 'https://redux-recipe.herokuapp.com/',
     tech: ['React', 'CSS3', 'Jest', 'Axios'],
@@ -166,7 +166,7 @@ const projects = [
     image: '/Images/ga.png',
     alt: 'Shooter Game',
     title: 'Shooter Game',
-    description: 'A user enters their name and starts to enjoy the game.',
+    description: "A user enters their name and starts to enjoy the game. Kill as many enemies you can, don't get killed.",
     codeLink: 'https://github.com/addod19/js_game_capstone',
     liveUrl: 'https://addod19.github.io/js_game_capstone/',
     tech: ['JS', 'Phaser', 'CSS3'],
@@ -175,7 +175,7 @@ const projects = [
     image: '/Images/cms.png',
     alt: 'BookStore',
     title: 'BookStore',
-    description: 'This is a bootstrap project aimed at cloning the Intuit signin/signup page',
+    description: 'In this project, I built a bookstore app with React and Redux.',
     codeLink: 'https://github.com/addod19/redux_recipe',
     liveUrl: 'https://redux-book.herokuapp.com/',
     tech: ['React', 'Redux', 'CSS3'],
@@ -184,7 +184,7 @@ const projects = [
     image: '/Images/todo.png',
     alt: 'Todo app',
     title: 'Todo',
-    description: 'Applying the concepts of Single Responsibility and Loosely Coupled Objects while building our todo app.',
+    description: 'In this project, I applied the concepts of Single Responsibility and Loosely Coupled Objects while building our todo app.',
     codeLink: 'https://github.com/addod19/todo',
     liveUrl: 'https://addod19.github.io/todo/',
     tech: ['JavaScript', 'UI Kit', 'CSS3', 'HTML'],
@@ -193,7 +193,7 @@ const projects = [
     image: '/Images/newsw.png',
     alt: 'Newsweek',
     title: 'Newsweek clone',
-    description: 'A practical demonstration of designing a website with bootstrap framework. ',
+    description: 'A practical demonstration of designing a website with a bootstrap framework. ',
     codeLink: 'https://github.com/addod19/using-bootstrap',
     liveUrl: 'https://addod19.github.io/using-bootstrap/',
     tech: ['HTML5', 'CSS3', 'Bootstrap'],
@@ -223,7 +223,7 @@ const RecentWorks = () => {
                 </MobileImg>
                 <div className="">
                   <h4 className="text-center">{project.title}</h4>
-
+                  <span>{project.description}</span>
                   <Lang>
                     {
                       project.tech.map((language, languageIdx) => <span key={languageIdx} className="py-1 px-2 m-1 rounded">{language}</span>)
