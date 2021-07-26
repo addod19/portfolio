@@ -3,11 +3,11 @@
 >  Using react to build my personalized portfolio with the help of GSAP and react-reveal animation.
 
 ## Screenshots
+![Screenshot from 2021-07-26 18-36-43](https://user-images.githubusercontent.com/46388113/127041131-009c9bc6-6424-411c-bb15-748dd17af3b1.png)
+![Screenshot from 2021-07-26 18-37-05](https://user-images.githubusercontent.com/46388113/127041143-7e600f16-fe45-4dbb-a1ca-5e526aa17b69.png)
+![Screenshot from 2021-07-26 18-37-28](https://user-images.githubusercontent.com/46388113/127041226-7cb19de8-4051-4112-8366-e152f223bfc6.png)
+![Screenshot from 2021-07-26 18-37-44](https://user-images.githubusercontent.com/46388113/127041183-597233f3-7835-4783-811a-05e37eee3ef0.png)
 
-<img src="./first.png" alt="fist now">
-<img src="./second.png" alt="fist now">
-<img src="./third.png" alt="fist now">
-<img src="./forth.png" alt="fist now">
 
 
 
