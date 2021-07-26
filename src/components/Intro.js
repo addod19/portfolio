@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {
-   FaGithub,
+  FaGithub,
   FaTwitter, FaMedium, FaAngellist,
   FaLinkedinIn,
 } from 'react-icons/fa';
@@ -285,7 +285,6 @@ const Design3 = styled.div`
   }
 `;
 
-
 const ImgDesign = styled.img`
   position: absolute;
   left: 65.74%;
@@ -305,57 +304,55 @@ const ImgDesign = styled.img`
 const Span = styled.span`
   color: #FF985C;
 `;
-const Intro = () => {
-  return (
-    <IntroStyle>
-      <IntroText>
-        <Span>Hi, there. I'm Daniel</Span>
-      </IntroText>
-      <SupportText>
-        I'm a software developer
-      </SupportText>
-      <Description>
-        Hello I’m a software developer! I can help you build a product , 
-        feature or website. Take a look at some of my work and experience! If you like what you see and have a project you need coded,
-        don’t hesitate to contact me.
-      </Description>
-      <Design1></Design1>
-      <Design2></Design2>
-      <Design3></Design3>
-      <SocialLinks>
-        <SLinks>
-          <AColor href="https://github.com/addod19" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-            <FaGithub className="rot"/>
-          </AColor>  
-        </SLinks>
-        <SLinks>
-          <AColor href="https://twitter.com/DanielLarbiAdd1" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-            <FaTwitter />
-          </AColor>  
-        </SLinks>
-        <SLinks>
-          <AColor href="https://angel.co/u/daniel-larbi-addo" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-            <FaAngellist  className="rotate" />
-          </AColor>  
-        </SLinks>
-        <SLinks>
-          <AColor href="https://medium.com/@addodaniellarbi" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-            <FaMedium />
-          </AColor> 
-        </SLinks>
-        <SLinks>
-          <AColor href="https://www.linkedin.com/in/daniel-larbi-addo/" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-            <FaLinkedinIn />
-          </AColor> 
-        </SLinks>
-        
-      </SocialLinks>
-      <Design1></Design1>
-      <Design2></Design2>
-      <Design3></Design3>
-      <ImgDesign src={ImgD} alt="helper design" />
-    </IntroStyle>
-  );
-}
- 
+const Intro = () => (
+  <IntroStyle>
+    <IntroText>
+      <Span>Hi, there. I'm Daniel</Span>
+    </IntroText>
+    <SupportText>
+      I'm a software developer
+    </SupportText>
+    <Description>
+      Hello I’m a software developer! I can help you build a product ,
+      feature or website. Take a look at some of my work and experience! If you like what you see and have a project you need coded,
+      don’t hesitate to contact me.
+    </Description>
+    <Design1 />
+    <Design2 />
+    <Design3 />
+    <SocialLinks>
+      <SLinks>
+        <AColor href="https://github.com/addod19" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+          <FaGithub className="rot" />
+        </AColor>
+      </SLinks>
+      <SLinks>
+        <AColor href="https://twitter.com/DanielLarbiAdd1" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+          <FaTwitter />
+        </AColor>
+      </SLinks>
+      <SLinks>
+        <AColor href="https://angel.co/u/daniel-larbi-addo" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+          <FaAngellist className="rotate" />
+        </AColor>
+      </SLinks>
+      <SLinks>
+        <AColor href="https://medium.com/@addodaniellarbi" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+          <FaMedium />
+        </AColor>
+      </SLinks>
+      <SLinks>
+        <AColor href="https://www.linkedin.com/in/daniel-larbi-addo/" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+          <FaLinkedinIn />
+        </AColor>
+      </SLinks>
+
+    </SocialLinks>
+    <Design1 />
+    <Design2 />
+    <Design3 />
+    <ImgDesign src={ImgD} alt="helper design" />
+  </IntroStyle>
+);
+
 export default Intro;

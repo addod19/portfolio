@@ -166,7 +166,6 @@ const MyDescription = styled.div`
   }
 `;
 
-
 const RotateRec = styled.div`
   position: static;
   width: 18px;
@@ -347,7 +346,6 @@ const Skll = styled.div`
   }
 `;
 
-
 const FStack = styled.h2`
   @media only screen and (max-width: 600px) {
     position: relative;
@@ -392,65 +390,66 @@ const ResLink = styled.a`
     color: grey;
   }
 `;
-const AboutMe = () => {
-  return (
-    <AboutMeWrap id="about">
-      <Row1>
-        <Col1>
-          <About>About Me</About>
-          <MyDescription>
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website. Take a look at some of my work and experience!
-            So if you'd like to work together, please get in touch.
-          </MyDescription>
-          <FStack>Full Stack Developer</FStack>
-          <Resume>
-            <ResLink target="_blank" rel="noopener noreferrer"
-              href="https://docs.google.com/document/d/15ORaVl9x50n_nSYa0_JAnQvXzvONjBF4qSuVUqk5_hg/edit">
-              View My Resume
-            </ResLink>
-          </Resume>
-        </Col1>
-        <Col2>
-          <ImgDesign src={ImgAbt} alt="helper design" />
-        </Col2>
-      </Row1>
-      <Divider></Divider>
-      <Row2>
-        <Lan>
-          <LHead>
-            <RotateRec></RotateRec>
-            <Lang>Languages</Lang>
-          </LHead>
-          <LList>JavaScript</LList>
-          <LList>Ruby</LList>
-          <LList>HTML</LList>
-          <LList>CSS</LList>
-        </Lan>
-        <Fram>
-          <FHead>
-            <Rec></Rec>
-            <Framwork>FrameWorks</Framwork>
-          </FHead>
-          <FList>Ruby on Rails</FList>
-          <FList>React</FList>
-          <FList>Redux</FList>
-          <FList>Boostrap</FList>
-          <FList>Material UI</FList>
-        </Fram>
-        <Skll>
-          <SHead>
-            <Circle></Circle>
-            <Skill>Skills</Skill>
-          </SHead>
-          <SList>GitHub</SList>
-          <SList>Terminal</SList>
-          <SList>GitLab</SList>
-          <SList>Heroku</SList>
-        </Skll>
-      </Row2>
-    </AboutMeWrap>
-  );
-}
+const AboutMe = () => (
+  <AboutMeWrap id="about">
+    <Row1>
+      <Col1>
+        <About>About Me</About>
+        <MyDescription>
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website. Take a look at some of my work and experience!
+          So if you'd like to work together, please get in touch.
+        </MyDescription>
+        <FStack>Full Stack Developer</FStack>
+        <Resume>
+          <ResLink
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/document/d/15ORaVl9x50n_nSYa0_JAnQvXzvONjBF4qSuVUqk5_hg/edit"
+          >
+            View My Resume
+          </ResLink>
+        </Resume>
+      </Col1>
+      <Col2>
+        <ImgDesign src={ImgAbt} alt="helper design" />
+      </Col2>
+    </Row1>
+    <Divider />
+    <Row2>
+      <Lan>
+        <LHead>
+          <RotateRec />
+          <Lang>Languages</Lang>
+        </LHead>
+        <LList>JavaScript</LList>
+        <LList>Ruby</LList>
+        <LList>HTML</LList>
+        <LList>CSS</LList>
+      </Lan>
+      <Fram>
+        <FHead>
+          <Rec />
+          <Framwork>FrameWorks</Framwork>
+        </FHead>
+        <FList>Ruby on Rails</FList>
+        <FList>React</FList>
+        <FList>Redux</FList>
+        <FList>Boostrap</FList>
+        <FList>Material UI</FList>
+      </Fram>
+      <Skll>
+        <SHead>
+          <Circle />
+          <Skill>Skills</Skill>
+        </SHead>
+        <SList>GitHub</SList>
+        <SList>Terminal</SList>
+        <SList>GitLab</SList>
+        <SList>Heroku</SList>
+      </Skll>
+    </Row2>
+  </AboutMeWrap>
+);
 
 export default AboutMe;

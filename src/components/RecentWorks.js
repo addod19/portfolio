@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 import styled from 'styled-components';
 
-import CustomModal from './CustomModal';
 import Modal from 'react-modal';
+import CustomModal from './CustomModal';
 
 const Recent = styled.div`
   width: 100%;
@@ -205,11 +205,10 @@ const projects = [
     liveUrl: 'https://addod19.github.io/using-bootstrap/',
     tech: ['HTML5', 'CSS3', 'Bootstrap'],
   },
-  
+
 ];
 
-
-Modal.setAppElement("#root");
+Modal.setAppElement('#root');
 const RecentWorks = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState([0]);
@@ -218,15 +217,15 @@ const RecentWorks = () => {
     <Recent className="mb-3">
       <FirstRow className="row">
         <H1 className="col-md-5">My Recent Works</H1>
-        <Divider className="col-md-7"></Divider>
+        <Divider className="col-md-7" />
       </FirstRow>
       <ProjectW className="row">
-      {
+        {
             projects.map((project, projectIdx) => (
-              
+
               <Proj key={projectIdx} className="col-md-4">
                 <MobileImg className="ImgW">
-                  <img src={project.image} alt={project.alt} className="img" title="click 'See Project' to view description"/>
+                  <img src={project.image} alt={project.alt} className="img" title="click 'See Project' to view description" />
                 </MobileImg>
                 <div className="">
                   <h4 className="text-center">{project.title}</h4>
@@ -243,7 +242,7 @@ const RecentWorks = () => {
                       setCurrentProject(project);
                       setModalIsOpen(true);
                     }}
-                    
+
                   >
                     See Project
                   </SeePro>
@@ -253,9 +252,9 @@ const RecentWorks = () => {
     }
       </ProjectW>
       <CustomModal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} title={currentProject.title} description={currentProject.description} imageUrl={currentProject.image} codeLink={currentProject.codeLink} liveUrl={currentProject.liveUrl} tech={currentProject.tech} />
-              
+
     </Recent>
   );
-}
- 
+};
+
 export default RecentWorks;

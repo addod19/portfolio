@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaAngellist, FaGithub, FaLinkedinIn, FaMedium, FaTwitter } from 'react-icons/fa';
+import {
+  FaAngellist, FaGithub, FaLinkedinIn, FaMedium, FaTwitter,
+} from 'react-icons/fa';
 
 import styled from 'styled-components';
 import MyContact from './ContactForm';
@@ -118,49 +120,46 @@ const SLinks = styled.li`
   color: #CFCFCF;
 
 `;
-const Contact = () => {
+const Contact = () => (
+  <ContactWrap id="contact" className="container">
+    <Main className="row">
+      <ContactMsg className="col-sm-12 col-xs-12">
+        I'm always interested in hearing about new projects,
+        so if you'd like to work please get in touch.
+      </ContactMsg>
+      <MyContact />
+    </Main>
+    <Divider />
+    <FooterLinks>
+      <Wrp>
+        <SLinks>
+          <AColor href="https://github.com/addod19" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <FaGithub className="rot" />
+          </AColor>
+        </SLinks>
+        <SLinks>
+          <AColor href="https://www.linkedin.com/in/daniel-larbi-addo/" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <FaLinkedinIn className="rot" />
+          </AColor>
+        </SLinks>
+        <SLinks>
+          <AColor href="https://medium.com/@addodaniellarbi" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <FaMedium className="rot" />
+          </AColor>
+        </SLinks>
+        <SLinks>
+          <AColor href="https://twitter.com/DanielLarbiAdd1" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <FaTwitter className="rot" />
+          </AColor>
+        </SLinks>
+        <SLinks>
+          <AColor href="https://angel.co/u/daniel-larbi-addo" target="_blank" rel="noopener noreferrer" className="s-links animTop">
+            <FaAngellist className="rot" />
+          </AColor>
+        </SLinks>
+      </Wrp>
+    </FooterLinks>
+  </ContactWrap>
+);
 
-  return ( 
-    <ContactWrap id="contact" className="container">
-      <Main className="row">
-        <ContactMsg className="col-sm-12 col-xs-12">
-          I'm always interested in hearing about new projects, 
-          so if you'd like to work please get in touch.
-        </ContactMsg>
-       <MyContact />
-      </Main>
-      <Divider></Divider>
-      <FooterLinks>
-        <Wrp>
-          <SLinks>
-            <AColor href="https://github.com/addod19" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-              <FaGithub className="rot"/>
-            </AColor>  
-          </SLinks>
-          <SLinks>
-            <AColor href="https://www.linkedin.com/in/daniel-larbi-addo/" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-              <FaLinkedinIn className="rot"/>
-            </AColor>  
-          </SLinks>
-          <SLinks>
-            <AColor href="https://medium.com/@addodaniellarbi" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-              <FaMedium className="rot"/>
-            </AColor>  
-          </SLinks>
-          <SLinks>
-            <AColor href="https://twitter.com/DanielLarbiAdd1" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-              <FaTwitter className="rot"/>
-            </AColor>  
-          </SLinks>
-          <SLinks>
-            <AColor href="https://angel.co/u/daniel-larbi-addo" target="_blank" rel="noopener noreferrer" className="s-links animTop">
-              <FaAngellist className="rot"/>
-            </AColor>  
-          </SLinks>
-        </Wrp>
-      </FooterLinks>
-    </ContactWrap>
-  );
-}
- 
 export default Contact;

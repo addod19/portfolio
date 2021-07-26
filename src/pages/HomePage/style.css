@@ -6,8 +6,9 @@
 main {
   height: 100%;
 }
+
 .homeWrap {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   border: 5px solid white;
 }
 
@@ -23,14 +24,16 @@ main {
   border-radius: 4px;
   margin-top: 4px;
 }
+
 .callSize {
   height: 23px;
   width: 20px;
   transform: rotate(180deg);
-  color: #F9855B;
+  color: #f9855b;
 }
+
 .typing {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 68px;
@@ -43,7 +46,7 @@ main {
 
 .headColor,
 .descp {
-  color: #727274;;
+  color: #727274;
 }
 
 .designer {
@@ -52,7 +55,7 @@ main {
 }
 
 .d-c {
-  color: #000000;
+  color: #000;
   font-size: 30px;
   font-family: 'Poppins', sans-serif;
 }
@@ -75,7 +78,7 @@ main {
 }
 
 .myIntro {
-  color:#727274;
+  color: #727274;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -92,16 +95,16 @@ main {
 
 .s-links {
   font-size: 25px;
-  color: #F9855B;
+  color: #f9855b;
 }
 
 .s-links:hover {
-  color: #727274;;
+  color: #727274;
 }
 
 .ip-font,
 .dan {
-  color: #F9855B;
+  color: #f9855b;
 }
 
 .bskills {
@@ -178,7 +181,7 @@ main {
   font-size: 18px;
   align-self: center;
   text-align: center;
-  color: #F9855B;
+  color: #f9855b;
   font-weight: 500;
 }
 
@@ -201,7 +204,7 @@ main {
 
   .homeWrap {
     height: auto;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     border: none;
   }
 
@@ -296,12 +299,12 @@ main {
   }
 
   .s-links {
-    color: #F9855B;;
+    color: #f9855b;
     font-size: 25px;
   }
 
   .s-links:hover {
-    color: #E5E5E5;
+    color: #e5e5e5;
   }
 
   .no-marg {
@@ -328,7 +331,7 @@ main {
     font-size: 30px;
     align-self: center;
     text-align: center;
-    color: #F9855B;
+    color: #f9855b;
   }
 
   .ip-font {
@@ -422,7 +425,7 @@ main {
     font-size: 40px;
     align-self: center;
     text-align: center;
-    color: #F9855B;
+    color: #f9855b;
   }
 
   .ip-font {
@@ -444,16 +447,17 @@ main {
   width: 100%;
   height: 20em;
 }
+
 /* .cSize {
   height: 3rem;
   width: 3rem;
 } */
 .rot {
-  
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     transform: rotate(100deg);
   }
 }
+
 .t1-color {
   color: white;
   font-weight: 600;
@@ -467,7 +471,7 @@ main {
 
 .s-icons {
   font-size: 30px;
-  color: #F9855B;
+  color: #f9855b;
 }
 
 .s-icons:hover {

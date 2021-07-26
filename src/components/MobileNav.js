@@ -10,14 +10,15 @@ const Contact = styled.a``;
 const WrapMobileLinks = styled.div``;
 const CloseButton = styled.button``;
 
-const MobileNav = ({ modalIsOpen, setModalIsOpen}) => {
-  const handleClick = componentName => {
+const MobileNav = ({ modalIsOpen, setModalIsOpen }) => {
+  const handleClick = (componentName) => {
     setModalIsOpen(false);
     window.location.href = componentName;
   };
 
   return (
-    <Modal isOpen={modalIsOpen}
+    <Modal
+      isOpen={modalIsOpen}
       style={{
         overlay: {
           position: 'fixed',
@@ -42,22 +43,22 @@ const MobileNav = ({ modalIsOpen, setModalIsOpen}) => {
           maxWidth: '100%',
         },
       }}
-      >
-        <WrapMobileLinks>
-          <Portfolio href="#portfolio" onClick={() => handleClick('#portfolio')}></Portfolio>
-          <About href="#about" onClick={() => handleClick('#about')}></About>
-          <Contact href="#contact" onClick={() => handleClick('#contact')}></Contact>
-        </WrapMobileLinks>
-        <CloseButton type="button" onClick={() => setModalIsOpen(false)}>
-          +
-        </CloseButton>
-      </Modal>
+    >
+      <WrapMobileLinks>
+        <Portfolio href="#portfolio" onClick={() => handleClick('#portfolio')} />
+        <About href="#about" onClick={() => handleClick('#about')} />
+        <Contact href="#contact" onClick={() => handleClick('#contact')} />
+      </WrapMobileLinks>
+      <CloseButton type="button" onClick={() => setModalIsOpen(false)}>
+        +
+      </CloseButton>
+    </Modal>
   );
-}
+};
 
 MobileNav.propTypes = {
   modalIsOpen: PropTypes.bool.isRequired,
   setModalIsOpen: PropTypes.func.isRequired,
-}
+};
 
 export default MobileNav;
