@@ -63,7 +63,7 @@ const CloseBtn = styled.button`
 const modalClassNames = 'p-2 my-2 rounded bg-normal-green text-white focus:outline-none focus:bg-darker-green hover:shadow-xl flex justify-center text-center';
 
 const CustomModal = ({
-  modalIsOpen, setModalIsOpen, imageUrl, title, description, tech, codeLink, liveUrl,
+  modalIsOpen, setModalIsOpen, imageUrl, title, description, codeLink, liveUrl,
 }) => (
   <Modal
     isOpen={modalIsOpen}
@@ -124,12 +124,11 @@ const CustomModal = ({
 CustomModal.propTypes = {
   modalIsOpen: PropTypes.bool.isRequired,
   setModalIsOpen: PropTypes.func.isRequired,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  codeLink: PropTypes.string,
-  imageUrl: PropTypes.string,
-  liveUrl: PropTypes.string,
-  tech: PropTypes.array,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  codeLink: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  liveUrl: PropTypes.string.isRequired,
 };
 
 export default CustomModal;

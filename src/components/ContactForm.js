@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import axios from 'axios';
 import styled from 'styled-components';
@@ -29,11 +29,11 @@ const ContactForm = () => {
     message: '',
   });
 
-  const [senders, setSenders] = useState([]);
-
-  console.log();
-
   const { name, email, message } = sendMsg;
+
+  const feedbackMsg = (msg) => (
+    <h1>{msg}</h1>
+  );
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -48,10 +48,9 @@ const ContactForm = () => {
       data: sendMsg,
     }).then((response) => {
       if (response.data.status === 'success') {
-        alert('Message Sent.');
-        this.resetForm();
+        feedbackMsg('Message sent');
       } else if (response.data.status === 'fail') {
-        alert('Message failed to send.');
+        feedbackMsg('Message failed to send.');
       }
     });
   };
@@ -62,14 +61,17 @@ const ContactForm = () => {
     <FormWrapper>
       <form id="contact-form" onSubmit={() => handleSubmit()} method="POST">
         <div className="form-group">
+          { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
           <label htmlFor="name">Name</label>
           <input type="text" id="name" className="form-control" name="name" onChange={handleChange} value={name} required />
         </div>
         <div className="form-group">
-          <label htmlFor="exampleInputEmail1">Email address</label>
+          { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
+          <label htmlFor="email">Email address</label>
           <input type="email" value={email} name="email" onChange={handleChange} className="form-control" required />
         </div>
         <div className="form-group">
+          { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
           <label htmlFor="message">Message</label>
           <textarea className="form-control" name="message" onChange={handleChange} value={message} required rows="5" />
         </div>

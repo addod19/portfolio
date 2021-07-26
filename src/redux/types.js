@@ -1,1 +1,0 @@
-const SENDMSG = 'SEND MEESSAGE';

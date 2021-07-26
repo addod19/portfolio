@@ -307,15 +307,15 @@ const Span = styled.span`
 const Intro = () => (
   <IntroStyle>
     <IntroText>
-      <Span>Hi, there. I'm Daniel</Span>
+      <Span>Hi, there. I&apos;m Daniel</Span>
     </IntroText>
     <SupportText>
-      I'm a software developer
+      I&apos;m a software developer
     </SupportText>
     <Description>
       Hello I’m a software developer! I can help you build a product ,
-      feature or website. Take a look at some of my work and experience! If you like what you see and have a project you need coded,
-      don’t hesitate to contact me.
+      feature or website. Take a look at some of my work and experience! If you like what you
+      see and have a project you need coded, don’t hesitate to contact me.
     </Description>
     <Design1 />
     <Design2 />

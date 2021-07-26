@@ -396,9 +396,9 @@ const AboutMe = () => (
       <Col1>
         <About>About Me</About>
         <MyDescription>
-          Hello I’m a software developer! I can help you build a product ,
+          Hello I&apos;m a software developer! I can help you build a product ,
           feature or website. Take a look at some of my work and experience!
-          So if you'd like to work together, please get in touch.
+          So if you&apos;d like to work together, please get in touch.
         </MyDescription>
         <FStack>Full Stack Developer</FStack>
         <Resume>

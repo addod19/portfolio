@@ -124,8 +124,8 @@ const Contact = () => (
   <ContactWrap id="contact" className="container">
     <Main className="row">
       <ContactMsg className="col-sm-12 col-xs-12">
-        I'm always interested in hearing about new projects,
-        so if you'd like to work please get in touch.
+        I&apos;m always interested in hearing about new projects,
+        so if you&apos;d like to work please get in touch.
       </ContactMsg>
       <MyContact />
     </Main>

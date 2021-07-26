@@ -213,6 +213,7 @@ const RecentWorks = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState([0]);
 
+  const proIdx = projects[Math.floor(Math.random() * projects.length)];
   return (
     <Recent className="mb-3">
       <FirstRow className="row">
@@ -221,9 +222,9 @@ const RecentWorks = () => {
       </FirstRow>
       <ProjectW className="row">
         {
-            projects.map((project, projectIdx) => (
+            projects.map((project) => (
 
-              <Proj key={projectIdx} className="col-md-4">
+              <Proj key={proIdx} className="col-md-4">
                 <MobileImg className="ImgW">
                   <img src={project.image} alt={project.alt} className="img" title="click 'See Project' to view description" />
                 </MobileImg>
@@ -232,7 +233,7 @@ const RecentWorks = () => {
                   <span>{project.description}</span>
                   <Lang>
                     {
-                      project.tech.map((language, languageIdx) => <TechStyle key={languageIdx} className="py-1 px-2 m-1 rounded">{language}</TechStyle>)
+                      project.tech.map((language) => <TechStyle key={proIdx} className="py-1 px-2 m-1 rounded">{language}</TechStyle>)
                     }
                   </Lang>
                   <SeePro
@@ -251,8 +252,16 @@ const RecentWorks = () => {
             ))
     }
       </ProjectW>
-      <CustomModal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} title={currentProject.title} description={currentProject.description} imageUrl={currentProject.image} codeLink={currentProject.codeLink} liveUrl={currentProject.liveUrl} tech={currentProject.tech} />
-
+      <CustomModal
+        modalIsOpen={modalIsOpen}
+        setModalIsOpen={setModalIsOpen}
+        title={currentProject.title}
+        description={currentProject.description}
+        imageUrl={currentProject.image}
+        codeLink={currentProject.codeLink}
+        liveUrl={currentProject.liveUrl}
+        tech={currentProject.tech}
+      />
     </Recent>
   );
 };
