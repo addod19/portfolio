@@ -21,9 +21,9 @@
 
 
 
-### Live version
+### Heroku Live version
 
-* [Portfolio](www.daniellarbiaddo.com/)
+* [Portfolio](https://portfolio-review0.herokuapp.com/)
 
 ## Getting Started
 
