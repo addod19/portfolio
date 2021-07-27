@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import axios from 'axios';
 import styled, { css } from 'styled-components';
 
 const commonStyleBorder = css`
@@ -39,28 +38,8 @@ const ContactForm = () => {
 
   const { name, email, message } = sendMsg;
 
-  const feedbackMsg = (msg) => (
-    <h1>{msg}</h1>
-  );
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    axios({
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify({ email, message }),
-      url: 'http://localhost:3002/send',
-      data: sendMsg,
-    }).then((response) => {
-      if (response.data.status === 'success') {
-        feedbackMsg('Message sent');
-      } else if (response.data.status === 'fail') {
-        feedbackMsg('Message failed to send.');
-      }
-    });
   };
 
   const handleChange = (e) => setSendMsg({ ...sendMsg, [e.target.name]: e.target.value });
