@@ -1,40 +1,58 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-modal';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
+const commonBgColor = css`
+  background: #FF985C;
+`;
+
+const commonColor1 = css`
+  color: #F55800;
+`;
+const commonRelativePos = css`
+  position: relative;
+`;
+
+const commonFont1 = css`
+  font-size: 16px;
+`;
+
+const commonFont2 = css`
+  font-size: 30px;
+`;
 const Title = styled.h2`
   text-align: center;
   color: black;
   width: 100%;
-  position: relative;
+  ${commonRelativePos}
   left: -280px;
 `;
 const Live = styled.a`
-  font-size: 30px;
-  color: #F55800;
+  ${commonFont2}
+  ${commonColor1}
   width: 200px;
   height: auto;
-  background: #FF985C;
+  ${commonBgColor}
   &:hover {
     color: black !important;
     text-decoration: none;
   }
   @media only screen and (max-width: 600px) {
-    font-size: 16px;
+    f${commonFont1}
   }
 `;
 
 const Code = styled.a`
-  font-size: 30px;
-  color: #F55800;
-  background: #FF985C;
+  ${commonFont2}
+  ${commonColor1}
+  ${commonBgColor}
   &:hover {
     color: black !important;
     text-decoration: none;
   }
   @media only screen and (max-width: 600px) {
-    font-size: 16px;
+    ${commonFont1}
     width: 100px;
   }
 `;
@@ -42,7 +60,7 @@ const Code = styled.a`
 const ModalW = styled.div`
   @media only screen and (max-width: 600px) {
     width: 100%;
-    position: relative;
+    ${commonRelativePos}
     left: -15px;
   }
 `;
@@ -56,7 +74,7 @@ const MobileLink = styled.div`
 
 const CloseBtn = styled.button`
   @media only screen and (max-width: 600px) {
-    position: relative;
+    ${commonRelativePos}
     left: -40px;
   }
 `;

@@ -3,9 +3,16 @@ import {
   FaAngellist, FaGithub, FaLinkedinIn, FaMedium, FaTwitter,
 } from 'react-icons/fa';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import MyContact from './ContactForm';
 
+const commonStyleFlex = css`
+  display: flex;
+`;
+
+const commonStyleGrid = css`
+  display: grid;
+`;
 const ContactWrap = styled.div`
   width: 100%;
   height: auto;
@@ -19,7 +26,7 @@ const ContactWrap = styled.div`
 
 const Main = styled.main`
   height: auto;
-  display: grid;
+  ${commonStyleGrid}
   grid-template-columns: repeat(2, 1fr);
 
 
@@ -41,7 +48,7 @@ const Divider = styled.div`
 
 const FooterLinks = styled.footer`
   height: 90px;
-  display: flex;
+  ${commonStyleFlex}
   justify-content: center;
 
   @media(max-width: 769px) {
@@ -63,7 +70,7 @@ const ContactMsg = styled.div`
   line-height: 52px;
   /* or 130% */
 
-  display: flex;
+  ${commonStyleFlex}
   align-items: center;
 
   color: #262626;
@@ -88,7 +95,7 @@ const ContactMsg = styled.div`
 `;
 
 const Wrp = styled.div`
-  display: grid;
+  ${commonStyleGrid}
   grid-template-columns: repeat(5, 1fr);
   width: 30%;
   height: 50px;

@@ -1,24 +1,32 @@
 import React, { useState } from 'react';
 
 import axios from 'axios';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const commonStyleBorder = css`
+  border: none;
+`;
+
+const commonStyleWhiteColor = css`
+  color: white;
+`;
 
 const FormWrapper = styled.div`
   
   @media only screen and (max-width: 600px){
     height: 450px;
-    border: none;
+    ${commonStyleBorder}
     width: 90%;
     margin: auto;
   }
 `;
 const Btn = styled.button`
-  border: none;
-  color: white;
+  ${commonStyleBorder}
+  ${commonStyleWhiteColor}
   width: 50%;
   margin-left: 25%;
   &:hover {
-    color: white;
+    ${commonStyleWhiteColor}
     background: black !important;
   }
 `;

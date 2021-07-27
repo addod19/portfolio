@@ -1,67 +1,61 @@
 import React from 'react';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
+const commonFont = css`
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+`;
+
+const commonFlexProp = css`
+  display: flex;
+  align-items: center;
+  text-align: center;
+`;
+
+const commonTextColor = css`
+  color: white !important;
+`;
+
+const commonHoverColor = css`
+  color: #F55800;
+`;
 const ListStyle = styled.ul``;
 
 const Portfolio = styled.li`
-
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
+  ${commonFont}  
+  ${commonFlexProp}
 `;
 
 const About = styled.li`
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  /* identical to box height, or 133% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
+  ${commonFont}
+  ${commonFlexProp}
 `;
 
 const Contact = styled.li`
-
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
+  ${commonFont}
+  ${commonFlexProp}
 `;
 
 const PLink = styled.a`
-  color: white !important;
-
+  ${commonTextColor}
   &:hover {
-    color: #F55800;
+    ${commonHoverColor}
   }
 `;
 const ALink = styled.a`
-  color: white !important;
+  ${commonTextColor}
   &:hover {
-    color: #F55800;
+    ${commonHoverColor}
   }
 `;
 const CLink = styled.a`
-  color: white !important;
+  ${commonTextColor}
   &:hover {
-    color: #F55800;
+    ${commonHoverColor}
   }
 `;
 const MyNav = styled.nav`
@@ -71,10 +65,10 @@ const Burg = styled.button`
   background: none !important;
 `;
 const Span = styled.span`
-  color: white !important;
+ ${commonTextColor}
 `;
 const Name = styled.a`
-  color: white !important;
+  ${commonTextColor}
 `;
 const Nav = () => (
   <>

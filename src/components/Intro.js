@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import {
   FaGithub,
@@ -9,6 +9,16 @@ import {
 } from 'react-icons/fa';
 import ImgD from '../Images/Group.png';
 
+const flexProp = css`
+  display: flex;
+  flex-direction: column;
+`;
+
+const commonFont = css`
+  font-style: normal;
+  font-weight: normal;
+`;
+
 const IntroStyle = styled.section`
   width: 1440px;
   height: 870px;
@@ -16,13 +26,10 @@ const IntroStyle = styled.section`
   top: 0px;
 
   background: #1C1A19;
-
-  display: flex;
-  flex-direction: column;
+  ${flexProp}
 
   @media only screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
+    ${flexProp}
     align-items: flex-start;
     padding: 120px 24px;
 
@@ -41,8 +48,7 @@ const IntroText = styled.div`
   top: 122px;
 
   font-family: Crete Round;
-  font-style: normal;
-  font-weight: normal;
+  ${commonFont}
   font-size: 72px;
   line-height: 71px;
   /* or 113% */
@@ -68,8 +74,7 @@ const IntroText = styled.div`
     top: 120px;
 
     font-family: Crete Round;
-    font-style: normal;
-    font-weight: normal;
+    ${commonFont}
     font-size: 56px;
     line-height: 64px;
     /* or 114% */
@@ -157,8 +162,7 @@ const Description = styled.div`
   
 
   font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
+  ${commonFont}
   font-size: 20px;
   line-height: 30px;
   /* or 160% */
@@ -187,8 +191,7 @@ const Description = styled.div`
     /* Theme 1 / Body Reguler 2 */
 
     font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
+    ${commonFont}
     font-size: 16px;
     line-height: 24px;
     /* or 150% */

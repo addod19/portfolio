@@ -1,23 +1,29 @@
 import React, { useState } from 'react';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import Modal from 'react-modal';
 import CustomModal from './CustomModal';
 
-const Recent = styled.div`
+const commonFlex = css`
+  display: flex;
+`;
+
+const fullWidth = css`
   width: 100%;
+`;
+const Recent = styled.div`
+  ${fullWidth}
 
   @media only screen and (max-width: 600px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
+    ${fullWidth}
+    ${commonFlex}
+    flex-direction: column;  
   }
 `;
 
 const FirstRow = styled.div`
-  display: flex;
+  ${commonFlex}
   width: 90%;
   margin: auto;
 
@@ -68,7 +74,7 @@ const H1 = styled.h1`
   line-height: 52px;
   /* identical to box height, or 130% */
 
-  display: flex;
+  ${commonFlex}
   align-items: center;
 
   /* Neutrals/N900 */
@@ -96,7 +102,7 @@ const H1 = styled.h1`
     line-height: 52px;
     /* or 130% */
 
-    display: flex;
+    ${commonFlex}
     align-items: center;
 
     /* Theme 3 / Neutral 1 */
@@ -119,7 +125,7 @@ const ProjectW = styled.div`
   width: 90%;
   margin: auto;
   @media only screen and (max-width: 600px) {
-    width: 100%;
+    ${fullWidth}
   }
 `;
 
@@ -133,7 +139,7 @@ const MobileImg = styled.div`
   @media only screen and (max-width: 600px) {
     position: relative;
     left: 0px;
-    width: 100%;
+    ${fullWidth}
   }
 `;
 
@@ -141,7 +147,7 @@ const Lang = styled.div`
   height: 50px;
   margin-top: 10px;
   @media only screen and (max-width: 600px) {
-    width: 100%;
+    ${fullWidth}
     text-overflow: ellipsis;
   }
 `;
