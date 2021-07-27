@@ -11,7 +11,7 @@ const commonStyleWhiteColor = css`
 `;
 
 const FormWrapper = styled.div`
-  
+  border: 1px solid red;
   @media only screen and (max-width: 600px){
     height: 450px;
     ${commonStyleBorder}
@@ -29,6 +29,7 @@ const Btn = styled.button`
     background: black !important;
   }
 `;
+
 const ContactForm = () => {
   const [sendMsg, setSendMsg] = useState({
     name: '',
@@ -48,19 +49,22 @@ const ContactForm = () => {
     <FormWrapper>
       <form id="contact-form" onSubmit={() => handleSubmit()} method="POST">
         <div className="form-group">
-          { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" className="form-control" name="name" onChange={handleChange} value={name} required />
+          <label htmlFor="name">
+            Name
+            <input type="text" id="name" className="form-control" name="name" onChange={handleChange} value={name} required />
+          </label>
         </div>
         <div className="form-group">
-          { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
-          <label htmlFor="email">Email address</label>
-          <input type="email" value={email} name="email" onChange={handleChange} className="form-control" required />
+          <label htmlFor="email">
+            Email address
+            <input type="email" value={email} name="email" onChange={handleChange} className="form-control" required />
+          </label>
         </div>
         <div className="form-group">
-          { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
-          <label htmlFor="message">Message</label>
-          <textarea className="form-control" name="message" onChange={handleChange} value={message} required rows="5" />
+          <label htmlFor="message">
+            Message
+            <textarea className="form-control" name="message" onChange={handleChange} value={message} required rows="5" />
+          </label>
         </div>
         <Btn type="submit" className="btn form-control mb-2">Get In Touch</Btn>
       </form>

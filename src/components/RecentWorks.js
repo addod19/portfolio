@@ -129,7 +129,7 @@ const ProjectW = styled.div`
   }
 `;
 
-const Proj = styled.div`
+const Proj = styled.article`
   @media only screen and (max-width: 600px) {
    
   }

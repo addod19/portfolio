@@ -51,15 +51,7 @@ const IntroText = styled.div`
   ${commonFont}
   font-size: 72px;
   line-height: 71px;
-  /* or 113% */
-
-
-  // color: #F55800;
   color: #FF985C;
-
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   align-self: center;
@@ -77,16 +69,8 @@ const IntroText = styled.div`
     ${commonFont}
     font-size: 56px;
     line-height: 64px;
-    /* or 114% */
-
     letter-spacing: 0.37px;
-
-    /* Theme 3 / Primary 1 */
-
     color: #FF6B00;
-
-    /* Inside Auto Layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -100,15 +84,11 @@ const SupportText = styled.div`
   height: 40px;
   left: -170px;
   top: -380px;
-
-
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 30px;
-  /* or 137% */
-
   display: flex;
   align-items: center;
 
@@ -129,23 +109,14 @@ const SupportText = styled.div`
     height: auto;
     top: 300px;
     left: 15px;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
-    /* or 133% */
-
     display: flex;
     align-items: center;
-
-    /* Theme 3 / Primary 4 */
-
     color: #FFF5E1;
-
-    /* Inside Auto Layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -159,22 +130,12 @@ const Description = styled.div`
   height: 123px;
   left: -170px;
   top: -350px;
-  
-
   font-family: Inter;
   ${commonFont}
   font-size: 20px;
   line-height: 30px;
-  /* or 160% */
-
-
-  /* Neutrals/N20 */
-
   color: #F4F5F7;
   box-sizing: border-box;
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 2;
   align-self: center;
@@ -187,22 +148,11 @@ const Description = styled.div`
     height: auto;
     left: 2px;
     top: 340px;
-
-    /* Theme 1 / Body Reguler 2 */
-
     font-family: Poppins;
     ${commonFont}
     font-size: 16px;
     line-height: 24px;
-    /* or 150% */
-
-
-    /* Theme 3 / Neutral 11 */
-
     color: #FFFFFF;
-
-    /* Inside Auto Layout */
-
     flex: none;
     order: 2;
     flex-grow: 0;
@@ -222,8 +172,7 @@ const SocialLinks = styled.ul`
     height: 100px;
     position: relative;
     left: -50px;
-    top: 180px;
-    
+    top: 180px; 
   }
 `;
 
