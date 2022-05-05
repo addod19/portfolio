@@ -29,10 +29,8 @@ const Main = styled.main`
   ${commonStyleGrid}
   grid-template-columns: repeat(2, 1fr);
 
-
   @media(max-width: 768px) {
     grid-template-columns: 1fr;
-
   }
 `;
 
@@ -42,7 +40,6 @@ const Divider = styled.div`
   left: 0px;
   right: 0px;
   top: 0px;
-
   background: #DFE1E6;
 `;
 
@@ -68,16 +65,10 @@ const ContactMsg = styled.div`
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  /* or 130% */
 
   ${commonStyleFlex}
   align-items: center;
-
   color: #262626;
-
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   align-self: center;
@@ -116,7 +107,6 @@ const AColor = styled.a`
   @media(max-width: 768px) {
     transform: rotate(100deg);
     color: #F55800;
-
     &:hover {
       color: #CFCFCF;
     }

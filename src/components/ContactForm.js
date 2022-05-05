@@ -11,7 +11,7 @@ const commonStyleWhiteColor = css`
 `;
 
 const FormWrapper = styled.div`
-  border: 1px solid red;
+  width: 100%;
   @media only screen and (max-width: 600px){
     height: 450px;
     ${commonStyleBorder}
@@ -51,22 +51,49 @@ const ContactForm = () => {
         <div className="form-group">
           <label htmlFor="name">
             Name
-            <input type="text" id="name" className="form-control" name="name" onChange={handleChange} value={name} required />
+            <input
+              type="text"
+              id="name"
+              className="form-control"
+              name="name"
+              onChange={handleChange}
+              value={name}
+              required
+            />
           </label>
         </div>
         <div className="form-group">
           <label htmlFor="email">
             Email address
-            <input type="email" value={email} name="email" onChange={handleChange} className="form-control" required />
+            <input
+              type="email"
+              value={email}
+              name="email"
+              onChange={handleChange}
+              className="form-control"
+              required
+            />
           </label>
         </div>
         <div className="form-group">
           <label htmlFor="message">
             Message
-            <textarea className="form-control" name="message" onChange={handleChange} value={message} required rows="5" />
+            <textarea
+              className="form-control"
+              name="message"
+              onChange={handleChange}
+              value={message}
+              required
+              rows="5"
+            />
           </label>
         </div>
-        <Btn type="submit" className="btn form-control mb-2">Get In Touch</Btn>
+        <Btn
+          type="submit"
+          className="btn form-control mb-2"
+        >
+          Get In Touch
+        </Btn>
       </form>
     </FormWrapper>
   );

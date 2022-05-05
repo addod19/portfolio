@@ -5,9 +5,8 @@ import styled from 'styled-components';
 import ImgAbt from '../Images/group1.png';
 
 const AboutMeWrap = styled.section`
-  width: 1440px;
+  width: 100%;
   height: 800px;
-
   background: #262626;
 
   @media only screen and (max-width: 600px) {
@@ -25,7 +24,6 @@ const Divider = styled.div`
   top: calc(50% - 0px/2 + 0.5px);
   width: 80%;
   margin-left: 5%;
-
   border: 1px solid #FFFFFF;
 
   @media only screen and (max-width: 600px) {
@@ -36,6 +34,7 @@ const Divider = styled.div`
 const LHead = styled.h3`
   color: white;
   display: flex;
+  left: 50px;
   flex-direction: row;
   @media only screen and (max-width: 600px) {
     justify-content: center;
@@ -68,16 +67,11 @@ const FHead = styled.h3`
     flex-direction: row;
     align-items: center;
     padding: 8px 12px;
-
     position: static;
     width: 281px;
     height: auto;
     left: 0px;
     top: 0px;
-
-
-    /* Inside Auto Layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -109,21 +103,12 @@ const About = styled.div`
   height: 78px;
   left: 0px;
   top: 130px;
-  
-
   font-family: Crete Round;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
   line-height: 72px;
-  /* or 113% */
-
-
   color: #FF985C;
-
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   align-self: center;
@@ -140,26 +125,18 @@ const About = styled.div`
 const MyDescription = styled.div`
   z-index: 1;
   magin-left: 0px;
-
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
-  /* or 160% */
-
-
-  /* Neutrals/N20 */
-
   color: #F4F5F7;
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 1;
   align-self: center;
   flex-grow: 0;
   margin: 0px 24px;
+
   @media only screen and (max-width: 600px) {
     width: 130%;
     margin-left: -40px;
@@ -175,9 +152,6 @@ const RotateRec = styled.div`
   z-index: 1;
   background: #FF985C;
   transform: rotate(-45deg);
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   align-self: center;
@@ -190,11 +164,7 @@ const Rec = styled.div`
   height: 18px;
   left: 12px;
   top: 20.73px;
-
   background: #FF985C;
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   align-self: center;
@@ -207,11 +177,7 @@ const Circle = styled.div`
   height: 18px;
   left: 12px;
   top: 20.73px;
-
   background: #FF985C;
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   align-self: center;
@@ -225,6 +191,7 @@ const Col1 = styled.div`
   width: 50%;
   height: 500px;
   padding: 50px;
+
   @media only screen and (max-width: 600px) {
     width: 100%;
     height: auto;
@@ -242,6 +209,7 @@ const Row1 = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+
   @media only screen and (max-width: 600px) {
     width: 100%;
     height: auto;
@@ -253,10 +221,11 @@ const Row2 = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  margin-left: 70px;
+  margin-left: 150px;
   height: 250px;
   margin-top: 20px;
   width: 100%;
+
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
     border: none;
@@ -266,23 +235,17 @@ const Row2 = styled.div`
 
 `;
 const Lan = styled.div`
-  height: 150px;
-
+  height: 200px;
   @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
-
     position: static;
     width: 225.46px;
     height: auto;
     left: 51.77px;
     top: 120px;
-
-
-    /* Inside Auto Layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -299,46 +262,34 @@ const Fram = styled.div`
   height: auto;
 
   @media only screen and (max-width: 600px) {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
-
     position: static;
     width: 281px;
     height: auto;
     left: 24px;
     top: 425.46px;
-
-
-    /* Inside Auto Layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
     margin: 0px 24px;
-
   }
 `;
 const Skll = styled.div`
-  height: 150px;
+  height: 200px;
 
   @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
-
     position: static;
     width: 169px;
     height: auto;
     left: 80px;
     top: 785.46px;
-
-
-    /* Inside Auto Layout */
-
     flex: none;
     order: 2;
     flex-grow: 0;
@@ -347,10 +298,11 @@ const Skll = styled.div`
 `;
 
 const FStack = styled.h2`
+  left: 0px;
   @media only screen and (max-width: 600px) {
     position: relative;
     left: -300px;
-    TOP: 30px;
+    top: 30px;
     width: 100%;
   }
 `;
@@ -396,11 +348,11 @@ const AboutMe = () => (
       <Col1>
         <About>About Me</About>
         <MyDescription>
-          Hello I&apos;m a software developer! I can help you build a product ,
+          Hello I&apos;m a software engineer! I can help you build a product ,
           feature or website. Take a look at some of my work and experience!
           So if you&apos;d like to work together, please get in touch.
         </MyDescription>
-        <FStack>Full Stack Developer</FStack>
+        <FStack>Full Stack Software Engineer</FStack>
         <Resume>
           <ResLink
             target="_blank"
@@ -426,6 +378,7 @@ const AboutMe = () => (
         <LList>Ruby</LList>
         <LList>HTML</LList>
         <LList>CSS</LList>
+        <LList>Solidity</LList>
       </Lan>
       <Fram>
         <FHead>
@@ -437,6 +390,8 @@ const AboutMe = () => (
         <FList>Redux</FList>
         <FList>Boostrap</FList>
         <FList>Material UI</FList>
+        <FList>Styled Components</FList>
+        <FList>TailwindCSS</FList>
       </Fram>
       <Skll>
         <SHead>
@@ -447,6 +402,8 @@ const AboutMe = () => (
         <SList>Terminal</SList>
         <SList>GitLab</SList>
         <SList>Heroku</SList>
+        <SList>Truffle</SList>
+        <SList>Ganache</SList>
       </Skll>
     </Row2>
   </AboutMeWrap>

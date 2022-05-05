@@ -20,7 +20,7 @@ const commonFont = css`
 `;
 
 const IntroStyle = styled.section`
-  width: 1440px;
+  width: 100%;
   height: 870px;
   left: 0px;
   top: 0px;

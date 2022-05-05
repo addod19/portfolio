@@ -37,13 +37,9 @@ const Divider = styled.div`
   position: absolute;
   width: 894px;
   height: 0px;
-  left: 380px;
+  left: 420px;
   top: 952px;
-
   border: 1px solid #212121;
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 1;
   align-self: center;
@@ -66,23 +62,14 @@ const H1 = styled.h1`
   position: static;
   left: 0px;
   top: 0px;
-
   font-family: Crete Round;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
-  /* identical to box height, or 130% */
-
   ${commonFlex}
   align-items: center;
-
-  /* Neutrals/N900 */
-
   color: #091E42;
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   align-self: center;
@@ -94,23 +81,14 @@ const H1 = styled.h1`
     width: 100%;
     left: -40px;
     top: 0px;
-
     font-family: Crete Round;
     font-style: normal;
     font-weight: normal;
     font-size: 34px;
     line-height: 52px;
-    /* or 130% */
-
     ${commonFlex}
     align-items: center;
-
-    /* Theme 3 / Neutral 1 */
-
     color: #1C1A19;
-
-    /* Inside Auto Layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -131,7 +109,6 @@ const ProjectW = styled.div`
 
 const Proj = styled.article`
   @media only screen and (max-width: 600px) {
-   
   }
   
 `;
@@ -158,6 +135,7 @@ const TechStyle = styled.span`
 `;
 const projects = [
   {
+    id: '01',
     image: '/Images/fb.png',
     alt: 'Facebook App',
     title: 'Facebook Clone',
@@ -167,6 +145,7 @@ const projects = [
     tech: ['Rails', 'SCSS', 'OmniAuth', 'Bootstrap'],
   },
   {
+    id: '02',
     image: '/Images/rec.png',
     alt: 'Recipe App',
     title: 'Recipe App',
@@ -176,6 +155,7 @@ const projects = [
     tech: ['React', 'CSS3', 'Jest', 'Axios'],
   },
   {
+    id: '03',
     image: '/Images/ga.png',
     alt: 'Shooter Game',
     title: 'Shooter Game',
@@ -185,6 +165,7 @@ const projects = [
     tech: ['JS', 'Phaser', 'CSS3'],
   },
   {
+    id: '04',
     image: '/Images/cms.png',
     alt: 'BookStore',
     title: 'BookStore',
@@ -194,6 +175,7 @@ const projects = [
     tech: ['React', 'Redux', 'CSS3'],
   },
   {
+    id: '05',
     image: '/Images/todo.png',
     alt: 'Todo app',
     title: 'Todo',
@@ -203,6 +185,7 @@ const projects = [
     tech: ['JavaScript', 'UI Kit', 'CSS3', 'HTML'],
   },
   {
+    id: '06',
     image: '/Images/newsw.png',
     alt: 'Newsweek',
     title: 'Newsweek clone',
@@ -228,9 +211,9 @@ const RecentWorks = () => {
       </FirstRow>
       <ProjectW className="row">
         {
-            projects.map((project) => (
+            projects.map((project, id) => (
 
-              <Proj key={proIdx} className="col-md-4">
+              <Proj key={id} className="col-md-4">
                 <MobileImg className="ImgW">
                   <img src={project.image} alt={project.alt} className="img" title="click 'See Project' to view description" />
                 </MobileImg>
@@ -239,7 +222,12 @@ const RecentWorks = () => {
                   <span>{project.description}</span>
                   <Lang>
                     {
-                      project.tech.map((language) => <TechStyle key={proIdx} className="py-1 px-2 m-1 rounded">{language}</TechStyle>)
+                      project.tech.map((language) =>
+                      <TechStyle
+                        key={proIdx} className="py-1 px-2 m-1 rounded"
+                      >
+                        {language}
+                      </TechStyle>)
                     }
                   </Lang>
                   <SeePro
@@ -249,7 +237,6 @@ const RecentWorks = () => {
                       setCurrentProject(project);
                       setModalIsOpen(true);
                     }}
-
                   >
                     See Project
                   </SeePro>

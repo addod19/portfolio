@@ -118,7 +118,13 @@ const CustomModal = ({
       },
     }}
   >
-    <CloseBtn type="button" onClick={() => setModalIsOpen(false)} className="close close-modal absolute text-5xl transform rotate-45 cursor-pointer">+</CloseBtn>
+    <CloseBtn
+      type="button"
+      onClick={() => setModalIsOpen(false)}
+      className="close close-modal absolute text-5xl transform rotate-45 cursor-pointer"
+    >
+      +
+    </CloseBtn>
     <ModalW>
       <Title>
         {title}
@@ -128,10 +134,22 @@ const CustomModal = ({
       </div>
       <p className="text-justify">{description}</p>
       <MobileLink className="project-info pt-6 items-center">
-        <Live href={liveUrl} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} mr-3 hidden lg:flex`}>
+        <Live
+          href={liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          type="button"
+          className={`${modalClassNames} mr-3 hidden lg:flex`}
+        >
           Live
         </Live>
-        <Code href={codeLink} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} hidden lg:flex`}>
+        <Code
+          href={codeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          type="button"
+          className={`${modalClassNames} hidden lg:flex`}
+        >
           Code
         </Code>
       </MobileLink>
@@ -139,14 +157,22 @@ const CustomModal = ({
   </Modal>
 );
 
+CustomModal.defaulProps = {
+  title: '',
+  description: '',
+  codeLink: '',
+  imageUrl: '',
+  liveUrl: ''
+}
+
 CustomModal.propTypes = {
   modalIsOpen: PropTypes.bool.isRequired,
   setModalIsOpen: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  codeLink: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired,
-  liveUrl: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  codeLink: PropTypes.string,
+  imageUrl: PropTypes.string,
+  liveUrl: PropTypes.string,
 };
 
 export default CustomModal;
