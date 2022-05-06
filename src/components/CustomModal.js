@@ -158,21 +158,21 @@ const CustomModal = ({
 );
 
 CustomModal.defaulProps = {
-  title: '',
-  description: '',
-  codeLink: '',
-  imageUrl: '',
-  liveUrl: ''
-}
+  title: 'some',
+  description: 'some',
+  codeLink: 'some',
+  imageUrl: 'some',
+  liveUrl: 'some',
+};
 
 CustomModal.propTypes = {
   modalIsOpen: PropTypes.bool.isRequired,
   setModalIsOpen: PropTypes.func.isRequired,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  codeLink: PropTypes.string,
-  imageUrl: PropTypes.string,
-  liveUrl: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  codeLink: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  liveUrl: PropTypes.string.isRequired,
 };
 
 export default CustomModal;
