@@ -23,7 +23,7 @@
 
 ### Heroku Live version
 
-* [Portfolio](https://portfolio-review0.herokuapp.com/)
+* [Portfolio](https://playful-bublanina-2a3a6b.netlify.app/)
 
 ## Getting Started
 
