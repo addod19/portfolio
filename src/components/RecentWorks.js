@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import styled, { css } from 'styled-components';
 
@@ -24,93 +24,76 @@ const Recent = styled.div`
 
 const FirstRow = styled.div`
   ${commonFlex}
+  align-items: center;
+  gap: 24px;
   width: 90%;
-  margin: auto;
+  margin: 0 auto 24px;
 
   @media(max-width: 768px) {
-    display: grid;
-    grid-template-column: 1fr;
+    display: block;
   }
 `;
 
 const Divider = styled.div`
-  position: absolute;
-  width: 894px;
-  height: 0px;
-  left: 420px;
-  top: 952px;
-  border: 1px solid #212121;
-  flex: none;
-  order: 1;
-  align-self: center;
-  flex-grow: 0;
-  margin: 24px 0px;
+  flex: 1;
+  min-width: 120px;
+  height: 1px;
+  background: #212121;
 
   @media only screen and (max-width: 600px) {
     width: 90%;
-    left: 10%;
-    top: 680px;
-    margin-left: -16px;
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    margin-left: -20px;
+    margin: 10px auto 0;
   }
 `;
 
 const H1 = styled.h1`
-  position: static;
-  left: 0px;
-  top: 0px;
   font-family: Crete Round;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
-  ${commonFlex}
-  align-items: center;
+  margin: 0;
+  white-space: nowrap;
   color: #091E42;
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 24px 0px;
 
   @media only screen and (max-width: 600px) {
-    position: relative;
     width: 100%;
-    left: -40px;
-    top: 0px;
-    font-family: Crete Round;
-    font-style: normal;
-    font-weight: normal;
     font-size: 34px;
     line-height: 52px;
-    ${commonFlex}
-    align-items: center;
     color: #1C1A19;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 24px;
+    margin: 0 auto;
+    text-align: center;
   }
 `;
 
 const SeePro = styled.button`
   background: #545454;
+  border: none;
 `;
 const ProjectW = styled.div`
   width: 90%;
   margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+
+  @media only screen and (max-width: 992px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   @media only screen and (max-width: 600px) {
     ${fullWidth}
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 `;
 
 const Proj = styled.article`
-  @media only screen and (max-width: 600px) {
-  }
-  
+  height: 100%;
+  padding: 12px;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  background: #ffffff;
 `;
 const MobileImg = styled.div`
   @media only screen and (max-width: 600px) {
@@ -121,16 +104,23 @@ const MobileImg = styled.div`
 `;
 
 const Lang = styled.div`
-  height: 50px;
+  min-height: 50px;
   margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
   @media only screen and (max-width: 600px) {
     ${fullWidth}
-    text-overflow: ellipsis;
   }
 `;
 
 const TechStyle = styled.span`
-  border: 1px solid grey;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #6f6f6f;
+  border-top: 1px solid #6f6f6f;
+  background: #fff;
   height: auto;
 `;
 const projects = [
@@ -202,30 +192,28 @@ const RecentWorks = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState([0]);
 
-  const proIdx = projects[Math.floor(Math.random() * projects.length)];
-
   return (
     <Recent className="mb-3">
-      <FirstRow className="row">
-        <H1 className="col-md-5">My Recent Works</H1>
-        <Divider className="col-md-7" />
+      <FirstRow>
+        <H1>My Recent Works</H1>
+        <Divider />
       </FirstRow>
-      <ProjectW className="row">
+      <ProjectW>
         {
             projects.map((project) => (
 
-              <Proj key={proIdx} className="col-md-4">
+              <Proj key={project.id}>
                 <MobileImg className="ImgW">
                   <img src={project.image} alt={project.alt} className="img" title="click 'See Project' to view description" />
                 </MobileImg>
-                <div className="">
+                <div>
                   <h4 className="text-center">{project.title}</h4>
                   <span>{project.description}</span>
                   <Lang>
                     {
                       project.tech.map((language) => (
                         <TechStyle
-                          key={proIdx}
+                          key={`${project.id}-${language}`}
                           className="py-1 px-2 m-1 rounded"
                         >
                           {language}

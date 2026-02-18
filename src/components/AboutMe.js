@@ -1,366 +1,185 @@
-import React from 'react';
-
 import styled from 'styled-components';
-
 import ImgAbt from '../Images/group1.png';
 
 const AboutMeWrap = styled.section`
   width: 100%;
-  height: 800px;
+  padding: 72px 0 64px;
   background: #262626;
 
   @media only screen and (max-width: 600px) {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+    padding: 56px 0 40px;
   }
 `;
 
-const Divider = styled.div`  
-  height: 0px;
-  left: 0px;
-  right: 0px;
-  top: calc(50% - 0px/2 + 0.5px);
-  width: 80%;
-  margin-left: 5%;
-  border: 1px solid #FFFFFF;
+const Row1 = styled.div`
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  align-items: center;
 
-  @media only screen and (max-width: 600px) {
-    margin-left: 0;
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
 `;
-
-const LHead = styled.h3`
-  color: white;
-  display: flex;
-  left: 50px;
-  flex-direction: row;
-  @media only screen and (max-width: 600px) {
-    justify-content: center;
-  }
-
-`;
-const Lang = styled.div`
-  margin: 2px;
-`;
-
-const Framwork = styled.div`
-  margin: 2px;
-`;
-const LList = styled.div`
-  color: white;
-
-  @media(max-width: 769px) {
-    justify-content: center;
-  }
-`;
-
-const FHead = styled.h3`
-  color: white;
-  display: flex;
-  flex-direction: row;
-
-  @media only screen and (max-width: 600px) {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 12px;
-    position: static;
-    width: 281px;
-    height: auto;
-    left: 0px;
-    top: 0px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 24px;
-  }
-`;
-
-const FList = styled.div`
-  color: white;
-`;
-
-const SHead = styled.h3`
-  color: white;
-  display: flex;
-  flex-direction: row;
-
-  @media only screen and (max-width: 600px) {
-    justify-content: center;
-  }
-`;
-
-const SList = styled.div`
-  color: white;
-`;
-
-const About = styled.div`
-  position: static;
-  width: 566px;
-  height: 78px;
-  left: 0px;
-  top: 130px;
-  font-family: Crete Round;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 72px;
-  line-height: 72px;
-  color: #FF985C;
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 0px 24px;
-
-  @media only screen and (max-width: 600px) {
-    width: 140%;
-    height: auto;
-    font-size: 60px;
-    margin-left: -35px;
-  }
-`;
-const MyDescription = styled.div`
-  z-index: 1;
-  magin-left: 0px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 32px;
-  color: #F4F5F7;
-  flex: none;
-  order: 1;
-  align-self: center;
-  flex-grow: 0;
-  margin: 0px 24px;
-
-  @media only screen and (max-width: 600px) {
-    width: 130%;
-    margin-left: -40px;
-  }
-`;
-
-const RotateRec = styled.div`
-  position: static;
-  width: 18px;
-  height: 18px;
-  left: 16px;
-  top: 20.73px;
-  z-index: 1;
-  background: #FF985C;
-  transform: rotate(-45deg);
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 12px 0px;
-`;
-const Rec = styled.div`
-  position: static;
-  width: 18px;
-  height: 18px;
-  left: 12px;
-  top: 20.73px;
-  background: #FF985C;
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 12px 0px;
-`;
-const Circle = styled.div`
-  position: static;
-  width: 18px;
-  height: 18px;
-  left: 12px;
-  top: 20.73px;
-  background: #FF985C;
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 12px 0px;
-  border-radius: 40%;
-`;
-const Skill = styled.div``;
 
 const Col1 = styled.div`
-  width: 50%;
-  height: 500px;
-  padding: 50px;
-
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
 `;
+
 const Col2 = styled.div`
-  width: 50%;
-  height: 500px;
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    height: auto;
-  }
-`;
-const Row1 = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  justify-content: flex-end;
 
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-`;
-const Row2 = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  margin-left: 150px;
-  height: 250px;
-  margin-top: 20px;
-  width: 100%;
-
-  @media only screen and (max-width: 600px) {
-    grid-template-columns: 1fr;
-    border: none;
-    height: auto;
-    margin-left: 0;
-  }
-
-`;
-const Lan = styled.div`
-  height: 200px;
-  @media only screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    position: static;
-    width: 225.46px;
-    height: auto;
-    left: 51.77px;
-    top: 120px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 24px;
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    margin-left: 0px;
-    padding: 40px;
-    height: auto;
-  }
-`;
-const Fram = styled.div`
-  height: auto;
-
-  @media only screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    position: static;
-    width: 281px;
-    height: auto;
-    left: 24px;
-    top: 425.46px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 24px;
-  }
-`;
-const Skll = styled.div`
-  height: 200px;
-
-  @media only screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    position: static;
-    width: 169px;
-    height: auto;
-    left: 80px;
-    top: 785.46px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 0px 24px;
+  @media only screen and (max-width: 900px) {
+    justify-content: center;
   }
 `;
 
-const FStack = styled.h2`
-  left: 0px;
+const About = styled.h2`
+  margin: 0 0 14px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1.05;
+  color: #ff985c;
+
   @media only screen and (max-width: 600px) {
-    position: relative;
-    left: -300px;
-    top: 30px;
-    width: 100%;
+    font-size: 52px;
+  }
+`;
+
+const MyDescription = styled.p`
+  margin: 0 0 24px;
+  max-width: 620px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f4f5f7;
+`;
+
+const FStack = styled.h3`
+  margin: 0 0 20px;
+  max-width: 460px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #ffffff;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 38px;
+  }
+`;
+
+const Resume = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 16px;
+  background-color: #ff985c;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: border-radius 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    color: #f4f5f7;
+    text-decoration: none;
+    border-radius: 20px;
   }
 `;
 
 const ImgDesign = styled.img`
+  width: 100%;
+  max-width: 460px;
+  display: block;
+`;
+
+const Divider = styled.div`
+  width: 90%;
+  max-width: 1140px;
+  height: 1px;
+  margin: 48px auto 32px;
+  background: #ffffff;
+`;
+
+const Row2 = styled.div`
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+`;
+
+const RotateRec = styled.div`
+  width: 18px;
+  height: 18px;
+  background: #ff985c;
+  transform: rotate(-45deg);
+`;
+
+const Rec = styled.div`
+  width: 18px;
+  height: 18px;
+  background: #ff985c;
+`;
+
+const Circle = styled.div`
+  width: 18px;
+  height: 18px;
+  background: #ff985c;
+  border-radius: 50%;
+`;
+
+const Heading = styled.h3`
+  margin: 0 0 12px;
+  color: #ffffff;
   display: flex;
-  margin-top: 50px;
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    margin-left: 50%;
-    margin-top: 0;
-  }
-`;
-const Resume = styled.div`
-  width: 150px;
-  height: 40px;
-  padding: 5px;
-  background-color: #FF985C;
-  color: white;
-  margin-left: 23px;
-  &:hover {
-    border-radius: 20px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    margin-left: -35px;
-    position: relative;
-    bottom: -50px;
-  }
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
 `;
 
-const ResLink = styled.a`
-  margin-left: 6%;
-  color: white;
-  &:hover {
-    text-decoration: none;
-    color: grey;
-  }
+const ListItem = styled.p`
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-size: 18px;
 `;
+
 const AboutMe = () => (
   <AboutMeWrap id="about">
     <Row1>
       <Col1>
         <About>About Me</About>
         <MyDescription>
-          Hello I&apos;m a software engineer! I can help you build a product ,
+          Hello I&apos;m a software engineer! I can help you build a product,
           feature or website. Take a look at some of my work and experience!
           So if you&apos;d like to work together, please get in touch.
         </MyDescription>
         <FStack>Full Stack Software Engineer</FStack>
-        <Resume>
-          <ResLink
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://docs.google.com/document/d/15ORaVl9x50n_nSYa0_JAnQvXzvONjBF4qSuVUqk5_hg/edit"
-          >
-            View My Resume
-          </ResLink>
+        <Resume
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.google.com/document/d/15ORaVl9x50n_nSYa0_JAnQvXzvONjBF4qSuVUqk5_hg/edit"
+        >
+          View My Resume
         </Resume>
       </Col1>
       <Col2>
@@ -370,40 +189,40 @@ const AboutMe = () => (
     <Divider />
     <Row2>
       <Lan>
-        <LHead>
+        <Heading>
           <RotateRec />
-          <Lang>Languages</Lang>
-        </LHead>
-        <LList>JavaScript</LList>
-        <LList>Ruby</LList>
-        <LList>HTML</LList>
-        <LList>CSS</LList>
-        <LList>Solidity</LList>
+          Languages
+        </Heading>
+        <ListItem>JavaScript</ListItem>
+        <ListItem>Ruby</ListItem>
+        <ListItem>HTML</ListItem>
+        <ListItem>CSS</ListItem>
+        <ListItem>Solidity</ListItem>
       </Lan>
       <Fram>
-        <FHead>
+        <Heading>
           <Rec />
-          <Framwork>FrameWorks</Framwork>
-        </FHead>
-        <FList>Ruby on Rails</FList>
-        <FList>React</FList>
-        <FList>Redux</FList>
-        <FList>Boostrap</FList>
-        <FList>Material UI</FList>
-        <FList>Styled Components</FList>
-        <FList>TailwindCSS</FList>
+          Frameworks
+        </Heading>
+        <ListItem>Ruby on Rails</ListItem>
+        <ListItem>React</ListItem>
+        <ListItem>Redux</ListItem>
+        <ListItem>Bootstrap</ListItem>
+        <ListItem>Material UI</ListItem>
+        <ListItem>Styled Components</ListItem>
+        <ListItem>TailwindCSS</ListItem>
       </Fram>
       <Skll>
-        <SHead>
+        <Heading>
           <Circle />
-          <Skill>Skills</Skill>
-        </SHead>
-        <SList>GitHub</SList>
-        <SList>Terminal</SList>
-        <SList>GitLab</SList>
-        <SList>Heroku</SList>
-        <SList>Truffle</SList>
-        <SList>Ganache</SList>
+          Skills
+        </Heading>
+        <ListItem>GitHub</ListItem>
+        <ListItem>Terminal</ListItem>
+        <ListItem>GitLab</ListItem>
+        <ListItem>Heroku</ListItem>
+        <ListItem>Truffle</ListItem>
+        <ListItem>Ganache</ListItem>
       </Skll>
     </Row2>
   </AboutMeWrap>

@@ -15,98 +15,88 @@ const commonStyleGrid = css`
 `;
 const ContactWrap = styled.div`
   width: 100%;
-  height: auto;
-  margin-top: 20px;
+  padding: 64px 0 24px;
 
   @media only screen and (max-width: 600px) {
-    width: 100%;
-    margin-top: 0px;
+    padding: 48px 0 20px;
   }
 `;
 
 const Main = styled.main`
-  height: auto;
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto 40px;
   ${commonStyleGrid}
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  align-items: start;
 
   @media(max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 `;
 
 const Divider = styled.div`
-  position: relative;
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
   height: 1px;
-  left: 0px;
-  right: 0px;
-  top: 0px;
   background: #DFE1E6;
 `;
 
 const FooterLinks = styled.footer`
-  height: 90px;
+  min-height: 90px;
   ${commonStyleFlex}
   justify-content: center;
+  align-items: center;
+  padding: 16px 0;
 
   @media(max-width: 769px) {
-    height: auto;
+    min-height: auto;
   }
 `;
 
 const ContactMsg = styled.div`
-  position: relative;
-  width: 455px;
-  height: 356px;
-  left: 0px;
-  top: 0px;
-
+  width: 100%;
+  margin: 0;
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-
   ${commonStyleFlex}
-  align-items: center;
+  align-items: flex-start;
   color: #262626;
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 0px 24px;
 
-  @media only screen and (max-width: 600px) {
-    font-size: 28px;
-    margin-left: -14px;
-    line-height: 30px;
-    height: 200px;
-    width: 100%;
-    margin: auto;
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+    line-height: 1.3;
   }
 `;
 
 const Wrp = styled.div`
   ${commonStyleGrid}
-  grid-template-columns: repeat(5, 1fr);
-  width: 30%;
-  height: 50px;
-  margin-top: 40px;
+  grid-template-columns: repeat(5, auto);
+  gap: 16px;
+  width: auto;
+  margin-top: 16px;
+  padding: 0;
 
   @media(max-width: 769px) {
-    grid-gap: 10px;
-    width: 100%;
-    margin-top: 20px;
+    gap: 12px;
   }
 `;
 const AColor = styled.a`
   color: #FF985C !important;
+
   &:hover {
     color: black !important;
   }
 
   @media(max-width: 768px) {
-    transform: rotate(100deg);
     color: #F55800;
+
     &:hover {
       color: #CFCFCF;
     }
@@ -115,12 +105,12 @@ const AColor = styled.a`
 
 const SLinks = styled.li`
   color: #CFCFCF;
-
+  list-style: none;
 `;
 const Contact = () => (
-  <ContactWrap id="contact" className="container">
-    <Main className="row">
-      <ContactMsg className="col-sm-12 col-xs-12">
+  <ContactWrap id="contact">
+    <Main>
+      <ContactMsg>
         I&apos;m always interested in hearing about new projects,
         so if you&apos;d like to work please get in touch.
       </ContactMsg>

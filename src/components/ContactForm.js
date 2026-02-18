@@ -1,32 +1,66 @@
 import React, { useState } from 'react';
-
-import styled, { css } from 'styled-components';
-
-const commonStyleBorder = css`
-  border: none;
-`;
-
-const commonStyleWhiteColor = css`
-  color: white;
-`;
+import styled from 'styled-components';
 
 const FormWrapper = styled.div`
   width: 100%;
-  @media only screen and (max-width: 600px){
-    height: 450px;
-    ${commonStyleBorder}
-    width: 90%;
-    margin: auto;
-  }
+  max-width: 520px;
 `;
+
+const Form = styled.form`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+`;
+
+const FormGroup = styled.div`
+  width: 100%;
+`;
+
+const Label = styled.label`
+  display: block;
+  margin-bottom: 8px;
+  color: #172b4d;
+  font-size: 18px;
+  font-weight: 500;
+`;
+
+const baseInputStyles = `
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 14px;
+  border: 1px solid #c1c7d0;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #172b4d;
+  font-size: 16px;
+`;
+
+const Input = styled.input`
+  ${baseInputStyles}
+`;
+
+const TextArea = styled.textarea`
+  ${baseInputStyles}
+  min-height: 160px;
+  resize: vertical;
+`;
+
 const Btn = styled.button`
-  ${commonStyleBorder}
-  ${commonStyleWhiteColor}
-  width: 50%;
-  margin-left: 25%;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 4px;
+  background: #ff985c;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+
   &:hover {
-    ${commonStyleWhiteColor}
-    background: black !important;
+    background: #e77735;
   }
 `;
 
@@ -47,54 +81,44 @@ const ContactForm = () => {
 
   return (
     <FormWrapper>
-      <form id="contact-form" onSubmit={() => handleSubmit()} method="POST">
-        <div className="form-group">
-          <label htmlFor="name">
-            Name
-            <input
-              type="text"
-              id="name"
-              className="form-control"
-              name="name"
-              onChange={handleChange}
-              value={name}
-              required
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">
-            Email address
-            <input
-              type="email"
-              value={email}
-              name="email"
-              onChange={handleChange}
-              className="form-control"
-              required
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">
-            Message
-            <textarea
-              className="form-control"
-              name="message"
-              onChange={handleChange}
-              value={message}
-              required
-              rows="5"
-            />
-          </label>
-        </div>
-        <Btn
-          type="submit"
-          className="btn form-control mb-2"
-        >
+      <Form id="contact-form" onSubmit={handleSubmit} method="POST">
+        <FormGroup>
+          <Label htmlFor="name">Name</Label>
+          <Input
+            type="text"
+            id="name"
+            name="name"
+            onChange={handleChange}
+            value={name}
+            required
+          />
+        </FormGroup>
+        <FormGroup>
+          <Label htmlFor="email">Email address</Label>
+          <Input
+            id="email"
+            type="email"
+            value={email}
+            name="email"
+            onChange={handleChange}
+            required
+          />
+        </FormGroup>
+        <FormGroup>
+          <Label htmlFor="message">Message</Label>
+          <TextArea
+            id="message"
+            name="message"
+            onChange={handleChange}
+            value={message}
+            required
+            rows="5"
+          />
+        </FormGroup>
+        <Btn type="submit">
           Get In Touch
         </Btn>
-      </form>
+      </Form>
     </FormWrapper>
   );
 };
